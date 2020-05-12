@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iOA-24-UzG">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -7,8 +7,14 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
         <array key="Montserrat-Medium.ttf">
             <string>Montserrat-Medium</string>
+        </array>
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
         </array>
         <array key="Montserrat-SemiBold.ttf">
             <string>Montserrat-SemiBold</string>
@@ -20,17 +26,17 @@
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="Stretching" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <rect key="frame" x="170" y="438" width="74" height="20"/>
+                                <rect key="frame" x="164.5" y="410.5" width="85" height="21"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by FirstViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
-                                <rect key="frame" x="110" y="466" width="194.5" height="17"/>
+                                <rect key="frame" x="110" y="439.5" width="194" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -62,17 +68,17 @@
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="Stretching" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <rect key="frame" x="106" y="426.5" width="202" height="43"/>
+                                <rect key="frame" x="106" y="399.5" width="202" height="43"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
-                                <rect key="frame" x="99.5" y="477.5" width="215" height="17"/>
+                                <rect key="frame" x="99.5" y="450.5" width="215" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -95,7 +101,8 @@
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="mainVC" id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="srI-St-oMJ"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -109,6 +116,87 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--Onboarding View Controller-->
+        <scene sceneID="Lzv-W7-bJe">
+            <objects>
+                <viewController id="iOA-24-UzG" customClass="OnboardingViewController" customModule="Stretching" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sis-dd-Wdb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gMT-xK-H7o">
+                                <rect key="frame" x="0.0" y="97" width="414" height="378"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="1xe-HN-VfZ"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="ySv-AG-O31"/>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NII-XO-sCC">
+                                <rect key="frame" x="101" y="570" width="213" height="40"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="67C-gU-N2Q">
+                                <rect key="frame" x="20" y="618" width="374" height="143"/>
+                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="13"/>
+                                <color key="textColor" red="0.59215686274509804" green="0.59215686274509804" blue="0.59215686274509804" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sHN-Wt-max">
+                                <rect key="frame" x="286" y="811" width="108" height="35"/>
+                                <color key="backgroundColor" red="1" green="0.38823529411764707" blue="0.28235294117647058" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="iNY-VN-5Zk"/>
+                                    <constraint firstAttribute="width" constant="108" id="iXr-fb-Sa7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="13"/>
+                                <state key="normal" title="Let's Start">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="startButtonClicked:" destination="iOA-24-UzG" eventType="touchUpInside" id="diC-cN-rPB"/>
+                                </connections>
+                            </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="0Cb-6v-J8t">
+                                <rect key="frame" x="20" y="811" width="39" height="37"/>
+                                <color key="pageIndicatorTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" red="1" green="0.38823529410000002" blue="0.28235294119999998" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="67C-gU-N2Q" firstAttribute="centerX" secondItem="sis-dd-Wdb" secondAttribute="centerX" id="0lO-tG-r2T"/>
+                            <constraint firstItem="WF4-Od-GSa" firstAttribute="bottom" secondItem="sHN-Wt-max" secondAttribute="bottom" constant="16" id="1wO-h5-ZTA"/>
+                            <constraint firstItem="67C-gU-N2Q" firstAttribute="leading" secondItem="WF4-Od-GSa" secondAttribute="leading" constant="20" id="8vm-lv-bDG"/>
+                            <constraint firstItem="WF4-Od-GSa" firstAttribute="trailing" secondItem="NII-XO-sCC" secondAttribute="trailing" constant="100" id="Blx-TS-Dq9"/>
+                            <constraint firstItem="WF4-Od-GSa" firstAttribute="bottom" secondItem="0Cb-6v-J8t" secondAttribute="bottom" constant="14" id="DX5-9k-knL"/>
+                            <constraint firstItem="gMT-xK-H7o" firstAttribute="leading" secondItem="WF4-Od-GSa" secondAttribute="leading" id="JTa-Al-CH2"/>
+                            <constraint firstItem="NII-XO-sCC" firstAttribute="leading" secondItem="WF4-Od-GSa" secondAttribute="leading" constant="101" id="NAp-dX-2cp"/>
+                            <constraint firstItem="sHN-Wt-max" firstAttribute="top" secondItem="67C-gU-N2Q" secondAttribute="bottom" constant="50" id="TeV-Hw-8rs"/>
+                            <constraint firstItem="0Cb-6v-J8t" firstAttribute="leading" secondItem="WF4-Od-GSa" secondAttribute="leading" constant="20" id="a08-EQ-q4n"/>
+                            <constraint firstItem="WF4-Od-GSa" firstAttribute="trailing" secondItem="67C-gU-N2Q" secondAttribute="trailing" constant="20" id="fCy-A3-tfY"/>
+                            <constraint firstItem="67C-gU-N2Q" firstAttribute="top" secondItem="NII-XO-sCC" secondAttribute="bottom" constant="8" id="gJR-kw-xzT"/>
+                            <constraint firstItem="WF4-Od-GSa" firstAttribute="trailing" secondItem="sHN-Wt-max" secondAttribute="trailing" constant="20" id="hYC-6U-O7i"/>
+                            <constraint firstItem="gMT-xK-H7o" firstAttribute="top" secondItem="WF4-Od-GSa" secondAttribute="top" constant="53" id="iMG-ab-8EN"/>
+                            <constraint firstItem="NII-XO-sCC" firstAttribute="centerX" secondItem="sis-dd-Wdb" secondAttribute="centerX" id="qrF-jO-OWI"/>
+                            <constraint firstItem="NII-XO-sCC" firstAttribute="top" secondItem="gMT-xK-H7o" secondAttribute="bottom" constant="95" id="yq5-TH-Xja"/>
+                            <constraint firstItem="gMT-xK-H7o" firstAttribute="trailing" secondItem="WF4-Od-GSa" secondAttribute="trailing" id="z35-Zx-BxZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WF4-Od-GSa"/>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionOnboarding" destination="67C-gU-N2Q" id="NeB-3q-k0p"/>
+                        <outlet property="pageControl" destination="0Cb-6v-J8t" id="Qfm-Cy-0QJ"/>
+                        <outlet property="scrollView" destination="gMT-xK-H7o" id="H27-x0-EgW"/>
+                        <outlet property="startButton" destination="sHN-Wt-max" id="b2d-Yi-vYo"/>
+                        <outlet property="titleOnboarding" destination="NII-XO-sCC" id="40r-qd-RqK"/>
+                        <segue destination="49e-Tb-3d3" kind="show" id="hkn-wm-1eU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I6I-Vz-Aiq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1707.2463768115942" y="0.0"/>
         </scene>
     </scenes>
     <resources>
