@@ -35,6 +35,11 @@
 		8D24D1BE24686E8C00C9B548 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D24D1BD24686E8C00C9B548 /* OnboardingViewController.swift */; };
 		8DDC28672465487200DD76C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DDC28652465487200DD76C1 /* Main.storyboard */; };
 		8DDC28682465487200DD76C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DDC28662465487200DD76C1 /* LaunchScreen.storyboard */; };
+		EC413FA324725F86000C5B29 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC413FA224725F86000C5B29 /* ProfileViewController.swift */; };
+		EC413FA8247262E7000C5B29 /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC413FA6247262E7000C5B29 /* SettingCell.swift */; };
+		EC413FA9247262E7000C5B29 /* SettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC413FA7247262E7000C5B29 /* SettingCell.xib */; };
+		EC413FAD24726781000C5B29 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC413FAB24726781000C5B29 /* ProfileCell.swift */; };
+		EC413FAE24726781000C5B29 /* ProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC413FAC24726781000C5B29 /* ProfileCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +73,11 @@
 		8D24D1BD24686E8C00C9B548 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		8DDC28652465487200DD76C1 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8DDC28662465487200DD76C1 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC413FA224725F86000C5B29 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		EC413FA6247262E7000C5B29 /* SettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
+		EC413FA7247262E7000C5B29 /* SettingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingCell.xib; sourceTree = "<group>"; };
+		EC413FAB24726781000C5B29 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		EC413FAC24726781000C5B29 /* ProfileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +135,8 @@
 				4FBC0FCA24653E930052DB8A /* SecondViewController.swift */,
 				8DDC28662465487200DD76C1 /* LaunchScreen.storyboard */,
 				8DDC28652465487200DD76C1 /* Main.storyboard */,
+				EC413FA224725F86000C5B29 /* ProfileViewController.swift */,
+				EC413FAA2472630A000C5B29 /* Profile Cell */,
 				8D24D1BD24686E8C00C9B548 /* OnboardingViewController.swift */,
 			);
 			path = Presentation;
@@ -179,6 +191,17 @@
 				8D24D1A924686A0A00C9B548 /* Montserrat-ExtraBoldItalic.ttf */,
 			);
 			path = Montserrat;
+			sourceTree = "<group>";
+		};
+		EC413FAA2472630A000C5B29 /* Profile Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EC413FAB24726781000C5B29 /* ProfileCell.swift */,
+				EC413FAC24726781000C5B29 /* ProfileCell.xib */,
+				EC413FA6247262E7000C5B29 /* SettingCell.swift */,
+				EC413FA7247262E7000C5B29 /* SettingCell.xib */,
+			);
+			path = "Profile Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +264,7 @@
 			files = (
 				8D24D1B624686A0A00C9B548 /* Montserrat-ExtraBold.ttf in Resources */,
 				8DDC28672465487200DD76C1 /* Main.storyboard in Resources */,
+				EC413FA9247262E7000C5B29 /* SettingCell.xib in Resources */,
 				8D24D1B324686A0A00C9B548 /* Montserrat-BlackItalic.ttf in Resources */,
 				8D24D1B224686A0A00C9B548 /* Montserrat-MediumItalic.ttf in Resources */,
 				8D24D1AC24686A0A00C9B548 /* Montserrat-BoldItalic.ttf in Resources */,
@@ -260,6 +284,7 @@
 				8D24D1AB24686A0A00C9B548 /* Montserrat-Medium.ttf in Resources */,
 				4FBC0FD324653E940052DB8A /* Assets.xcassets in Resources */,
 				8D24D1AF24686A0A00C9B548 /* Montserrat-ExtraLight.ttf in Resources */,
+				EC413FAE24726781000C5B29 /* ProfileCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,9 +297,12 @@
 			files = (
 				4FBC0FD124653E930052DB8A /* Stretching.xcdatamodeld in Sources */,
 				8D24D1BE24686E8C00C9B548 /* OnboardingViewController.swift in Sources */,
+				EC413FA8247262E7000C5B29 /* SettingCell.swift in Sources */,
 				4FCDFBA32472732400BD5DB3 /* StretchingAssetKit.swift in Sources */,
 				4FBC0FCB24653E930052DB8A /* SecondViewController.swift in Sources */,
 				4FBC0FC924653E930052DB8A /* FirstViewController.swift in Sources */,
+				EC413FA324725F86000C5B29 /* ProfileViewController.swift in Sources */,
+				EC413FAD24726781000C5B29 /* ProfileCell.swift in Sources */,
 				4FBC0FC524653E930052DB8A /* AppDelegate.swift in Sources */,
 				4FBC0FC724653E930052DB8A /* SceneDelegate.swift in Sources */,
 			);
