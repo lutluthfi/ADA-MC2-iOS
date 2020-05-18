@@ -90,6 +90,7 @@
                     </view>
                     <connections>
                         <outlet property="logOutButton" destination="2MQ-pl-C7O" id="5nv-mL-iMy"/>
+                        <outlet property="tableView" destination="xUJ-Lf-rbF" id="9T1-xm-tah"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TRW-Ag-QSg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
