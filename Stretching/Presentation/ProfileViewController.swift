@@ -22,6 +22,7 @@ class ProfileViewController: UIViewController {
         tableView.register(UINib(nibName: "SettingCell", bundle: nil), forCellReuseIdentifier: "settingCell")
         tableView.register(UINib(nibName: "ProfileCell", bundle: nil), forCellReuseIdentifier: "cellProfile")
         logOutButton.layer.borderColor = UIColor.orange as! CGColor
+        
         logOutButton.layer.cornerRadius = 10
     }
     

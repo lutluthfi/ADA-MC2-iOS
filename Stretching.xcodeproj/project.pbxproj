@@ -40,6 +40,9 @@
 		EC413FA9247262E7000C5B29 /* SettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC413FA7247262E7000C5B29 /* SettingCell.xib */; };
 		EC413FAD24726781000C5B29 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC413FAB24726781000C5B29 /* ProfileCell.swift */; };
 		EC413FAE24726781000C5B29 /* ProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC413FAC24726781000C5B29 /* ProfileCell.xib */; };
+		EC413FB224728743000C5B29 /* RewardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC413FB124728743000C5B29 /* RewardViewController.swift */; };
+		EC413FB824728950000C5B29 /* RewardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC413FB624728950000C5B29 /* RewardViewCell.swift */; };
+		EC413FB924728950000C5B29 /* RewardViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC413FB724728950000C5B29 /* RewardViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +81,9 @@
 		EC413FA7247262E7000C5B29 /* SettingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingCell.xib; sourceTree = "<group>"; };
 		EC413FAB24726781000C5B29 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		EC413FAC24726781000C5B29 /* ProfileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCell.xib; sourceTree = "<group>"; };
+		EC413FB124728743000C5B29 /* RewardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardViewController.swift; sourceTree = "<group>"; };
+		EC413FB624728950000C5B29 /* RewardViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardViewCell.swift; sourceTree = "<group>"; };
+		EC413FB724728950000C5B29 /* RewardViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RewardViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +142,8 @@
 				8DDC28662465487200DD76C1 /* LaunchScreen.storyboard */,
 				8DDC28652465487200DD76C1 /* Main.storyboard */,
 				EC413FA224725F86000C5B29 /* ProfileViewController.swift */,
+				EC413FB124728743000C5B29 /* RewardViewController.swift */,
+				EC413FB5247288F4000C5B29 /* RewardCell */,
 				EC413FAA2472630A000C5B29 /* Profile Cell */,
 				8D24D1BD24686E8C00C9B548 /* OnboardingViewController.swift */,
 			);
@@ -202,6 +210,15 @@
 				EC413FA7247262E7000C5B29 /* SettingCell.xib */,
 			);
 			path = "Profile Cell";
+			sourceTree = "<group>";
+		};
+		EC413FB5247288F4000C5B29 /* RewardCell */ = {
+			isa = PBXGroup;
+			children = (
+				EC413FB624728950000C5B29 /* RewardViewCell.swift */,
+				EC413FB724728950000C5B29 /* RewardViewCell.xib */,
+			);
+			path = RewardCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +290,7 @@
 				8DDC28682465487200DD76C1 /* LaunchScreen.storyboard in Resources */,
 				8D24D1AD24686A0A00C9B548 /* Montserrat-Light.ttf in Resources */,
 				8D24D1B924686A0A00C9B548 /* Montserrat-Regular.ttf in Resources */,
+				EC413FB924728950000C5B29 /* RewardViewCell.xib in Resources */,
 				8D24D1AE24686A0A00C9B548 /* Montserrat-ThinItalic.ttf in Resources */,
 				8D24D1AA24686A0A00C9B548 /* Montserrat-LightItalic.ttf in Resources */,
 				8D24D1BB24686A0A00C9B548 /* Montserrat-SemiBoldItalic.ttf in Resources */,
@@ -295,6 +313,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC413FB224728743000C5B29 /* RewardViewController.swift in Sources */,
 				4FBC0FD124653E930052DB8A /* Stretching.xcdatamodeld in Sources */,
 				8D24D1BE24686E8C00C9B548 /* OnboardingViewController.swift in Sources */,
 				EC413FA8247262E7000C5B29 /* SettingCell.swift in Sources */,
@@ -305,6 +324,7 @@
 				EC413FAD24726781000C5B29 /* ProfileCell.swift in Sources */,
 				4FBC0FC524653E930052DB8A /* AppDelegate.swift in Sources */,
 				4FBC0FC724653E930052DB8A /* SceneDelegate.swift in Sources */,
+				EC413FB824728950000C5B29 /* RewardViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
