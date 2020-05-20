@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="GreetingsExploreCollectionViewCell" customModule="Stretching" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="275" height="264"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="275" height="264"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cFM-LV-Mdb">
+                        <rect key="frame" x="0.0" y="0.0" width="275" height="264"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hey [Name]," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fj3-J1-zvf">
+                                <rect key="frame" x="0.0" y="102.5" width="275" height="29.5"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mgB-rd-EMD">
+                                <rect key="frame" x="0.0" y="132" width="275" height="49"/>
+                                <string key="text">Need some streching
+activity today ?</string>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
+                                <color key="textColor" red="0.59215686274509804" green="0.59215686274509804" blue="0.59215686274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fj3-J1-zvf" firstAttribute="leading" secondItem="cFM-LV-Mdb" secondAttribute="leading" id="98t-kz-w2K"/>
+                            <constraint firstItem="mgB-rd-EMD" firstAttribute="top" secondItem="cFM-LV-Mdb" secondAttribute="centerY" id="9yY-SK-2sG"/>
+                            <constraint firstItem="mgB-rd-EMD" firstAttribute="leading" secondItem="cFM-LV-Mdb" secondAttribute="leading" id="NtD-i5-WkC"/>
+                            <constraint firstAttribute="trailing" secondItem="fj3-J1-zvf" secondAttribute="trailing" id="aB9-7z-gJC"/>
+                            <constraint firstItem="fj3-J1-zvf" firstAttribute="bottom" secondItem="cFM-LV-Mdb" secondAttribute="centerY" id="b8t-jT-GaE"/>
+                            <constraint firstAttribute="trailing" secondItem="mgB-rd-EMD" secondAttribute="trailing" id="cRl-rh-5kN"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="cFM-LV-Mdb" secondAttribute="bottom" id="Nm5-IL-vRs"/>
+                <constraint firstItem="cFM-LV-Mdb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ewG-X2-8ds"/>
+                <constraint firstAttribute="trailing" secondItem="cFM-LV-Mdb" secondAttribute="trailing" id="fAb-PQ-83v"/>
+                <constraint firstItem="cFM-LV-Mdb" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="mlB-Il-hAY"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="275" height="264"/>
+            <connections>
+                <outlet property="greetingsLabel" destination="fj3-J1-zvf" id="yfh-Iq-8JA"/>
+            </connections>
+            <point key="canvasLocation" x="223.91304347826087" y="127.90178571428571"/>
+        </collectionViewCell>
+    </objects>
+</document>
