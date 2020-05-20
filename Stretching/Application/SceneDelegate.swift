@@ -11,7 +11,7 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+    let storyboard = UIStoryboard(name: "ExploreViewController", bundle: nil)
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
@@ -19,12 +19,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = scene as? UIWindowScene else { return }
         
-        if UserDefaults.standard.bool(forKey: "hasLaunched") {
-            let vc = storyboard.instantiateViewController (withIdentifier: "mainVC") as! UITabBarController
-            window = UIWindow(windowScene: windowScene)
-            window?.rootViewController = vc
-            window?.makeKeyAndVisible()
-        }
+        // if UserDefaults.standard.bool(forKey: "hasLaunched") {
+        let vc = storyboard
+            .instantiateViewController(withIdentifier: "ExploreViewController")
+        self.window = UIWindow(windowScene: windowScene)
+        self.window?.rootViewController = vc
+        self.window?.makeKeyAndVisible()
+        // }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

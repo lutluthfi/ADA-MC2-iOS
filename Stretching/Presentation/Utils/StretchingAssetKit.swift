@@ -41,4 +41,13 @@ struct StretchingAssetKit {
     static let imageGuide29 = UIImage(named: "29")!
     static let imageGuide30 = UIImage(named: "30")!
     static let imageGuide31 = UIImage(named: "31")!
+    struct Image {
+        static let imageRecommendInternalRotationStretch = #imageLiteral(resourceName: "ImageRecommendInternalRotationStretch")
+        static let imageRecommendLevatorScapulaeStretch = #imageLiteral(resourceName: "ImageRecommendLevatorScapulaeStretch")
+        static let imageRecommendSideToSideStretch = #imageLiteral(resourceName: "ImageRecommendSideToSideStretch")
+        static let imageRecommendUpperTraperziuStretch = #imageLiteral(resourceName: "ImageRecommendUpperTrapeziusStretch")
+        static let imageTypeStretchNeck = #imageLiteral(resourceName: "ImageTypeStretcNeck")
+        static let imageTypeStretchShoulder = #imageLiteral(resourceName: "ImageTypeStretcShoulder")
+        static let imageTypeStretchWrist = #imageLiteral(resourceName: "ImageTypeStretcWrist")
+    }
 }
