@@ -31,12 +31,24 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
     var imageViewThree: UIImageView?
     var indexPosition: Int?
     
+    let imageOne: [UIImage] = [#imageLiteral(resourceName: "1onboard-1choosetechnique"), #imageLiteral(resourceName: "1onboard-2choosetechnique"), #imageLiteral(resourceName: "1onboard-3choosetechnique")]
+    let imageTwo: [UIImage] = [#imageLiteral(resourceName: "2onboard-1Startpracticing"), #imageLiteral(resourceName: "2onboard-2Startpracticing"), #imageLiteral(resourceName: "2onboard-3Startpracticing")]
+    let imageThree: [UIImage] = [#imageLiteral(resourceName: "3onboard-1 progress"), #imageLiteral(resourceName: "3onboard-2progress")]
+    
     let images = ["1boarding", "2boarding", "3boarding"]
-    let onTitle = ["Gue Tampan", "Ganteng", "Dan Manis"]
+    let onTitle = ["Is this you?", "Stretching guidance through virtual reality", "Get stretch Less Stress"]
     
     override func viewDidLayoutSubviews() {
         scrollWidth = scrollView.frame.size.width
         scrollHeight = scrollView.frame.size.height
+    }
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.portrait
+    }
+    
+    override var shouldAutorotate: Bool {
+        return false
     }
     
     override func viewDidLoad() {
@@ -48,9 +60,23 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
         scrollView.showsHorizontalScrollIndicator = false
         scrollView.showsVerticalScrollIndicator = false
         
-        imageViewOne = UIImageView.init(image: UIImage.init(named: images[0]))
-        imageViewTwo = UIImageView.init(image: UIImage.init(named: images[1]))
-        imageViewThree = UIImageView.init(image: UIImage.init(named: images[2]))
+        imageViewOne = UIImageView()
+        let loadingImageOne = imageOne.map { $0 }
+        imageViewOne?.animationImages = loadingImageOne
+        imageViewOne?.animationDuration = 1.0
+        imageViewOne?.startAnimating()
+        
+        imageViewTwo = UIImageView()
+        let loadingImageTwo = imageTwo.map { $0 }
+        imageViewTwo?.animationImages = loadingImageTwo
+        imageViewTwo?.animationDuration = 1.0
+        imageViewTwo?.startAnimating()
+        
+        imageViewThree = UIImageView()
+        let loadingImageThree = imageThree.map { $0 }
+        imageViewThree?.animationImages = loadingImageThree
+        imageViewThree?.animationDuration = 1.0
+        imageViewThree?.startAnimating()
         
         let Array: [UIImageView] = [imageViewOne!, imageViewTwo!, imageViewThree!]
         
@@ -85,7 +111,6 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
         pageControl.currentPage = 0
         
     }
-
     
     @IBAction func pageChanged(_ sender: Any) {
         scrollView!.scrollRectToVisible(CGRect(x: scrollWidth * CGFloat ((pageControl?.currentPage)!), y: 0, width: scrollWidth, height: scrollHeight), animated: true)
@@ -107,6 +132,8 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
             imageViewThree!.transform = CGAffineTransform(rotationAngle: position / firstConstantMove)
         } else if (position > 414.0) && (position <= 818.0) {
             self.titleOnboarding.text = onTitle[2]
+            self.startButton.backgroundColor = UIColor(red: 255/255, green: 99/255, blue: 72/255, alpha: 1)
+            self.startButton.titleLabel?.textColor = UIColor.white
             imageViewOne!.transform = CGAffineTransform(rotationAngle: position / secondConstantMove)
             imageViewTwo!.transform = CGAffineTransform(rotationAngle: position / secondConstantMove)
             imageViewThree!.transform = CGAffineTransform(rotationAngle: position / secondConstantMove)
@@ -123,6 +150,7 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
     
     @IBAction func startButtonClicked(_ sender: UIButton) {
         UserDefaults.standard.set(true, forKey: "hasLaunched")
+        performSegue(withIdentifier: "toMainPage", sender:  nil)
     }
     
 }
