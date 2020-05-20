@@ -19,16 +19,16 @@
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Title]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="osf-Rc-aIL">
-                    <rect key="frame" x="0.0" y="14.5" width="52" height="21"/>
-                    <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="17"/>
+                    <rect key="frame" x="0.0" y="14.5" width="43" height="21"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="18"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
             <constraints>
                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="osf-Rc-aIL" secondAttribute="trailing" id="DNw-dV-p2p"/>
+                <constraint firstItem="osf-Rc-aIL" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="Eza-WM-bh3"/>
                 <constraint firstItem="osf-Rc-aIL" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="HMq-Ma-egq"/>
-                <constraint firstItem="osf-Rc-aIL" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="plQ-9t-ca8"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
             <connections>

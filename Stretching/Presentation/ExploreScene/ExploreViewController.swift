@@ -192,7 +192,7 @@ extension ExploreViewController {
         group.contentInsets = .init(top: .zero, leading: 8, bottom: .zero, trailing: 8) // Spacing for items
         let headerSize = NSCollectionLayoutSize(
             widthDimension: .fractionalWidth(1.0),
-            heightDimension: .estimated(DefaultHeaderExploreCollectionReusableView.height)
+            heightDimension: .estimated(DefaultHeaderExploreCollectionReusableView.height) 
         )
         let sectionHeader = NSCollectionLayoutBoundarySupplementaryItem(
             layoutSize: headerSize,

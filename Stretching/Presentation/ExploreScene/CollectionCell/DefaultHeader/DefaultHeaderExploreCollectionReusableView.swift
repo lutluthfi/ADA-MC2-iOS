@@ -12,7 +12,7 @@ class DefaultHeaderExploreCollectionReusableView: UICollectionReusableView {
     static let identifier = String(
         describing: DefaultHeaderExploreCollectionReusableView.self
     )
-    static let height = CGFloat(48)
+    static let height = CGFloat(64)
 
     @IBOutlet weak var titleLabel: UILabel!
     
