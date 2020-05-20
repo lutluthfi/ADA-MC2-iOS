@@ -14,6 +14,7 @@
 		4FBC0FD124653E930052DB8A /* Stretching.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4FBC0FCF24653E930052DB8A /* Stretching.xcdatamodeld */; };
 		4FBC0FD324653E940052DB8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FBC0FD224653E940052DB8A /* Assets.xcassets */; };
 		4FCDFBA32472732400BD5DB3 /* StretchingAssetKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCDFBA22472732400BD5DB3 /* StretchingAssetKit.swift */; };
+		71CB1D5F2474DAB200D51A86 /* GuidePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CB1D5D2474DAB200D51A86 /* GuidePageViewController.swift */; };
 		8D24D1AA24686A0A00C9B548 /* Montserrat-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D24D19724686A0A00C9B548 /* Montserrat-LightItalic.ttf */; };
 		8D24D1AB24686A0A00C9B548 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D24D19824686A0A00C9B548 /* Montserrat-Medium.ttf */; };
 		8D24D1AC24686A0A00C9B548 /* Montserrat-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D24D19924686A0A00C9B548 /* Montserrat-BoldItalic.ttf */; };
@@ -52,6 +53,8 @@
 		4FBC0FD224653E940052DB8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4FBC0FD724653E950052DB8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4FCDFBA22472732400BD5DB3 /* StretchingAssetKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchingAssetKit.swift; sourceTree = "<group>"; };
+		71CB1D5D2474DAB200D51A86 /* GuidePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GuidePageViewController.swift; path = "/Users/rafikaalifia/Desktop/ADA-MC2-iOS/Stretching/Presentation/Utils/GuidePageViewController.swift"; sourceTree = "<absolute>"; };
+		71CB1D5E2474DAB200D51A86 /* GuidePageStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = GuidePageStoryboard.storyboard; path = "/Users/rafikaalifia/Desktop/ADA-MC2-iOS/Stretching/Presentation/Utils/GuidePageStoryboard.storyboard"; sourceTree = "<absolute>"; };
 		8D24D19724686A0A00C9B548 /* Montserrat-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-LightItalic.ttf"; sourceTree = "<group>"; };
 		8D24D19824686A0A00C9B548 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
 		8D24D19924686A0A00C9B548 /* Montserrat-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BoldItalic.ttf"; sourceTree = "<group>"; };
@@ -164,6 +167,8 @@
 			isa = PBXGroup;
 			children = (
 				4FCDFBA22472732400BD5DB3 /* StretchingAssetKit.swift */,
+				71CB1D5E2474DAB200D51A86 /* GuidePageStoryboard.storyboard */,
+				71CB1D5D2474DAB200D51A86 /* GuidePageViewController.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -297,6 +302,7 @@
 			files = (
 				4FBC0FD124653E930052DB8A /* Stretching.xcdatamodeld in Sources */,
 				8D24D1BE24686E8C00C9B548 /* OnboardingViewController.swift in Sources */,
+				71CB1D5F2474DAB200D51A86 /* GuidePageViewController.swift in Sources */,
 				EC413FA8247262E7000C5B29 /* SettingCell.swift in Sources */,
 				4FCDFBA32472732400BD5DB3 /* StretchingAssetKit.swift in Sources */,
 				4FBC0FCB24653E930052DB8A /* SecondViewController.swift in Sources */,
