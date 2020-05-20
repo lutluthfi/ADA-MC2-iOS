@@ -13,14 +13,14 @@ class TypeStretchExploreCollectionViewCell: UICollectionViewCell {
         TypeStretchExploreCollectionViewCell.self
     )
     static let height = CGFloat(115)
-    static let width = CGFloat(190)
+    static let width = CGFloat(144)
 
     @IBOutlet weak var posterImageView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         self.layoutIfNeeded()
-        self.layer.cornerRadius = 8
+        self.posterImageView.layer.cornerRadius = 8
     }
 
     func fill(with poster: UIImage) {
