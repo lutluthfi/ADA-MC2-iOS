@@ -9,31 +9,28 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="filterCell" rowHeight="141" id="KGk-i7-Jjw" customClass="RewardViewCell" customModule="Stretching" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="344" height="141"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="filterCell" rowHeight="190" id="KGk-i7-Jjw" customClass="RewardViewCell" customModule="Stretching" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="380" height="190"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="344" height="141"/>
+                <rect key="frame" x="0.0" y="0.0" width="380" height="190"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KFM-lh-dd0">
-                        <rect key="frame" x="10" y="10" width="324" height="121"/>
+                        <rect key="frame" x="0.0" y="0.0" width="380" height="190"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zec-1B-Pdv">
-                                <rect key="frame" x="-1" y="0.0" width="321" height="72"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nama Filter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p6O-8c-QcU">
-                                <rect key="frame" x="8" y="93" width="88" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nama Filter" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p6O-8c-QcU">
+                                <rect key="frame" x="40" y="143" width="87.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TkB-Uk-mc9">
-                                <rect key="frame" x="226" y="89" width="86" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TkB-Uk-mc9">
+                                <rect key="frame" x="236" y="143" width="109" height="30"/>
                                 <color key="backgroundColor" red="0.93725490196078431" green="0.80784313725490198" blue="0.77647058823529413" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="109" id="L7J-u2-Mv1"/>
+                                </constraints>
                                 <state key="normal" title="try filter">
                                     <color key="titleColor" red="0.8862745098" green="0.40784313729999999" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
@@ -41,15 +38,28 @@
                                     <action selector="filterButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="fzj-zh-sq2"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zec-1B-Pdv">
+                                <rect key="frame" x="0.0" y="0.0" width="380" height="143"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="TkB-Uk-mc9" firstAttribute="top" secondItem="zec-1B-Pdv" secondAttribute="bottom" id="7EE-h6-WDu"/>
+                            <constraint firstItem="p6O-8c-QcU" firstAttribute="leading" secondItem="KFM-lh-dd0" secondAttribute="leading" constant="40" id="IYe-cl-sVE"/>
+                            <constraint firstAttribute="trailing" secondItem="TkB-Uk-mc9" secondAttribute="trailing" constant="35" id="eFo-4k-76C"/>
+                            <constraint firstItem="zec-1B-Pdv" firstAttribute="leading" secondItem="KFM-lh-dd0" secondAttribute="leading" id="gI5-Qb-ppo"/>
+                            <constraint firstItem="zec-1B-Pdv" firstAttribute="top" secondItem="KFM-lh-dd0" secondAttribute="top" id="mXZ-Qc-J0D"/>
+                            <constraint firstItem="p6O-8c-QcU" firstAttribute="top" secondItem="zec-1B-Pdv" secondAttribute="bottom" id="r9d-4T-ImM"/>
+                            <constraint firstAttribute="trailing" secondItem="zec-1B-Pdv" secondAttribute="trailing" id="uuq-Ww-CnI"/>
+                            <constraint firstAttribute="bottom" secondItem="p6O-8c-QcU" secondAttribute="bottom" constant="26.5" id="vPX-3p-hCN"/>
+                        </constraints>
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="KFM-lh-dd0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="5KE-1F-PLU"/>
-                    <constraint firstAttribute="bottom" secondItem="KFM-lh-dd0" secondAttribute="bottom" constant="10" id="Dbd-jj-Gf4"/>
-                    <constraint firstItem="KFM-lh-dd0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="RBC-A2-6hw"/>
-                    <constraint firstAttribute="trailing" secondItem="KFM-lh-dd0" secondAttribute="trailing" constant="10" id="Ub8-XN-D9t"/>
+                    <constraint firstAttribute="bottom" secondItem="KFM-lh-dd0" secondAttribute="bottom" id="8RQ-AI-Z8o"/>
+                    <constraint firstItem="KFM-lh-dd0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="9Bp-wU-toU"/>
+                    <constraint firstAttribute="trailing" secondItem="KFM-lh-dd0" secondAttribute="trailing" id="jM9-NA-HaR"/>
+                    <constraint firstItem="KFM-lh-dd0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="pst-wH-sZr"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -59,7 +69,7 @@
                 <outlet property="filterImage" destination="zec-1B-Pdv" id="FPN-F4-qoI"/>
                 <outlet property="filterName" destination="p6O-8c-QcU" id="qld-l1-Ghg"/>
             </connections>
-            <point key="canvasLocation" x="146.37681159420291" y="181.13839285714286"/>
+            <point key="canvasLocation" x="173.91304347826087" y="123.21428571428571"/>
         </tableViewCell>
     </objects>
 </document>

@@ -21,8 +21,8 @@ class ProfileViewController: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
         tableView.register(UINib(nibName: "SettingCell", bundle: nil), forCellReuseIdentifier: "settingCell")
         tableView.register(UINib(nibName: "ProfileCell", bundle: nil), forCellReuseIdentifier: "cellProfile")
-        logOutButton.layer.borderColor = UIColor.orange as! CGColor
-        
+        logOutButton.layer.borderColor = #colorLiteral(red: 1, green: 0.3882352941, blue: 0.2823529412, alpha: 1)
+        logOutButton.layer.borderWidth = 1
         logOutButton.layer.cornerRadius = 10
     }
     

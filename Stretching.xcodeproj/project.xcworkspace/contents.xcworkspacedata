@@ -2,12 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/rafikaalifia/Desktop/ADA-MC2-iOS/Stretching/Presentation/Utils/GuidePageStoryboard.storyboard">
-   </FileRef>
-   <FileRef
-      location = "group:/Users/rafikaalifia/Desktop/ADA-MC2-iOS/Stretching/Presentation/Utils/GuidePageViewController.swift">
-   </FileRef>
-   <FileRef
       location = "self:">
    </FileRef>
 </Workspace>

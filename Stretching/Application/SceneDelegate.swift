@@ -11,7 +11,7 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-    let storyboard = UIStoryboard(name: "ExploreViewController", bundle: nil)
+    //let storyboard = UIStoryboard(name: "ExploreViewController", bundle: nil)
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
@@ -20,8 +20,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = scene as? UIWindowScene else { return }
         
         // if UserDefaults.standard.bool(forKey: "hasLaunched") {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard
-            .instantiateViewController(withIdentifier: "ExploreViewController")
+            .instantiateViewController(withIdentifier: "ProfileViewController")
         self.window = UIWindow(windowScene: windowScene)
         self.window?.rootViewController = vc
         self.window?.makeKeyAndVisible()

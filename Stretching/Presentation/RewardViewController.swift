@@ -15,8 +15,7 @@ class RewardViewController: UIViewController {
     var fotoFilter = [ #imageLiteral(resourceName: "thunder copy"), #imageLiteral(resourceName: "istockphoto-1134423558-1024x1024"), #imageLiteral(resourceName: "istockphoto-1134423558-1024x1024")]
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        navigationController?.navigationBar.prefersLargeTitles = true
+        //navigationController?.navigationBar.prefersLargeTitles = true
         tableView.register(UINib(nibName: "RewardViewCell", bundle: nil), forCellReuseIdentifier: "filterCell")
     }
 
