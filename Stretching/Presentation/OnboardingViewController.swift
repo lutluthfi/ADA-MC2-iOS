@@ -35,8 +35,21 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
     let imageTwo: [UIImage] = [#imageLiteral(resourceName: "2onboard-1Startpracticing"), #imageLiteral(resourceName: "2onboard-2Startpracticing"), #imageLiteral(resourceName: "2onboard-3Startpracticing")]
     let imageThree: [UIImage] = [#imageLiteral(resourceName: "3onboard-1 progress"), #imageLiteral(resourceName: "3onboard-2progress")]
     
-    let images = ["1boarding", "2boarding", "3boarding"]
-    let onTitle = ["Is this you?", "Stretching guidance through virtual reality", "Get stretch Less Stress"]
+    let images = [
+        "1boarding",
+        "2boarding",
+        "3boarding"
+    ]
+    let onTitle = [
+        "Choose techniques",
+        "Start practicing",
+        "See your progress"
+    ]
+    let onDescription = [
+        "Choose the stretch techniques you curious to learn. We have what you need from neck to wrist stretch",
+        "Set your phone in a potrait way and put it on the desk. We’ll guide and notify you through the stretch process with our AR. Less risk of injury!",
+        "Track your flexibility enhancement. Find yourself more flexible throughout time"
+    ]
     
     override func viewDidLayoutSubviews() {
         scrollWidth = scrollView.frame.size.width
@@ -81,6 +94,7 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
         let Array: [UIImageView] = [imageViewOne!, imageViewTwo!, imageViewThree!]
         
         self.titleOnboarding.text = onTitle[0]
+        self.descriptionOnboarding.text = onDescription[0]
         
         //crete the slides and add them
         for index in 0..<images.count {
@@ -123,22 +137,37 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
         let position: CGFloat = scrollView.contentOffset.x
-        print(position)
         
         if (position > 0.0) && (position <= 414.0) {
+            self.startButton.setTitle("Skip", for: .normal)
+            self.startButton.backgroundColor = .clear
+            self.startButton.setTitleColor(
+                UIColor(red: 255/255, green: 99/255, blue: 72/255, alpha: 1),
+                for: .normal
+            )
             self.titleOnboarding.text = onTitle[1]
+            self.descriptionOnboarding.text = onDescription[1]
             imageViewOne!.transform = CGAffineTransform(rotationAngle: position / firstConstantMove)
             imageViewTwo!.transform = CGAffineTransform(rotationAngle: position / firstConstantMove)
             imageViewThree!.transform = CGAffineTransform(rotationAngle: position / firstConstantMove)
         } else if (position > 414.0) && (position <= 818.0) {
-            self.titleOnboarding.text = onTitle[2]
+            self.startButton.setTitle("Let's Start", for: .normal)
             self.startButton.backgroundColor = UIColor(red: 255/255, green: 99/255, blue: 72/255, alpha: 1)
-            self.startButton.titleLabel?.textColor = UIColor.white
+            self.startButton.setTitleColor(.white, for: .normal)
+            self.titleOnboarding.text = onTitle[2]
+            self.descriptionOnboarding.text = onDescription[2]
             imageViewOne!.transform = CGAffineTransform(rotationAngle: position / secondConstantMove)
             imageViewTwo!.transform = CGAffineTransform(rotationAngle: position / secondConstantMove)
             imageViewThree!.transform = CGAffineTransform(rotationAngle: position / secondConstantMove)
         } else if (position == 0.0) {
+            self.startButton.setTitle("Skip", for: .normal)
+            self.startButton.backgroundColor = .clear
+            self.startButton.setTitleColor(
+                UIColor(red: 255/255, green: 99/255, blue: 72/255, alpha: 1),
+                for: .normal
+            )
             self.titleOnboarding.text = onTitle[0]
+            self.descriptionOnboarding.text = onDescription[0]
         }
         
     }
