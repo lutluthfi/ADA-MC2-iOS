@@ -176,19 +176,19 @@
 		4FBC0FDE24653EEA0052DB8A /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				4FCDFE2F24766B8D00BD5DB3 /* GuideScene */,
-				4FCDFBED247408A400BD5DB3 /* PracticeScene */,
-				4FCDFBE82474074E00BD5DB3 /* ExploreScene */,
-				4FCDFBA12472731200BD5DB3 /* Utils */,
-				4FBC0FC824653E930052DB8A /* FirstViewController.swift */,
-				4FBC0FCA24653E930052DB8A /* SecondViewController.swift */,
 				8DDC28662465487200DD76C1 /* LaunchScreen.storyboard */,
 				8DDC28652465487200DD76C1 /* Main.storyboard */,
+				4FBC0FC824653E930052DB8A /* FirstViewController.swift */,
+				8D24D1BD24686E8C00C9B548 /* OnboardingViewController.swift */,
 				EC413FA224725F86000C5B29 /* ProfileViewController.swift */,
 				EC413FB124728743000C5B29 /* RewardViewController.swift */,
-				EC413FB5247288F4000C5B29 /* RewardCell */,
+				4FBC0FCA24653E930052DB8A /* SecondViewController.swift */,
+				4FCDFBE82474074E00BD5DB3 /* ExploreScene */,
+				4FCDFE2F24766B8D00BD5DB3 /* GuideScene */,
+				4FCDFBED247408A400BD5DB3 /* PracticeScene */,
 				EC413FAA2472630A000C5B29 /* Profile Cell */,
-				8D24D1BD24686E8C00C9B548 /* OnboardingViewController.swift */,
+				EC413FB5247288F4000C5B29 /* RewardCell */,
+				4FCDFBA12472731200BD5DB3 /* Utils */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -196,9 +196,9 @@
 		4FBC0FDF24653EF20052DB8A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				8D24D19624686A0A00C9B548 /* Montserrat */,
-				4FBC0FD224653E940052DB8A /* Assets.xcassets */,
 				4FBC0FD724653E950052DB8A /* Info.plist */,
+				4FBC0FD224653E940052DB8A /* Assets.xcassets */,
+				8D24D19624686A0A00C9B548 /* Montserrat */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -248,9 +248,9 @@
 		4FCDFBA12472731200BD5DB3 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				4FCDFBA22472732400BD5DB3 /* StretchingAssetKit.swift */,
 				4FC8202A247913D1006DAFB4 /* CollectionView */,
 				4FC8202D247918B4006DAFB4 /* Extension */,
-				4FCDFBA22472732400BD5DB3 /* StretchingAssetKit.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -258,9 +258,9 @@
 		4FCDFBE82474074E00BD5DB3 /* ExploreScene */ = {
 			isa = PBXGroup;
 			children = (
-				4FCDFBF22474312200BD5DB3 /* CollectionCell */,
-				4FCDFBE92474084700BD5DB3 /* ExploreViewController.swift */,
 				4FCDFBEB2474085300BD5DB3 /* ExploreViewController.storyboard */,
+				4FCDFBE92474084700BD5DB3 /* ExploreViewController.swift */,
+				4FCDFBF22474312200BD5DB3 /* CollectionCell */,
 			);
 			path = ExploreScene;
 			sourceTree = "<group>";
@@ -268,9 +268,9 @@
 		4FCDFBED247408A400BD5DB3 /* PracticeScene */ = {
 			isa = PBXGroup;
 			children = (
-				4FC8201E24790CB2006DAFB4 /* CollectionCell */,
 				4FCDFBEE247408E700BD5DB3 /* PracticeViewController.storyboard */,
 				4FCDFBF0247408F100BD5DB3 /* PracticeViewController.swift */,
+				4FC8201E24790CB2006DAFB4 /* CollectionCell */,
 			);
 			path = PracticeScene;
 			sourceTree = "<group>";
