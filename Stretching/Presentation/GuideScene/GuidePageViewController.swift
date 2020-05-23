@@ -8,9 +8,22 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class GuidePageViewController: UIViewController {
     @IBOutlet weak var stretchGuide: UIImageView!
     @IBOutlet weak var guideLabel: UILabel!
+    
+    lazy var chevronLeftBarButtonItem: UIBarButtonItem = {
+        return .init(
+            image: UIImage(systemName: "chevron.left"),
+            style: .done,
+            target: self,
+            action: #selector(self.onChevronLeftBarButtonItemTapped(_:))
+        )
+    }()
+    lazy var navigationBarImage: UIImage = {
+        return .init()
+    }()
+    
     var timer = Timer()
     
     let turnMovement =
@@ -22,8 +35,34 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         turnStretchAnimate()
-        timer = Timer.scheduledTimer(timeInterval: 6, target: self, selector: #selector(updateMovement), userInfo: nil, repeats: true)
-        
+        timer = Timer.scheduledTimer(
+            timeInterval: 6,
+            target: self,
+            selector: #selector(updateMovement),
+            userInfo: nil,
+            repeats: true
+        )
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationItem.leftBarButtonItems = [self.chevronLeftBarButtonItem]
+        self.navigationController?.navigationBar.tintColor = .white
+        self.navigationController?.navigationBar.setBackgroundImage(
+            self.navigationBarImage,
+            for: UIBarMetrics.default
+        )
+        self.navigationController?.navigationBar.shadowImage = self.navigationBarImage
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+    
+    @objc func onChevronLeftBarButtonItemTapped(_ sender: UIBarButtonItem) {
+        self.navigationController?.popViewController(animated: true)
     }
     
     @objc func updateMovement() {

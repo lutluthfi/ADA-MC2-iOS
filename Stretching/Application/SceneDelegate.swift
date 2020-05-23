@@ -19,9 +19,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = scene as? UIWindowScene else { return }
         
         // if UserDefaults.standard.bool(forKey: "hasLaunched") {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let storyboard = UIStoryboard(name: "PracticeViewController", bundle: nil)
         let vc = storyboard.instantiateViewController(
-            withIdentifier: "OnboardingViewController"
+            withIdentifier: "PracticeViewController"
         )
         self.window = UIWindow(windowScene: windowScene)
         self.window?.rootViewController = vc

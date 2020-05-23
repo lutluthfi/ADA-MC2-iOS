@@ -16,6 +16,7 @@ class TypeStretchExploreCollectionViewCell: UICollectionViewCell {
     static let width = CGFloat(144)
 
     @IBOutlet weak var posterImageView: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,7 +24,8 @@ class TypeStretchExploreCollectionViewCell: UICollectionViewCell {
         self.posterImageView.layer.cornerRadius = 8
     }
 
-    func fill(with poster: UIImage) {
+    func fill(with poster: UIImage, title: String) {
         self.posterImageView.image = poster
+        self.titleLabel.text = title
     }
 }

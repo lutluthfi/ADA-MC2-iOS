@@ -81,15 +81,25 @@ class ExploreViewController: UIViewController {
         StretchingAssetKit.Image.imageRecommendSideToSideStretch,
         StretchingAssetKit.Image.imageRecommendUpperTraperziuStretch,
     ]
-    private let displayedTypeStretchPosters: [UIImage] = [
-        StretchingAssetKit.Image.imageTypeStretchNeck,
-        StretchingAssetKit.Image.imageTypeStretchShoulder,
-        StretchingAssetKit.Image.imageTypeStretchWrist,
+    private let displayedTypeStretchPosters: [(poster: UIImage, title: String)] = [
+        (StretchingAssetKit.Image.imageTypeStretchNeck, "Neck Stretching"),
+        (StretchingAssetKit.Image.imageTypeStretchShoulder, "Shoulder Stretching"),
+        (StretchingAssetKit.Image.imageTypeStretchWrist, "Wrist Stretching"),
     ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.implementComponentView()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
     private func implementComponentView() {
@@ -347,11 +357,30 @@ extension ExploreViewController: UICollectionViewDataSource, UICollectionViewDel
             guard let cell = reusableCell else {
                 fatalError()
             }
-            let poster = self.displayedTypeStretchPosters[indexPath.row]
-            cell.fill(with: poster)
+            let poster = self.displayedTypeStretchPosters[indexPath.row].poster
+            let title = self.displayedTypeStretchPosters[indexPath.row].title
+            cell.fill(with: poster, title: title)
             return cell
         default:
             return UICollectionViewCell()
+        }
+    }
+    
+    func collectionView(
+        _ collectionView: UICollectionView,
+        didSelectItemAt indexPath: IndexPath
+    ) {
+        switch indexPath.section {
+        case CollectionView.Section.recommend.rawValue:
+            let storyboard = UIStoryboard(name: "GuidePageStoryboard", bundle: nil)
+            let vc = storyboard.instantiateViewController(identifier: "GuidePageViewController")
+            self.navigationController?.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(vc, animated: true)
+            break
+        case CollectionView.Section.type.rawValue:
+            break
+        default:
+            break
         }
     }
 }

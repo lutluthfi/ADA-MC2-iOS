@@ -13,6 +13,10 @@
 		4FBC0FCB24653E930052DB8A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBC0FCA24653E930052DB8A /* SecondViewController.swift */; };
 		4FBC0FD124653E930052DB8A /* Stretching.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4FBC0FCF24653E930052DB8A /* Stretching.xcdatamodeld */; };
 		4FBC0FD324653E940052DB8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FBC0FD224653E940052DB8A /* Assets.xcassets */; };
+		4FC8202224790CCB006DAFB4 /* FilterPracticeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC8202024790CCB006DAFB4 /* FilterPracticeCollectionViewCell.swift */; };
+		4FC8202324790CCB006DAFB4 /* FilterPracticeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FC8202124790CCB006DAFB4 /* FilterPracticeCollectionViewCell.xib */; };
+		4FC8202C247913E3006DAFB4 /* ScaledCollectionFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC8202B247913E3006DAFB4 /* ScaledCollectionFlowLayout.swift */; };
+		4FC8202F247918C2006DAFB4 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC8202E247918C2006DAFB4 /* String+Extension.swift */; };
 		4FCDFBA32472732400BD5DB3 /* StretchingAssetKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCDFBA22472732400BD5DB3 /* StretchingAssetKit.swift */; };
 		4FCDFBEA2474084800BD5DB3 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCDFBE92474084700BD5DB3 /* ExploreViewController.swift */; };
 		4FCDFBEC2474085300BD5DB3 /* ExploreViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FCDFBEB2474085300BD5DB3 /* ExploreViewController.storyboard */; };
@@ -70,6 +74,10 @@
 		4FBC0FD024653E930052DB8A /* Stretching.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Stretching.xcdatamodel; sourceTree = "<group>"; };
 		4FBC0FD224653E940052DB8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4FBC0FD724653E950052DB8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FC8202024790CCB006DAFB4 /* FilterPracticeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterPracticeCollectionViewCell.swift; sourceTree = "<group>"; };
+		4FC8202124790CCB006DAFB4 /* FilterPracticeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterPracticeCollectionViewCell.xib; sourceTree = "<group>"; };
+		4FC8202B247913E3006DAFB4 /* ScaledCollectionFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledCollectionFlowLayout.swift; sourceTree = "<group>"; };
+		4FC8202E247918C2006DAFB4 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		4FCDFBA22472732400BD5DB3 /* StretchingAssetKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchingAssetKit.swift; sourceTree = "<group>"; };
 		4FCDFBE92474084700BD5DB3 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		4FCDFBEB2474085300BD5DB3 /* ExploreViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ExploreViewController.storyboard; sourceTree = "<group>"; };
@@ -168,6 +176,7 @@
 		4FBC0FDE24653EEA0052DB8A /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				4FCDFE2F24766B8D00BD5DB3 /* GuideScene */,
 				4FCDFBED247408A400BD5DB3 /* PracticeScene */,
 				4FCDFBE82474074E00BD5DB3 /* ExploreScene */,
 				4FCDFBA12472731200BD5DB3 /* Utils */,
@@ -203,12 +212,45 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		4FC8201E24790CB2006DAFB4 /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				4FC8201F24790CB9006DAFB4 /* Filter */,
+			);
+			path = CollectionCell;
+			sourceTree = "<group>";
+		};
+		4FC8201F24790CB9006DAFB4 /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				4FC8202024790CCB006DAFB4 /* FilterPracticeCollectionViewCell.swift */,
+				4FC8202124790CCB006DAFB4 /* FilterPracticeCollectionViewCell.xib */,
+			);
+			path = Filter;
+			sourceTree = "<group>";
+		};
+		4FC8202A247913D1006DAFB4 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				4FC8202B247913E3006DAFB4 /* ScaledCollectionFlowLayout.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		4FC8202D247918B4006DAFB4 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4FC8202E247918C2006DAFB4 /* String+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		4FCDFBA12472731200BD5DB3 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				4FC8202A247913D1006DAFB4 /* CollectionView */,
+				4FC8202D247918B4006DAFB4 /* Extension */,
 				4FCDFBA22472732400BD5DB3 /* StretchingAssetKit.swift */,
-				4FCDFC1A2474FDD500BD5DB3 /* GuidePageViewController.swift */,
-				4FCDFC182474FDCE00BD5DB3 /* GuidePageStoryboard.storyboard */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -226,6 +268,7 @@
 		4FCDFBED247408A400BD5DB3 /* PracticeScene */ = {
 			isa = PBXGroup;
 			children = (
+				4FC8201E24790CB2006DAFB4 /* CollectionCell */,
 				4FCDFBEE247408E700BD5DB3 /* PracticeViewController.storyboard */,
 				4FCDFBF0247408F100BD5DB3 /* PracticeViewController.swift */,
 			);
@@ -286,6 +329,15 @@
 				4FCDFC14247499E300BD5DB3 /* GreetingsExploreCollectionViewCell.xib */,
 			);
 			path = Greetings;
+			sourceTree = "<group>";
+		};
+		4FCDFE2F24766B8D00BD5DB3 /* GuideScene */ = {
+			isa = PBXGroup;
+			children = (
+				4FCDFC1A2474FDD500BD5DB3 /* GuidePageViewController.swift */,
+				4FCDFC182474FDCE00BD5DB3 /* GuidePageStoryboard.storyboard */,
+			);
+			path = GuideScene;
 			sourceTree = "<group>";
 		};
 		8D24D19624686A0A00C9B548 /* Montserrat */ = {
@@ -420,6 +472,7 @@
 				4FCDFC192474FDCE00BD5DB3 /* GuidePageStoryboard.storyboard in Resources */,
 				8D24D1AB24686A0A00C9B548 /* Montserrat-Medium.ttf in Resources */,
 				4FBC0FD324653E940052DB8A /* Assets.xcassets in Resources */,
+				4FC8202324790CCB006DAFB4 /* FilterPracticeCollectionViewCell.xib in Resources */,
 				8D24D1AF24686A0A00C9B548 /* Montserrat-ExtraLight.ttf in Resources */,
 				EC413FAE24726781000C5B29 /* ProfileCell.xib in Resources */,
 			);
@@ -443,14 +496,17 @@
 				4FBC0FC924653E930052DB8A /* FirstViewController.swift in Sources */,
 				4FCDFC0724743F9800BD5DB3 /* GuideStretch+DAOMapping.swift in Sources */,
 				EC413FA324725F86000C5B29 /* ProfileViewController.swift in Sources */,
+				4FC8202C247913E3006DAFB4 /* ScaledCollectionFlowLayout.swift in Sources */,
 				EC413FAD24726781000C5B29 /* ProfileCell.swift in Sources */,
 				4FCDFBFA2474317200BD5DB3 /* RecommendStretchExploreCollectionViewCell.swift in Sources */,
 				4FBC0FC524653E930052DB8A /* AppDelegate.swift in Sources */,
 				4FCDFC03247439B600BD5DB3 /* Stretch+DAOMapping.swift in Sources */,
+				4FC8202F247918C2006DAFB4 /* String+Extension.swift in Sources */,
 				4FCDFBF1247408F100BD5DB3 /* PracticeViewController.swift in Sources */,
 				4FCDFC1B2474FDD500BD5DB3 /* GuidePageViewController.swift in Sources */,
 				4FCDFC0B2474900000BD5DB3 /* DefaultHeaderExploreCollectionReusableView.swift in Sources */,
 				4FCDFBEA2474084800BD5DB3 /* ExploreViewController.swift in Sources */,
+				4FC8202224790CCB006DAFB4 /* FilterPracticeCollectionViewCell.swift in Sources */,
 				4FBC0FC724653E930052DB8A /* SceneDelegate.swift in Sources */,
 				EC413FB824728950000C5B29 /* RewardViewCell.swift in Sources */,
 			);
@@ -587,7 +643,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ada.mc2-11.Stretching";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -605,7 +661,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ada.mc2-11.Stretching";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

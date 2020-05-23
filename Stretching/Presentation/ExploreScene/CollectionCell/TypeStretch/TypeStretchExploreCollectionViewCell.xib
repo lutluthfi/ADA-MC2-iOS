@@ -16,7 +16,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="190" height="161"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ImageTypeStretcNeck" translatesAutoresizingMaskIntoConstraints="NO" id="sWe-Ee-Kjt">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ImageTypeStretchNeck" translatesAutoresizingMaskIntoConstraints="NO" id="sWe-Ee-Kjt">
                         <rect key="frame" x="0.0" y="0.0" width="190" height="85"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jq1-2a-71Y">
@@ -41,11 +41,12 @@
             <size key="customSize" width="190" height="175"/>
             <connections>
                 <outlet property="posterImageView" destination="sWe-Ee-Kjt" id="ulp-as-TL3"/>
+                <outlet property="titleLabel" destination="Jq1-2a-71Y" id="Zzt-L1-3PB"/>
             </connections>
             <point key="canvasLocation" x="239.13043478260872" y="194.53125"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="ImageTypeStretcNeck" width="144" height="85"/>
+        <image name="ImageTypeStretchNeck" width="144" height="85"/>
     </resources>
 </document>
