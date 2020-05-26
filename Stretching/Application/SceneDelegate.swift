@@ -20,9 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         // if UserDefaults.standard.bool(forKey: "hasLaunched") {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(
-            withIdentifier: "OnboardingViewController"
-        )
+        let vc = storyboard.instantiateInitialViewController()
         self.window = UIWindow(windowScene: windowScene)
         self.window?.rootViewController = vc
         self.window?.makeKeyAndVisible()

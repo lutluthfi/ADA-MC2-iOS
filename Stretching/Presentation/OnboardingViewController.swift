@@ -178,8 +178,8 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
     }
     
     @IBAction func startButtonClicked(_ sender: UIButton) {
-        UserDefaults.standard.set(true, forKey: "hasLaunched")
-        performSegue(withIdentifier: "toMainPage", sender:  nil)
+        // UserDefaults.standard.set(true, forKey: "hasLaunched")
+        // performSegue(withIdentifier: "toMainPage", sender:  nil)
     }
     
 }

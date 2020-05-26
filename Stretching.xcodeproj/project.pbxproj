@@ -24,6 +24,8 @@
 		4FC8204224792279006DAFB4 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC8204124792279006DAFB4 /* DashboardViewController.swift */; };
 		4FC82047247924BA006DAFB4 /* HeaderCommonProfileCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC82045247924BA006DAFB4 /* HeaderCommonProfileCollectionReusableView.swift */; };
 		4FC82048247924BA006DAFB4 /* HeaderCommonProfileCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FC82046247924BA006DAFB4 /* HeaderCommonProfileCollectionReusableView.xib */; };
+		4FC8204C247AC428006DAFB4 /* SignInProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC8204B247AC428006DAFB4 /* SignInProfileCollectionViewCell.swift */; };
+		4FC820AF247BFCD9006DAFB4 /* KeychainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC820AE247BFCD8006DAFB4 /* KeychainStorage.swift */; };
 		4FCDFBA32472732400BD5DB3 /* StretchingAssetKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCDFBA22472732400BD5DB3 /* StretchingAssetKit.swift */; };
 		4FCDFBEA2474084800BD5DB3 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCDFBE92474084700BD5DB3 /* ExploreViewController.swift */; };
 		4FCDFBEC2474085300BD5DB3 /* ExploreViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FCDFBEB2474085300BD5DB3 /* ExploreViewController.storyboard */; };
@@ -88,6 +90,9 @@
 		4FC8204124792279006DAFB4 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		4FC82045247924BA006DAFB4 /* HeaderCommonProfileCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCommonProfileCollectionReusableView.swift; sourceTree = "<group>"; };
 		4FC82046247924BA006DAFB4 /* HeaderCommonProfileCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCommonProfileCollectionReusableView.xib; sourceTree = "<group>"; };
+		4FC820492479FD52006DAFB4 /* Stretching.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Stretching.entitlements; sourceTree = "<group>"; };
+		4FC8204B247AC428006DAFB4 /* SignInProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInProfileCollectionViewCell.swift; sourceTree = "<group>"; };
+		4FC820AE247BFCD8006DAFB4 /* KeychainStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStorage.swift; sourceTree = "<group>"; };
 		4FCDFBA22472732400BD5DB3 /* StretchingAssetKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchingAssetKit.swift; sourceTree = "<group>"; };
 		4FCDFBE92474084700BD5DB3 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		4FCDFBEB2474085300BD5DB3 /* ExploreViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ExploreViewController.storyboard; sourceTree = "<group>"; };
@@ -162,6 +167,7 @@
 		4FBC0FC324653E930052DB8A /* Stretching */ = {
 			isa = PBXGroup;
 			children = (
+				4FC820492479FD52006DAFB4 /* Stretching.entitlements */,
 				4FBC0FDD24653ECA0052DB8A /* Application */,
 				4FBC0FE024653EF90052DB8A /* Data */,
 				4FBC0FDE24653EEA0052DB8A /* Presentation */,
@@ -210,6 +216,7 @@
 		4FBC0FE024653EF90052DB8A /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				4FC820AD247BFCC9006DAFB4 /* KeychainStorage */,
 				4FCDFC012474396B00BD5DB3 /* DAO+Mapping */,
 				4FBC0FCF24653E930052DB8A /* Stretching.xcdatamodeld */,
 			);
@@ -252,8 +259,8 @@
 		4FC8203024791B5E006DAFB4 /* ProfileScene */ = {
 			isa = PBXGroup;
 			children = (
-				4FC8203124791D00006DAFB4 /* CollectionCell */,
 				EC413FA224725F86000C5B29 /* ProfileViewController.swift */,
+				4FC8203124791D00006DAFB4 /* CollectionCell */,
 			);
 			path = ProfileScene;
 			sourceTree = "<group>";
@@ -261,6 +268,7 @@
 		4FC8203124791D00006DAFB4 /* CollectionCell */ = {
 			isa = PBXGroup;
 			children = (
+				4FC8204A247AC405006DAFB4 /* SignIn */,
 				4FC82044247924A0006DAFB4 /* HeaderCommon */,
 				4FC8203224791D1B006DAFB4 /* Account */,
 				4FC8203324791D25006DAFB4 /* Common */,
@@ -303,6 +311,22 @@
 				4FC82046247924BA006DAFB4 /* HeaderCommonProfileCollectionReusableView.xib */,
 			);
 			path = HeaderCommon;
+			sourceTree = "<group>";
+		};
+		4FC8204A247AC405006DAFB4 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				4FC8204B247AC428006DAFB4 /* SignInProfileCollectionViewCell.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		4FC820AD247BFCC9006DAFB4 /* KeychainStorage */ = {
+			isa = PBXGroup;
+			children = (
+				4FC820AE247BFCD8006DAFB4 /* KeychainStorage.swift */,
+			);
+			path = KeychainStorage;
 			sourceTree = "<group>";
 		};
 		4FCDFBA12472731200BD5DB3 /* Utils */ = {
@@ -536,6 +560,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FC8204C247AC428006DAFB4 /* SignInProfileCollectionViewCell.swift in Sources */,
 				EC413FB224728743000C5B29 /* RewardViewController.swift in Sources */,
 				4FBC0FD124653E930052DB8A /* Stretching.xcdatamodeld in Sources */,
 				8D24D1BE24686E8C00C9B548 /* OnboardingViewController.swift in Sources */,
@@ -543,6 +568,7 @@
 				4FCDFC15247499E300BD5DB3 /* GreetingsExploreCollectionViewCell.swift in Sources */,
 				4FCDFBFF2474319700BD5DB3 /* TypeStretchExploreCollectionViewCell.swift in Sources */,
 				4FCDFC0724743F9800BD5DB3 /* GuideStretch+DAOMapping.swift in Sources */,
+				4FC820AF247BFCD9006DAFB4 /* KeychainStorage.swift in Sources */,
 				4FC8204224792279006DAFB4 /* DashboardViewController.swift in Sources */,
 				EC413FA324725F86000C5B29 /* ProfileViewController.swift in Sources */,
 				4FC8202C247913E3006DAFB4 /* ScaledCollectionFlowLayout.swift in Sources */,
@@ -685,6 +711,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Stretching/Stretching.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5U7M39KWXM;
 				INFOPLIST_FILE = "$(SRCROOT)/Stretching/Resources/Info.plist";
@@ -692,6 +719,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ada.mc2-11.Stretching";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -703,6 +731,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Stretching/Stretching.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5U7M39KWXM;
 				INFOPLIST_FILE = "$(SRCROOT)/Stretching/Resources/Info.plist";
@@ -710,6 +739,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ada.mc2-11.Stretching";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

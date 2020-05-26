@@ -6,24 +6,36 @@
 //  Copyright © 2020 MC2-11. All rights reserved.
 //
 
+import AuthenticationServices
 import UIKit
 
 extension ProfileViewController {
     class CollectionView {
-        static let accountSection = 0
-        static let generalSection = 1
-        static let settingSection = 2
-        static let signOutSection = 3
+        struct Account {
+            let email: String
+            let fullName: String
+        }
+        
+        static let accountSection = 1
+        static let generalSection = 2
+        static let settingSection = 3
+        static let signInSection = 0
         
         static func sections() -> [Int] {
             return [
                 self.accountSection,
                 self.generalSection,
                 self.settingSection,
-                self.signOutSection
+                self.signInSection
             ]
         }
         
+        static var accountProfileCollectionViewUINib: UINib = {
+            return .init(
+                nibName: AccountProfileCollectionViewCell.identifier,
+                bundle: nil
+            )
+        }()
         static var commonProfileCollectionViewUINib: UINib = {
             return .init(
                 nibName: CommonProfileCollectionViewCell.identifier,
@@ -36,36 +48,26 @@ extension ProfileViewController {
                 bundle: nil
             )
         }()
+        static var signInProfileCollectionViewUINib: UINib = {
+            return .init(
+                nibName: SignInProfileCollectionViewCell.identifier,
+                bundle: nil
+            )
+        }()
+        static var signOutProfileCollectionViewUINib: UINib = {
+            return .init(
+                nibName: SignOutProfileCollectionViewCell.identifier,
+                bundle: nil
+            )
+        }()
     }
 }
 
 class ProfileViewController: UIViewController {
     
-    lazy var collectionView: UICollectionView = {
-        let collectionViewLayout = UICollectionViewFlowLayout()
-        collectionViewLayout.scrollDirection = .vertical
-        collectionViewLayout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
-        let collectionView = UICollectionView(
-            frame: .zero,
-            collectionViewLayout: collectionViewLayout
-        )
-        collectionView.translatesAutoresizingMaskIntoConstraints = false
-        collectionView.backgroundColor = .white
-        collectionView.alwaysBounceVertical = true
-        collectionView.dataSource = self
-        collectionView.delegate = self
-        collectionView.register(
-            CollectionView.commonProfileCollectionViewUINib,
-            forCellWithReuseIdentifier: CommonProfileCollectionViewCell.identifier
-        )
-        collectionView.register(
-            CollectionView.headerCommonProfileCollectionViewUINib,
-            forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
-            withReuseIdentifier: HeaderCommonProfileCollectionReusableView.identifier
-        )
-        return collectionView
-    }()
+    @IBOutlet weak var collectionView: UICollectionView!
     
+    private var displayedAccount: ProfileViewController.CollectionView.Account?
     private let displayedGeneralItems: [String] = [
         "Terms & Conditions",
         "Privacy Policy",
@@ -82,31 +84,84 @@ class ProfileViewController: UIViewController {
     }
     
     private func setupViewDidLoad() {
-        self.implementComponentView()
+        let email = KeyChainStorage.load(key: .appleIDEmail)
+        let fullName = KeyChainStorage.load(key: .appleIDFullName)
+        if let email = email,
+            !email.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty,
+            let fullName = fullName,
+            !fullName.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+            self.displayedAccount = .init(email: email, fullName: fullName)
+        }
+        
+        self.collectionView.alwaysBounceVertical = true
+        self.collectionView.dataSource = self
+        self.collectionView.delegate = self
+        self.collectionView.register(
+            CollectionView.accountProfileCollectionViewUINib,
+            forCellWithReuseIdentifier: AccountProfileCollectionViewCell.identifier
+        )
+        self.collectionView.register(
+            CollectionView.commonProfileCollectionViewUINib,
+            forCellWithReuseIdentifier: CommonProfileCollectionViewCell.identifier
+        )
+        self.collectionView.register(
+            CollectionView.headerCommonProfileCollectionViewUINib,
+            forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
+            withReuseIdentifier: HeaderCommonProfileCollectionReusableView.identifier
+        )
+        self.collectionView.register(
+            SignInProfileCollectionViewCell.self,
+            forCellWithReuseIdentifier: SignInProfileCollectionViewCell.identifier
+        )
+        self.collectionView.register(
+            CollectionView.signOutProfileCollectionViewUINib,
+            forCellWithReuseIdentifier: SignOutProfileCollectionViewCell.identifier
+        )
     }
 }
 
-extension ProfileViewController {
-    private func implementComponentView() {
-        defer {
-            self.view.layoutIfNeeded()
+// MARK: - SignInProfileCollectionViewCellDelegate
+extension ProfileViewController: SignInProfileCollectionViewCellDelegate {
+    func signInProfile(_ cell: UICollectionViewCell, onTouchedUpInside button: UIButton) {
+        let appleIDProvider = ASAuthorizationAppleIDProvider()
+        let request = appleIDProvider.createRequest()
+        request.requestedScopes = [.fullName, .email]
+        let authorizationController = ASAuthorizationController(authorizationRequests: [request])
+        authorizationController.delegate = self
+        authorizationController.performRequests()
+    }
+}
+
+// MARK: - ASAuthorizationControllerDelegate
+extension ProfileViewController: ASAuthorizationControllerDelegate {
+    func authorizationController(
+        controller: ASAuthorizationController,
+        didCompleteWithAuthorization authorization: ASAuthorization
+    ) {
+        let appleIDCredential = authorization.credential as?  ASAuthorizationAppleIDCredential
+        if let appleIDCredential = appleIDCredential {
+            let userIdentifier = appleIDCredential.user
+            let fullName = "\(appleIDCredential.fullName?.givenName ?? "") \(appleIDCredential.fullName?.familyName ?? "")"
+            let email = appleIDCredential.email ?? ""
+            if let emailData = email.data(using: .utf8) {
+                _ = KeyChainStorage.save(key: .appleIDEmail, data: emailData)
+            }
+            if let fullNameData = fullName.data(using: .utf8) {
+                _ = KeyChainStorage.save(key: .appleIDFullName, data: fullNameData)
+            }
+            if let userIdentifierData = userIdentifier.data(using: .utf8) {
+                _ = KeyChainStorage.save(key: .appleIDUserIdentifier, data: userIdentifierData)
+            }
+            self.displayedAccount = .init(email: email, fullName: fullName)
+            self.collectionView.reloadData()
         }
+    }
+    
+    func authorizationController(
+        controller: ASAuthorizationController,
+        didCompleteWithError error: Error
+    ) {
         
-        self.view.addSubview(self.collectionView)
-        NSLayoutConstraint.activate([
-            self.collectionView
-                .leadingAnchor
-                .constraint(equalTo: self.view.leadingAnchor),
-            self.collectionView
-                .topAnchor
-                .constraint(equalTo: self.view.topAnchor),
-            self.collectionView
-                .trailingAnchor
-                .constraint(equalTo: self.view.trailingAnchor),
-            self.collectionView
-                .bottomAnchor
-                .constraint(equalTo: self.view.bottomAnchor)
-        ])
     }
 }
 
@@ -122,13 +177,13 @@ extension ProfileViewController: UICollectionViewDataSource, UICollectionViewDel
     ) -> Int {
         switch section {
         case CollectionView.accountSection:
-            return 1
+            return self.displayedAccount == nil ? 0 : 1
         case CollectionView.generalSection:
             return self.displayedGeneralItems.count
         case CollectionView.settingSection:
             return self.displayedSettingItems.count
-        case CollectionView.signOutSection:
-            return 1
+        case CollectionView.signInSection:
+            return self.displayedAccount == nil ? 1 : 0
         default:
             return .zero
         }
@@ -190,14 +245,18 @@ extension ProfileViewController: UICollectionViewDataSource, UICollectionViewDel
     ) -> CGSize {
         switch indexPath.section {
         case CollectionView.accountSection:
-            return .zero
+            let width = collectionView.frame.width - 32
+            let height = AccountProfileCollectionViewCell.height
+            return .init(width: width, height: height)
         case CollectionView.generalSection,
              CollectionView.settingSection:
             let width = collectionView.frame.width - 32
             let height = CommonProfileCollectionViewCell.height
             return .init(width: width, height: height)
-        case CollectionView.signOutSection:
-            return .zero
+        case CollectionView.signInSection:
+            let width = collectionView.frame.width - 32
+            let height = SignInProfileCollectionViewCell.height
+            return .init(width: width, height: height)
         default:
             return .zero
         }
@@ -208,6 +267,21 @@ extension ProfileViewController: UICollectionViewDataSource, UICollectionViewDel
         cellForItemAt indexPath: IndexPath
     ) -> UICollectionViewCell {
         switch indexPath.section {
+        case CollectionView.accountSection:
+            let identifier = AccountProfileCollectionViewCell.identifier
+            let reusableCell = collectionView.dequeueReusableCell(
+                withReuseIdentifier: identifier,
+                for: indexPath
+            ) as? AccountProfileCollectionViewCell
+            guard let cell = reusableCell else { fatalError() }
+            if let displayedAccount = self.displayedAccount {
+                cell.fill(
+                    with: displayedAccount.fullName,
+                    email: displayedAccount.email,
+                    photo: UIImage()
+                )
+            }
+            return cell
         case CollectionView.generalSection, CollectionView.settingSection:
             let identifier = CommonProfileCollectionViewCell.identifier
             let reusableCell = collectionView.dequeueReusableCell(
@@ -228,8 +302,23 @@ extension ProfileViewController: UICollectionViewDataSource, UICollectionViewDel
             }
             cell.fill(with: item)
             return cell
+        case CollectionView.signInSection:
+            let identifier = SignInProfileCollectionViewCell.identifier
+            let reusableCell = collectionView.dequeueReusableCell(
+                withReuseIdentifier: identifier,
+                for: indexPath
+            ) as? SignInProfileCollectionViewCell
+            guard let cell = reusableCell else { fatalError() }
+            cell.delegate = self
+            return cell
         default:
             return UICollectionViewCell()
         }
+    }
+    
+    func collectionView(
+        _ collectionView: UICollectionView,
+        didSelectItemAt indexPath: IndexPath
+    ) {
     }
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GuidePageViewController: UIViewController {
+class GuidePageViewController: UIViewController, UIGestureRecognizerDelegate {
     @IBOutlet weak var stretchGuide: UIImageView!
     @IBOutlet weak var guideLabel: UILabel!
     
@@ -53,6 +53,8 @@ class GuidePageViewController: UIViewController {
             for: UIBarMetrics.default
         )
         self.navigationController?.navigationBar.shadowImage = self.navigationBarImage
+        self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = self
         self.navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
@@ -85,4 +87,3 @@ class GuidePageViewController: UIViewController {
     }
     
 }
-

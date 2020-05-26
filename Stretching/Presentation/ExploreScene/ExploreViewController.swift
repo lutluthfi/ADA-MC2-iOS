@@ -75,6 +75,8 @@ class ExploreViewController: UIViewController {
         return collectionView
     }()
     
+    weak var delegate: DashboardViewControllerDelegate?
+    
     private let displayedRecommendStretchPosters: [UIImage] = [
         StretchingAssetKit.Image.imageRecommendInternalRotationStretch,
         StretchingAssetKit.Image.imageRecommendLevatorScapulaeStretch,
@@ -372,10 +374,11 @@ extension ExploreViewController: UICollectionViewDataSource, UICollectionViewDel
     ) {
         switch indexPath.section {
         case CollectionView.Section.recommend.rawValue:
-            let storyboard = UIStoryboard(name: "GuidePageStoryboard", bundle: nil)
-            let vc = storyboard.instantiateViewController(identifier: "GuidePageViewController")
-            self.navigationController?.hidesBottomBarWhenPushed = true
-            self.navigationController?.pushViewController(vc, animated: true)
+            self.delegate?.showGuidePageScene()
+//            let storyboard = UIStoryboard(name: "GuidePageStoryboard", bundle: nil)
+//            let vc = storyboard.instantiateViewController(identifier: "GuidePageViewController")
+//            self.navigationController?.hidesBottomBarWhenPushed = true
+//            self.navigationController?.pushViewController(vc, animated: true)
             break
         case CollectionView.Section.type.rawValue:
             break
