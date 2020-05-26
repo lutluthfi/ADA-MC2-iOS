@@ -14,7 +14,7 @@ class MyRewardCollectionViewCell: UICollectionViewCell {
         describing: MyRewardCollectionViewCell.self
     )
     
-    static let height = CGFloat(180)
+    static let height = CGFloat(150)
 
     @IBOutlet weak var imageReward: UIImageView!
     @IBOutlet weak var titleReward: UILabel!
@@ -25,6 +25,8 @@ class MyRewardCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         self.layoutIfNeeded()
         self.layer.cornerRadius = 8
+        self.layer.shadowColor = CGColor(srgbRed: 0.0, green: 0.0, blue: 0.0, alpha: 1.0)
+        self.contentView.backgroundColor = UIColor.lightGray
         let rewardImageViewCorner = self.imageReward.frame.height / 2
         self.imageReward.layer.cornerRadius = rewardImageViewCorner
     }

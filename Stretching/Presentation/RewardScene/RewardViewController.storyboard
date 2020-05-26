@@ -40,18 +40,18 @@
                                     <tabBarItem systemItem="more" id="sep-YY-Pbd"/>
                                 </items>
                             </tabBar>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ug2-Q6-BUQ">
-                                <rect key="frame" x="0.0" y="189" width="414" height="624"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <segue destination="gWH-a9-sdh" kind="embed" id="lfH-rE-AJW"/>
-                                </connections>
-                            </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L9b-uS-FFA">
                                 <rect key="frame" x="0.0" y="189" width="414" height="624"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <segue destination="AEL-JH-z61" kind="embed" id="NcC-xZ-XKh"/>
+                                    <segue destination="AEL-JH-z61" kind="embed" id="Xke-LE-FkZ"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ug2-Q6-BUQ">
+                                <rect key="frame" x="0.0" y="189" width="414" height="624"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="gWH-a9-sdh" kind="embed" id="LQg-xW-ZAr"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -62,8 +62,8 @@
                     <navigationItem key="navigationItem" title="Rewards" id="zd4-DY-js2"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="allRewardsView" destination="ug2-Q6-BUQ" id="qhO-xZ-8ba"/>
-                        <outlet property="myRewardsView" destination="ug2-Q6-BUQ" id="E2I-fy-zGp"/>
+                        <outlet property="allRewardsView" destination="L9b-uS-FFA" id="yxX-Vm-OUj"/>
+                        <outlet property="myRewardsView" destination="ug2-Q6-BUQ" id="zgX-YY-VTy"/>
                         <outlet property="topBar" destination="t65-JZ-SIs" id="QLe-UB-ieV"/>
                     </connections>
                 </viewController>
@@ -103,16 +103,33 @@
             </objects>
             <point key="canvasLocation" x="-146.37681159420291" y="908.70535714285711"/>
         </scene>
-        <!--View Controller-->
+        <!--All Reward View Controller-->
         <scene sceneID="wIN-8C-DH9">
             <objects>
-                <viewController id="AEL-JH-z61" sceneMemberID="viewController">
+                <viewController id="AEL-JH-z61" customClass="AllRewardViewController" customModule="Stretching" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="B04-ty-S2N">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="624"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4o1-11-9Qg">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="624"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="C4C-A4-31p">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="kro-vI-Lf8"/>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="4o1-11-9Qg" id="hML-70-wSR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Faz-wd-9PQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

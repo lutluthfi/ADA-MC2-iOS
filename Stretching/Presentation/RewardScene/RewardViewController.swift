@@ -21,10 +21,6 @@ class RewardViewController: UIViewController {
     @IBOutlet weak var myRewardsView: UIView!
     @IBOutlet weak var allRewardsView: UIView!
     
-//    var namaFilter = ["Thunder Filter", "Love Love Filter", "Cowboy heart Filter"]
-//    var fotoFilter = [ #imageLiteral(resourceName: "thunder copy"), #imageLiteral(resourceName: "istockphoto-1134423558-1024x1024"), #imageLiteral(resourceName: "istockphoto-1134423558-1024x1024")]
-    
-    
     lazy var myRewardTabBarItem: UITabBarItem = {
         return UITabBarItem(title: "My Reward", image: nil, selectedImage: nil)
     }()

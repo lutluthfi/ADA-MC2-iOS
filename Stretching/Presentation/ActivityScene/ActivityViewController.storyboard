@@ -130,6 +130,7 @@
                             <constraint firstItem="O5V-Qr-e7U" firstAttribute="top" secondItem="Ina-mb-ZlN" secondAttribute="top" id="QRk-Ss-9oi"/>
                             <constraint firstAttribute="bottom" secondItem="O5V-Qr-e7U" secondAttribute="bottom" id="fPg-Vz-OtC"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="jGr-TT-kBQ"/>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="O5V-Qr-e7U" id="ohR-aI-oHm"/>
