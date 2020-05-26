@@ -43,6 +43,7 @@ struct StretchingAssetKit {
     static let imageGuide31 = UIImage(named: "31")!
     struct Color {
         static let colorPrimaryOrange = #colorLiteral(red: 1, green: 0.4793429971, blue: 0.3508216441, alpha: 1)
+        static let colorPrimaryOrangeDark = #colorLiteral(red: 1, green: 0.4793429971, blue: 0.3508216441, alpha: 1)
         static let colorPrimaryIndigo = #colorLiteral(red: 0.3759545088, green: 0.5444107056, blue: 1, alpha: 1)
     }
     struct Image {

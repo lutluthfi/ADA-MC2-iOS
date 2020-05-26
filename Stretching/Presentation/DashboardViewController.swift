@@ -11,6 +11,8 @@ import UIKit
 
 protocol DashboardViewControllerDelegate: class {
     func showGuidePageScene()
+    func showPrivacyPolicyScene()
+    func showTermsConditionsScene()
 }
 
 class DashboardViewController: UITabBarController {
@@ -35,8 +37,14 @@ class DashboardViewController: UITabBarController {
         let exploreViewController = (viewControllers[0] as? UINavigationController)?
             .viewControllers
             .first as? ExploreViewController
+        let profileViewController = (viewControllers[1] as? UINavigationController)?
+            .viewControllers
+            .first as? ProfileViewController
         if let exploreViewController = exploreViewController {
             exploreViewController.delegate = self
+        }
+        if let profileViewController = profileViewController {
+            profileViewController.delegate = self
         }
     }
     
@@ -55,6 +63,19 @@ extension DashboardViewController: DashboardViewControllerDelegate {
         let storyboard = UIStoryboard(name: "GuidePageStoryboard", bundle: nil)
         let viewController = storyboard.instantiateViewController(
             identifier: String(describing: GuidePageViewController.self)
+        )
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    func showPrivacyPolicyScene() {
+        
+    }
+    
+    func showTermsConditionsScene() {
+        let identifier = String(describing: TermsConditionsViewController.self)
+        let storyboard = UIStoryboard(name: identifier, bundle: nil)
+        let viewController = storyboard.instantiateViewController(
+            identifier: identifier
         )
         self.navigationController?.pushViewController(viewController, animated: true)
     }
