@@ -38,6 +38,8 @@
 		4FC820CB247D3B84006DAFB4 /* RecentActivityCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FC820C9247D3B84006DAFB4 /* RecentActivityCollectionViewCell.xib */; };
 		4FC820D0247D3B9B006DAFB4 /* WeeklyActivityCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC820CE247D3B9B006DAFB4 /* WeeklyActivityCollectionViewCell.swift */; };
 		4FC820D1247D3B9B006DAFB4 /* WeeklyActivityCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FC820CF247D3B9B006DAFB4 /* WeeklyActivityCollectionViewCell.xib */; };
+		4FC820D6247D497D006DAFB4 /* RewardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FC820D5247D497D006DAFB4 /* RewardViewController.storyboard */; };
+		4FC820D8247D498D006DAFB4 /* RewardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC820D7247D498D006DAFB4 /* RewardViewController.swift */; };
 		4FCDFBA32472732400BD5DB3 /* StretchingAssetKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCDFBA22472732400BD5DB3 /* StretchingAssetKit.swift */; };
 		4FCDFBEA2474084800BD5DB3 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCDFBE92474084700BD5DB3 /* ExploreViewController.swift */; };
 		4FCDFBEC2474085300BD5DB3 /* ExploreViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FCDFBEB2474085300BD5DB3 /* ExploreViewController.storyboard */; };
@@ -117,6 +119,8 @@
 		4FC820C9247D3B84006DAFB4 /* RecentActivityCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecentActivityCollectionViewCell.xib; sourceTree = "<group>"; };
 		4FC820CE247D3B9B006DAFB4 /* WeeklyActivityCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyActivityCollectionViewCell.swift; sourceTree = "<group>"; };
 		4FC820CF247D3B9B006DAFB4 /* WeeklyActivityCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeeklyActivityCollectionViewCell.xib; sourceTree = "<group>"; };
+		4FC820D5247D497D006DAFB4 /* RewardViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RewardViewController.storyboard; sourceTree = "<group>"; };
+		4FC820D7247D498D006DAFB4 /* RewardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardViewController.swift; sourceTree = "<group>"; };
 		4FCDFBA22472732400BD5DB3 /* StretchingAssetKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchingAssetKit.swift; sourceTree = "<group>"; };
 		4FCDFBE92474084700BD5DB3 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		4FCDFBEB2474085300BD5DB3 /* ExploreViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ExploreViewController.storyboard; sourceTree = "<group>"; };
@@ -224,6 +228,7 @@
 				4FC820B5247D17E9006DAFB4 /* PrivacyPolicyScene */,
 				4FC8203024791B5E006DAFB4 /* ProfileScene */,
 				EC413FB5247288F4000C5B29 /* RewardCell */,
+				4FC820D2247D4945006DAFB4 /* RewardScene */,
 				4FC820B0247D0465006DAFB4 /* Terms&ConditionsScene */,
 				4FCDFBA12472731200BD5DB3 /* Utils */,
 			);
@@ -437,6 +442,39 @@
 			path = Weekly;
 			sourceTree = "<group>";
 		};
+		4FC820D2247D4945006DAFB4 /* RewardScene */ = {
+			isa = PBXGroup;
+			children = (
+				4FC820D4247D496D006DAFB4 /* AllScene */,
+				4FC820D3247D4959006DAFB4 /* OwnedScene */,
+				4FC820D5247D497D006DAFB4 /* RewardViewController.storyboard */,
+				4FC820D7247D498D006DAFB4 /* RewardViewController.swift */,
+			);
+			path = RewardScene;
+			sourceTree = "<group>";
+		};
+		4FC820D3247D4959006DAFB4 /* OwnedScene */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OwnedScene;
+			sourceTree = "<group>";
+		};
+		4FC820D4247D496D006DAFB4 /* AllScene */ = {
+			isa = PBXGroup;
+			children = (
+				4FC820D9247D49D0006DAFB4 /* CollectionCell */,
+			);
+			path = AllScene;
+			sourceTree = "<group>";
+		};
+		4FC820D9247D49D0006DAFB4 /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CollectionCell;
+			sourceTree = "<group>";
+		};
 		4FCDFBA12472731200BD5DB3 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -626,6 +664,7 @@
 			files = (
 				8D24D1B624686A0A00C9B548 /* Montserrat-ExtraBold.ttf in Resources */,
 				8DDC28672465487200DD76C1 /* Main.storyboard in Resources */,
+				4FC820D6247D497D006DAFB4 /* RewardViewController.storyboard in Resources */,
 				8D24D1B324686A0A00C9B548 /* Montserrat-BlackItalic.ttf in Resources */,
 				4FC8204024791D5A006DAFB4 /* AccountProfileCollectionViewCell.xib in Resources */,
 				4FCDFC002474319700BD5DB3 /* TypeStretchExploreCollectionViewCell.xib in Resources */,
@@ -688,6 +727,7 @@
 				4FC820D0247D3B9B006DAFB4 /* WeeklyActivityCollectionViewCell.swift in Sources */,
 				EC413FA324725F86000C5B29 /* ProfileViewController.swift in Sources */,
 				4FC8202C247913E3006DAFB4 /* ScaledCollectionFlowLayout.swift in Sources */,
+				4FC820D8247D498D006DAFB4 /* RewardViewController.swift in Sources */,
 				4FC820BC247D1E14006DAFB4 /* ActivityViewController.swift in Sources */,
 				4FCDFBFA2474317200BD5DB3 /* RecommendStretchExploreCollectionViewCell.swift in Sources */,
 				4FC820B9247D181D006DAFB4 /* PrivacyPolicyViewController.swift in Sources */,
