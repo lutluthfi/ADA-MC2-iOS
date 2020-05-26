@@ -57,6 +57,7 @@
 		4FCDFC16247499E300BD5DB3 /* GreetingsExploreCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FCDFC14247499E300BD5DB3 /* GreetingsExploreCollectionViewCell.xib */; };
 		4FCDFC192474FDCE00BD5DB3 /* GuidePageStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FCDFC182474FDCE00BD5DB3 /* GuidePageStoryboard.storyboard */; };
 		4FCDFC1B2474FDD500BD5DB3 /* GuidePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCDFC1A2474FDD500BD5DB3 /* GuidePageViewController.swift */; };
+		8D0C399A247D99060012D254 /* MyRewardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0C3999247D99060012D254 /* MyRewardViewController.swift */; };
 		8D24D1AA24686A0A00C9B548 /* Montserrat-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D24D19724686A0A00C9B548 /* Montserrat-LightItalic.ttf */; };
 		8D24D1AB24686A0A00C9B548 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D24D19824686A0A00C9B548 /* Montserrat-Medium.ttf */; };
 		8D24D1AC24686A0A00C9B548 /* Montserrat-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D24D19924686A0A00C9B548 /* Montserrat-BoldItalic.ttf */; };
@@ -79,7 +80,6 @@
 		8DDC28672465487200DD76C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DDC28652465487200DD76C1 /* Main.storyboard */; };
 		8DDC28682465487200DD76C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DDC28662465487200DD76C1 /* LaunchScreen.storyboard */; };
 		EC413FA324725F86000C5B29 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC413FA224725F86000C5B29 /* ProfileViewController.swift */; };
-		EC413FB224728743000C5B29 /* RewardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC413FB124728743000C5B29 /* RewardViewController.swift */; };
 		EC413FB824728950000C5B29 /* RewardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC413FB624728950000C5B29 /* RewardViewCell.swift */; };
 		EC413FB924728950000C5B29 /* RewardViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC413FB724728950000C5B29 /* RewardViewCell.xib */; };
 /* End PBXBuildFile section */
@@ -138,6 +138,7 @@
 		4FCDFC14247499E300BD5DB3 /* GreetingsExploreCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GreetingsExploreCollectionViewCell.xib; sourceTree = "<group>"; };
 		4FCDFC182474FDCE00BD5DB3 /* GuidePageStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GuidePageStoryboard.storyboard; sourceTree = "<group>"; };
 		4FCDFC1A2474FDD500BD5DB3 /* GuidePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuidePageViewController.swift; sourceTree = "<group>"; };
+		8D0C3999247D99060012D254 /* MyRewardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyRewardViewController.swift; path = CollectionCell/MyRewardViewController.swift; sourceTree = SOURCE_ROOT; };
 		8D24D19724686A0A00C9B548 /* Montserrat-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-LightItalic.ttf"; sourceTree = "<group>"; };
 		8D24D19824686A0A00C9B548 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
 		8D24D19924686A0A00C9B548 /* Montserrat-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BoldItalic.ttf"; sourceTree = "<group>"; };
@@ -160,7 +161,6 @@
 		8DDC28652465487200DD76C1 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8DDC28662465487200DD76C1 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC413FA224725F86000C5B29 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		EC413FB124728743000C5B29 /* RewardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardViewController.swift; sourceTree = "<group>"; };
 		EC413FB624728950000C5B29 /* RewardViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardViewCell.swift; sourceTree = "<group>"; };
 		EC413FB724728950000C5B29 /* RewardViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RewardViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -220,7 +220,6 @@
 				8DDC28652465487200DD76C1 /* Main.storyboard */,
 				4FC8204124792279006DAFB4 /* DashboardViewController.swift */,
 				8D24D1BD24686E8C00C9B548 /* OnboardingViewController.swift */,
-				EC413FB124728743000C5B29 /* RewardViewController.swift */,
 				4FC820BA247D1DC9006DAFB4 /* ActivityScene */,
 				4FCDFBE82474074E00BD5DB3 /* ExploreScene */,
 				4FCDFE2F24766B8D00BD5DB3 /* GuideScene */,
@@ -471,6 +470,7 @@
 		4FC820D9247D49D0006DAFB4 /* CollectionCell */ = {
 			isa = PBXGroup;
 			children = (
+				8D0C3999247D99060012D254 /* MyRewardViewController.swift */,
 			);
 			path = CollectionCell;
 			sourceTree = "<group>";
@@ -713,7 +713,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FC8204C247AC428006DAFB4 /* SignInProfileCollectionViewCell.swift in Sources */,
-				EC413FB224728743000C5B29 /* RewardViewController.swift in Sources */,
 				4FC820C4247D3B49006DAFB4 /* WeeklyActivityViewController.swift in Sources */,
 				4FBC0FD124653E930052DB8A /* Stretching.xcdatamodeld in Sources */,
 				8D24D1BE24686E8C00C9B548 /* OnboardingViewController.swift in Sources */,
@@ -723,6 +722,7 @@
 				4FCDFC0724743F9800BD5DB3 /* GuideStretch+DAOMapping.swift in Sources */,
 				4FC820AF247BFCD9006DAFB4 /* KeychainStorage.swift in Sources */,
 				4FC8204224792279006DAFB4 /* DashboardViewController.swift in Sources */,
+				8D0C399A247D99060012D254 /* MyRewardViewController.swift in Sources */,
 				4FC820B2247D0491006DAFB4 /* TermsConditionsViewController.swift in Sources */,
 				4FC820D0247D3B9B006DAFB4 /* WeeklyActivityCollectionViewCell.swift in Sources */,
 				EC413FA324725F86000C5B29 /* ProfileViewController.swift in Sources */,

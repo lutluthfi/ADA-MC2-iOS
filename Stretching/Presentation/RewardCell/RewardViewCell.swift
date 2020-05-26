@@ -8,7 +8,13 @@
 
 import UIKit
 
-class RewardViewCell: UITableViewCell {
+class RewardViewCell: UICollectionViewCell {
+    
+    static let identifier = String(
+        describing: RewardViewCell.self
+    )
+    
+    static let height = CGFloat(180)
 
     @IBOutlet weak var filterButton: UIButton!
     @IBOutlet weak var cellView: UIView!
@@ -21,10 +27,15 @@ class RewardViewCell: UITableViewCell {
         filterImage.layer.cornerRadius = 5
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+//    override func setSelected(_ selected: Bool, animated: Bool) {
+//        super.setSelected(selected, animated: animated)
+//
+//        // Configure the view for the selected state
+//    }
+    
+    func fill(with title: String, image: UIImage) {
+        self.filterName.text = title
+        self.filterImage.image = image
     }
     
     @IBAction func filterButtonPressed(_ sender: UIButton) {

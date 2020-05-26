@@ -23,21 +23,77 @@
             </objects>
             <point key="canvasLocation" x="-523" y="138"/>
         </scene>
-        <!--View Controller-->
+        <!--Rewards-->
         <scene sceneID="Fjz-Gh-f4m">
             <objects>
-                <viewController id="eLk-H3-VoP" sceneMemberID="viewController">
+                <viewController id="eLk-H3-VoP" customClass="RewardViewController" customModule="Stretching" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HPL-Uq-1NW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t65-JZ-SIs">
+                                <rect key="frame" x="0.0" y="140" width="414" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem systemItem="favorites" id="B9U-GJ-5gS"/>
+                                    <tabBarItem systemItem="more" id="sep-YY-Pbd"/>
+                                </items>
+                            </tabBar>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ug2-Q6-BUQ">
+                                <rect key="frame" x="0.0" y="189" width="414" height="624"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="gWH-a9-sdh" kind="embed" id="lfH-rE-AJW"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Ak1-UD-YCU"/>
                     </view>
-                    <navigationItem key="navigationItem" id="zd4-DY-js2"/>
+                    <tabBarItem key="tabBarItem" title="" image="reward-icon" selectedImage="selected-reward" id="ELr-G7-bbH"/>
+                    <navigationItem key="navigationItem" title="Rewards" id="zd4-DY-js2"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fIM-aB-I4d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="280" y="138"/>
         </scene>
+        <!--My Reward View Controller-->
+        <scene sceneID="5BC-BD-cai">
+            <objects>
+                <viewController id="gWH-a9-sdh" customClass="MyRewardViewController" customModule="Stretching" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VMp-QK-UHC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="624"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Xk3-eQ-qC8">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="624"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lyB-Qq-sGX">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="8Ss-aM-qhv"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="Xk3-eQ-qC8" id="Qgc-pm-xaw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e6V-I6-FSe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-146.37681159420291" y="908.70535714285711"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="reward-icon" width="10" height="15"/>
+        <image name="selected-reward" width="94" height="31"/>
+    </resources>
 </document>
