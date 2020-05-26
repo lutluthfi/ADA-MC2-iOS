@@ -68,7 +68,12 @@ extension DashboardViewController: DashboardViewControllerDelegate {
     }
     
     func showPrivacyPolicyScene() {
-        
+        let identifier = String(describing: PrivacyPolicyViewController.self)
+        let storyboard = UIStoryboard(name: identifier, bundle: nil)
+        let viewController = storyboard.instantiateViewController(
+            identifier: identifier
+        )
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
     
     func showTermsConditionsScene() {

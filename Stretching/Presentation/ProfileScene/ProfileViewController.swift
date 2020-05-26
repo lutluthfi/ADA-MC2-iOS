@@ -330,6 +330,7 @@ extension ProfileViewController: UICollectionViewDataSource, UICollectionViewDel
                 self.delegate?.showTermsConditionsScene()
                 break
             case "Privacy Policy":
+                self.delegate?.showPrivacyPolicyScene()
                 break
             default:
                 break
