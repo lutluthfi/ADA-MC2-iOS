@@ -7,15 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		40B05D7D247D0CA4000DE31E /* 04_l_Slowly_turn_left.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D4B247D0C86000DE31E /* 04_l_Slowly_turn_left.mp3 */; };
-		40B05D7F247D0CA4000DE31E /* 09_r_keep_down.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D4D247D0C86000DE31E /* 09_r_keep_down.mp3 */; };
-		40B05D81247D0CA4000DE31E /* 07_r_slowly_tilt_right.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D4F247D0C87000DE31E /* 07_r_slowly_tilt_right.mp3 */; };
-		40B05D8A247D0CA4000DE31E /* 06_l_Slowly_tilt_left.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D58247D0C87000DE31E /* 06_l_Slowly_tilt_left.mp3 */; };
-		40B05D8F247D0CA4000DE31E /* 05_r_Slowly_turn_right.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D5D247D0C88000DE31E /* 05_r_Slowly_turn_right.mp3 */; };
-		40B05D92247D0CA4000DE31E /* 08_l_keep_down.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D60247D0C8C000DE31E /* 08_l_keep_down.mp3 */; };
-		40B05D9B247D0CA4000DE31E /* 03_slowly_back_to_center.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D69247D0C8C000DE31E /* 03_slowly_back_to_center.mp3 */; };
-		40B05DA6247D0CA4000DE31E /* 01_keep_head_up.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D74247D0CA1000DE31E /* 01_keep_head_up.mp3 */; };
-		40B05DAC247D0CA4000DE31E /* 02_hold_8_seconds.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D7A247D0CA1000DE31E /* 02_hold_8_seconds.mp3 */; };
 		4FBC0FC524653E930052DB8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBC0FC424653E930052DB8A /* AppDelegate.swift */; };
 		4FBC0FC724653E930052DB8A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBC0FC624653E930052DB8A /* SceneDelegate.swift */; };
 		4FBC0FC924653E930052DB8A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBC0FC824653E930052DB8A /* FirstViewController.swift */; };
@@ -71,15 +62,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		40B05D4B247D0C86000DE31E /* 04_l_Slowly_turn_left.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 04_l_Slowly_turn_left.mp3; path = "../MC2-Team 11/Rafika's Voice Memos/04_l_Slowly_turn_left.mp3"; sourceTree = "<group>"; };
-		40B05D4D247D0C86000DE31E /* 09_r_keep_down.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 09_r_keep_down.mp3; path = "../MC2-Team 11/Rafika's Voice Memos/09_r_keep_down.mp3"; sourceTree = "<group>"; };
-		40B05D4F247D0C87000DE31E /* 07_r_slowly_tilt_right.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 07_r_slowly_tilt_right.mp3; path = "../MC2-Team 11/Rafika's Voice Memos/07_r_slowly_tilt_right.mp3"; sourceTree = "<group>"; };
-		40B05D58247D0C87000DE31E /* 06_l_Slowly_tilt_left.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 06_l_Slowly_tilt_left.mp3; path = "../MC2-Team 11/Rafika's Voice Memos/06_l_Slowly_tilt_left.mp3"; sourceTree = "<group>"; };
-		40B05D5D247D0C88000DE31E /* 05_r_Slowly_turn_right.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 05_r_Slowly_turn_right.mp3; path = "../MC2-Team 11/Rafika's Voice Memos/05_r_Slowly_turn_right.mp3"; sourceTree = "<group>"; };
-		40B05D60247D0C8C000DE31E /* 08_l_keep_down.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 08_l_keep_down.mp3; path = "../MC2-Team 11/Rafika's Voice Memos/08_l_keep_down.mp3"; sourceTree = "<group>"; };
-		40B05D69247D0C8C000DE31E /* 03_slowly_back_to_center.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 03_slowly_back_to_center.mp3; path = "../MC2-Team 11/Rafika's Voice Memos/03_slowly_back_to_center.mp3"; sourceTree = "<group>"; };
-		40B05D74247D0CA1000DE31E /* 01_keep_head_up.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 01_keep_head_up.mp3; path = "../MC2-Team 11/Rafika's Voice Memos/01_keep_head_up.mp3"; sourceTree = "<group>"; };
-		40B05D7A247D0CA1000DE31E /* 02_hold_8_seconds.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 02_hold_8_seconds.mp3; path = "../MC2-Team 11/Rafika's Voice Memos/02_hold_8_seconds.mp3"; sourceTree = "<group>"; };
 		4FBC0FC124653E930052DB8A /* Stretching.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stretching.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FBC0FC424653E930052DB8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FBC0FC624653E930052DB8A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -150,15 +132,6 @@
 		4FBC0FB824653E930052DB8A = {
 			isa = PBXGroup;
 			children = (
-				40B05D74247D0CA1000DE31E /* 01_keep_head_up.mp3 */,
-				40B05D7A247D0CA1000DE31E /* 02_hold_8_seconds.mp3 */,
-				40B05D69247D0C8C000DE31E /* 03_slowly_back_to_center.mp3 */,
-				40B05D4B247D0C86000DE31E /* 04_l_Slowly_turn_left.mp3 */,
-				40B05D5D247D0C88000DE31E /* 05_r_Slowly_turn_right.mp3 */,
-				40B05D58247D0C87000DE31E /* 06_l_Slowly_tilt_left.mp3 */,
-				40B05D4F247D0C87000DE31E /* 07_r_slowly_tilt_right.mp3 */,
-				40B05D60247D0C8C000DE31E /* 08_l_keep_down.mp3 */,
-				40B05D4D247D0C86000DE31E /* 09_r_keep_down.mp3 */,
 				4FBC0FC324653E930052DB8A /* Stretching */,
 				4FBC0FC224653E930052DB8A /* Products */,
 			);
@@ -419,7 +392,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D24D1B624686A0A00C9B548 /* Montserrat-ExtraBold.ttf in Resources */,
-				40B05D7D247D0CA4000DE31E /* 04_l_Slowly_turn_left.mp3 in Resources */,
 				8DDC28672465487200DD76C1 /* Main.storyboard in Resources */,
 				EC413FA9247262E7000C5B29 /* SettingCell.xib in Resources */,
 				8D24D1B324686A0A00C9B548 /* Montserrat-BlackItalic.ttf in Resources */,
@@ -431,17 +403,12 @@
 				8DDC28682465487200DD76C1 /* LaunchScreen.storyboard in Resources */,
 				8D24D1AD24686A0A00C9B548 /* Montserrat-Light.ttf in Resources */,
 				8D24D1B924686A0A00C9B548 /* Montserrat-Regular.ttf in Resources */,
-				40B05D8F247D0CA4000DE31E /* 05_r_Slowly_turn_right.mp3 in Resources */,
 				4FCDFC16247499E300BD5DB3 /* GreetingsExploreCollectionViewCell.xib in Resources */,
-				40B05D7F247D0CA4000DE31E /* 09_r_keep_down.mp3 in Resources */,
-				40B05D92247D0CA4000DE31E /* 08_l_keep_down.mp3 in Resources */,
 				EC413FB924728950000C5B29 /* RewardViewCell.xib in Resources */,
 				8D24D1AE24686A0A00C9B548 /* Montserrat-ThinItalic.ttf in Resources */,
 				8D24D1AA24686A0A00C9B548 /* Montserrat-LightItalic.ttf in Resources */,
 				8D24D1BB24686A0A00C9B548 /* Montserrat-SemiBoldItalic.ttf in Resources */,
-				40B05D9B247D0CA4000DE31E /* 03_slowly_back_to_center.mp3 in Resources */,
 				8D24D1B524686A0A00C9B548 /* Montserrat-ExtraLightItalic.ttf in Resources */,
-				40B05DAC247D0CA4000DE31E /* 02_hold_8_seconds.mp3 in Resources */,
 				4FCDFBFB2474317200BD5DB3 /* RecommendStretchExploreCollectionViewCell.xib in Resources */,
 				8D24D1B424686A0A00C9B548 /* Montserrat-SemiBold.ttf in Resources */,
 				4FCDFC0C2474900000BD5DB3 /* DefaultHeaderExploreCollectionReusableView.xib in Resources */,
@@ -450,13 +417,10 @@
 				4FCDFBEC2474085300BD5DB3 /* ExploreViewController.storyboard in Resources */,
 				4FCDFBEF247408E700BD5DB3 /* PracticeViewController.storyboard in Resources */,
 				8D24D1B124686A0A00C9B548 /* Montserrat-Bold.ttf in Resources */,
-				40B05D8A247D0CA4000DE31E /* 06_l_Slowly_tilt_left.mp3 in Resources */,
 				4FCDFC192474FDCE00BD5DB3 /* GuidePageStoryboard.storyboard in Resources */,
-				40B05DA6247D0CA4000DE31E /* 01_keep_head_up.mp3 in Resources */,
 				8D24D1AB24686A0A00C9B548 /* Montserrat-Medium.ttf in Resources */,
 				4FBC0FD324653E940052DB8A /* Assets.xcassets in Resources */,
 				8D24D1AF24686A0A00C9B548 /* Montserrat-ExtraLight.ttf in Resources */,
-				40B05D81247D0CA4000DE31E /* 07_r_slowly_tilt_right.mp3 in Resources */,
 				EC413FAE24726781000C5B29 /* ProfileCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
