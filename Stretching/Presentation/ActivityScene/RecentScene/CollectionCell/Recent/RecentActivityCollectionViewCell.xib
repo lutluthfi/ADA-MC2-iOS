@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="RecentActivityCollectionViewCell" customModule="Stretching" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="321" height="56"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="321" height="56"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kdH-aD-AiD">
+                        <rect key="frame" x="67" y="19.5" width="39" height="17.5"/>
+                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ImageActivityHead" translatesAutoresizingMaskIntoConstraints="NO" id="hpK-ck-zar">
+                        <rect key="frame" x="16" y="10.5" width="35" height="35"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="Oad-s4-Qj0"/>
+                            <constraint firstAttribute="height" constant="35" id="ZAC-bc-84K"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bar-Fj-vln">
+                        <rect key="frame" x="271" y="22" width="34" height="12"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="17m-CR-tfE">
+                                <rect key="frame" x="0.0" y="0.0" width="12" height="12"/>
+                                <color key="tintColor" red="1" green="0.69411764705882351" blue="0.40784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="XeX-HU-Nyw"/>
+                                    <constraint firstAttribute="width" constant="12" id="nWw-qT-EmB"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jG8-G0-Etp">
+                                <rect key="frame" x="20" y="0.0" width="14" height="12"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="10"/>
+                                <color key="textColor" red="1" green="0.69411764710000001" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="kdH-aD-AiD" firstAttribute="centerY" secondItem="hpK-ck-zar" secondAttribute="centerY" id="4Uq-y9-KIx"/>
+                <constraint firstAttribute="trailing" secondItem="bar-Fj-vln" secondAttribute="trailing" constant="16" id="8Gm-bC-7SS"/>
+                <constraint firstItem="bar-Fj-vln" firstAttribute="centerY" secondItem="hpK-ck-zar" secondAttribute="centerY" id="Evm-ct-amH"/>
+                <constraint firstItem="kdH-aD-AiD" firstAttribute="leading" secondItem="hpK-ck-zar" secondAttribute="trailing" constant="16" id="Qdf-7d-PoL"/>
+                <constraint firstItem="bar-Fj-vln" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="kdH-aD-AiD" secondAttribute="trailing" constant="16" id="ltf-6p-Eje"/>
+                <constraint firstItem="hpK-ck-zar" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="spI-vp-4Xi"/>
+                <constraint firstItem="hpK-ck-zar" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="xOu-Od-9gw"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="321" height="50"/>
+            <connections>
+                <outlet property="posterImageView" destination="hpK-ck-zar" id="m4v-ls-eDZ"/>
+                <outlet property="titleLabel" destination="kdH-aD-AiD" id="M7Z-uK-c6c"/>
+            </connections>
+            <point key="canvasLocation" x="334.05797101449281" y="152.67857142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ImageActivityHead" width="35" height="35"/>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+    </resources>
+</document>

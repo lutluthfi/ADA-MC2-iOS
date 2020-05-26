@@ -98,7 +98,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="1sp-M2-xdQ" kind="relationship" relationship="viewControllers" id="ghm-OB-AmF"/>
-                        <segue destination="BoF-0D-cly" kind="relationship" relationship="viewControllers" id="1Rq-td-bPB"/>
+                        <segue destination="k04-0a-ifw" kind="relationship" relationship="viewControllers" id="b5c-o4-rdm"/>
+                        <segue destination="BoF-0D-cly" kind="relationship" relationship="viewControllers" id="K9n-xj-nKx"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -130,6 +131,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kav-8G-OxN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="622" y="-311"/>
+        </scene>
+        <!--ActivityViewController-->
+        <scene sceneID="Ltu-p8-EDY">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ActivityViewController" id="k04-0a-ifw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="activity-icon" id="pHN-En-Okk"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DdN-P5-lno" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="624" y="-238"/>
         </scene>
         <!--Onboarding View Controller-->
         <scene sceneID="Lzv-W7-bJe">
@@ -240,6 +251,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="activity-icon" width="12" height="12"/>
         <image name="discover-icon" width="14" height="14"/>
         <image name="profile-icon" width="12" height="12"/>
         <image name="selected-profile" width="94" height="31"/>
