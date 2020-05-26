@@ -47,6 +47,13 @@
                                     <segue destination="gWH-a9-sdh" kind="embed" id="lfH-rE-AJW"/>
                                 </connections>
                             </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L9b-uS-FFA">
+                                <rect key="frame" x="0.0" y="189" width="414" height="624"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="AEL-JH-z61" kind="embed" id="NcC-xZ-XKh"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Ak1-UD-YCU"/>
@@ -54,6 +61,11 @@
                     <tabBarItem key="tabBarItem" title="" image="reward-icon" selectedImage="selected-reward" id="ELr-G7-bbH"/>
                     <navigationItem key="navigationItem" title="Rewards" id="zd4-DY-js2"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="allRewardsView" destination="ug2-Q6-BUQ" id="qhO-xZ-8ba"/>
+                        <outlet property="myRewardsView" destination="ug2-Q6-BUQ" id="E2I-fy-zGp"/>
+                        <outlet property="topBar" destination="t65-JZ-SIs" id="QLe-UB-ieV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fIM-aB-I4d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -90,6 +102,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e6V-I6-FSe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-146.37681159420291" y="908.70535714285711"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wIN-8C-DH9">
+            <objects>
+                <viewController id="AEL-JH-z61" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="B04-ty-S2N">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="624"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="kro-vI-Lf8"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Faz-wd-9PQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="626" y="909"/>
         </scene>
     </scenes>
     <resources>

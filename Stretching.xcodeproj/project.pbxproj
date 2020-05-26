@@ -59,7 +59,9 @@
 		4FCDFC16247499E300BD5DB3 /* GreetingsExploreCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FCDFC14247499E300BD5DB3 /* GreetingsExploreCollectionViewCell.xib */; };
 		4FCDFC192474FDCE00BD5DB3 /* GuidePageStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FCDFC182474FDCE00BD5DB3 /* GuidePageStoryboard.storyboard */; };
 		4FCDFC1B2474FDD500BD5DB3 /* GuidePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCDFC1A2474FDD500BD5DB3 /* GuidePageViewController.swift */; };
-		8D0C399A247D99060012D254 /* MyRewardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0C3999247D99060012D254 /* MyRewardViewController.swift */; };
+		8D0C39A6247DA4000012D254 /* MyRewardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D0C39A3247DA4000012D254 /* MyRewardCollectionViewCell.xib */; };
+		8D0C39A7247DA4000012D254 /* MyRewardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0C39A4247DA4000012D254 /* MyRewardCollectionViewCell.swift */; };
+		8D0C39A8247DA4000012D254 /* MyRewardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0C39A5247DA4000012D254 /* MyRewardViewController.swift */; };
 		8D24D1AA24686A0A00C9B548 /* Montserrat-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D24D19724686A0A00C9B548 /* Montserrat-LightItalic.ttf */; };
 		8D24D1AB24686A0A00C9B548 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D24D19824686A0A00C9B548 /* Montserrat-Medium.ttf */; };
 		8D24D1AC24686A0A00C9B548 /* Montserrat-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D24D19924686A0A00C9B548 /* Montserrat-BoldItalic.ttf */; };
@@ -82,8 +84,6 @@
 		8DDC28672465487200DD76C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DDC28652465487200DD76C1 /* Main.storyboard */; };
 		8DDC28682465487200DD76C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DDC28662465487200DD76C1 /* LaunchScreen.storyboard */; };
 		EC413FA324725F86000C5B29 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC413FA224725F86000C5B29 /* ProfileViewController.swift */; };
-		EC413FB824728950000C5B29 /* RewardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC413FB624728950000C5B29 /* RewardViewCell.swift */; };
-		EC413FB924728950000C5B29 /* RewardViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC413FB724728950000C5B29 /* RewardViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -142,7 +142,9 @@
 		4FCDFC14247499E300BD5DB3 /* GreetingsExploreCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GreetingsExploreCollectionViewCell.xib; sourceTree = "<group>"; };
 		4FCDFC182474FDCE00BD5DB3 /* GuidePageStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GuidePageStoryboard.storyboard; sourceTree = "<group>"; };
 		4FCDFC1A2474FDD500BD5DB3 /* GuidePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuidePageViewController.swift; sourceTree = "<group>"; };
-		8D0C3999247D99060012D254 /* MyRewardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyRewardViewController.swift; path = CollectionCell/MyRewardViewController.swift; sourceTree = SOURCE_ROOT; };
+		8D0C39A3247DA4000012D254 /* MyRewardCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyRewardCollectionViewCell.xib; sourceTree = "<group>"; };
+		8D0C39A4247DA4000012D254 /* MyRewardCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRewardCollectionViewCell.swift; sourceTree = "<group>"; };
+		8D0C39A5247DA4000012D254 /* MyRewardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRewardViewController.swift; sourceTree = "<group>"; };
 		8D24D19724686A0A00C9B548 /* Montserrat-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-LightItalic.ttf"; sourceTree = "<group>"; };
 		8D24D19824686A0A00C9B548 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
 		8D24D19924686A0A00C9B548 /* Montserrat-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BoldItalic.ttf"; sourceTree = "<group>"; };
@@ -165,8 +167,6 @@
 		8DDC28652465487200DD76C1 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8DDC28662465487200DD76C1 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC413FA224725F86000C5B29 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		EC413FB624728950000C5B29 /* RewardViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardViewCell.swift; sourceTree = "<group>"; };
-		EC413FB724728950000C5B29 /* RewardViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RewardViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -460,6 +460,7 @@
 		4FC820D3247D4959006DAFB4 /* OwnedScene */ = {
 			isa = PBXGroup;
 			children = (
+				8D0C39A1247DA4000012D254 /* CollectionCell */,
 			);
 			path = OwnedScene;
 			sourceTree = "<group>";
@@ -467,17 +468,8 @@
 		4FC820D4247D496D006DAFB4 /* AllScene */ = {
 			isa = PBXGroup;
 			children = (
-				4FC820D9247D49D0006DAFB4 /* CollectionCell */,
 			);
 			path = AllScene;
-			sourceTree = "<group>";
-		};
-		4FC820D9247D49D0006DAFB4 /* CollectionCell */ = {
-			isa = PBXGroup;
-			children = (
-				8D0C3999247D99060012D254 /* MyRewardViewController.swift */,
-			);
-			path = CollectionCell;
 			sourceTree = "<group>";
 		};
 		4FC820DC247D8644006DAFB4 /* Sounds */ = {
@@ -583,6 +575,24 @@
 			path = GuideScene;
 			sourceTree = "<group>";
 		};
+		8D0C39A1247DA4000012D254 /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				8D0C39A2247DA4000012D254 /* MyReward */,
+				8D0C39A5247DA4000012D254 /* MyRewardViewController.swift */,
+			);
+			path = CollectionCell;
+			sourceTree = "<group>";
+		};
+		8D0C39A2247DA4000012D254 /* MyReward */ = {
+			isa = PBXGroup;
+			children = (
+				8D0C39A3247DA4000012D254 /* MyRewardCollectionViewCell.xib */,
+				8D0C39A4247DA4000012D254 /* MyRewardCollectionViewCell.swift */,
+			);
+			path = MyReward;
+			sourceTree = "<group>";
+		};
 		8D24D19624686A0A00C9B548 /* Montserrat */ = {
 			isa = PBXGroup;
 			children = (
@@ -667,6 +677,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D24D1B624686A0A00C9B548 /* Montserrat-ExtraBold.ttf in Resources */,
+				8D0C39A6247DA4000012D254 /* MyRewardCollectionViewCell.xib in Resources */,
 				8DDC28672465487200DD76C1 /* Main.storyboard in Resources */,
 				4FC820D6247D497D006DAFB4 /* RewardViewController.storyboard in Resources */,
 				8D24D1B324686A0A00C9B548 /* Montserrat-BlackItalic.ttf in Resources */,
@@ -727,7 +738,7 @@
 				4FCDFC0724743F9800BD5DB3 /* GuideStretch+DAOMapping.swift in Sources */,
 				4FC820AF247BFCD9006DAFB4 /* KeychainStorage.swift in Sources */,
 				4FC8204224792279006DAFB4 /* DashboardViewController.swift in Sources */,
-				8D0C399A247D99060012D254 /* MyRewardViewController.swift in Sources */,
+				8D0C39A8247DA4000012D254 /* MyRewardViewController.swift in Sources */,
 				4FC820B2247D0491006DAFB4 /* TermsConditionsViewController.swift in Sources */,
 				4FC820D0247D3B9B006DAFB4 /* WeeklyActivityCollectionViewCell.swift in Sources */,
 				EC413FA324725F86000C5B29 /* ProfileViewController.swift in Sources */,
@@ -746,6 +757,7 @@
 				4FC8203B24791D50006DAFB4 /* SignOutProfileCollectionViewCell.swift in Sources */,
 				4FCDFC0B2474900000BD5DB3 /* DefaultHeaderExploreCollectionReusableView.swift in Sources */,
 				4FCDFBEA2474084800BD5DB3 /* ExploreViewController.swift in Sources */,
+				8D0C39A7247DA4000012D254 /* MyRewardCollectionViewCell.swift in Sources */,
 				4FC820C2247D3B3F006DAFB4 /* RecentActivityViewController.swift in Sources */,
 				4FC8202224790CCB006DAFB4 /* FilterPracticeCollectionViewCell.swift in Sources */,
 				4FBC0FC724653E930052DB8A /* SceneDelegate.swift in Sources */,

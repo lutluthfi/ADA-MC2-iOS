@@ -22,7 +22,7 @@ extension MyRewardViewController {
     class CollectionView {
         static var myRewardCollectionViewUINib: UINib = {
             return .init(
-                nibName: RewardViewCell.identifier,
+                nibName: MyRewardCollectionViewCell.identifier,
                 bundle: nil
             )
         }()
@@ -49,7 +49,7 @@ class MyRewardViewController: UIViewController {
         self.collectionView.delegate = self
         self.collectionView.register(
             CollectionView.myRewardCollectionViewUINib,
-            forCellWithReuseIdentifier: RewardViewCell.identifier
+            forCellWithReuseIdentifier: MyRewardCollectionViewCell.identifier
         )
     }
 
@@ -69,7 +69,7 @@ extension MyRewardViewController: UICollectionViewDataSource, UICollectionViewDe
         sizeForItemAt indexPath: IndexPath
     ) -> CGSize {
         let width = collectionView.frame.width - 32
-        let height = RewardViewCell.height
+        let height = MyRewardCollectionViewCell.height
         return .init(width: width, height: height)
     }
     
@@ -77,11 +77,11 @@ extension MyRewardViewController: UICollectionViewDataSource, UICollectionViewDe
         _ collectionView: UICollectionView,
         cellForItemAt indexPath: IndexPath
     ) -> UICollectionViewCell {
-        let identifier = RecentActivityCollectionViewCell.identifier
+        let identifier = MyRewardCollectionViewCell.identifier
         let reusableCell = collectionView.dequeueReusableCell(
             withReuseIdentifier: identifier,
             for: indexPath
-        ) as? RewardViewCell
+        ) as? MyRewardCollectionViewCell
         guard let cell = reusableCell else { fatalError() }
         let reward = self.displayedMyRewards[indexPath.row]
         cell.fill(with: reward.titleReward, image: reward.imageReward)
