@@ -67,6 +67,7 @@ class ProfileViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
+    weak var delegate: DashboardViewControllerDelegate?
     private var displayedAccount: ProfileViewController.CollectionView.Account?
     private let displayedGeneralItems: [String] = [
         "Terms & Conditions",
@@ -320,5 +321,23 @@ extension ProfileViewController: UICollectionViewDataSource, UICollectionViewDel
         _ collectionView: UICollectionView,
         didSelectItemAt indexPath: IndexPath
     ) {
+        let section = indexPath.section
+        let row = indexPath.row
+        switch section {
+        case CollectionView.generalSection:
+            switch self.displayedGeneralItems[row] {
+            case "Terms & Conditions":
+                self.delegate?.showTermsConditionsScene()
+                break
+            case "Privacy Policy":
+                self.delegate?.showPrivacyPolicyScene()
+                break
+            default:
+                break
+            }
+            break
+        default:
+            break
+        }
     }
 }

@@ -26,6 +26,10 @@
 		4FC82048247924BA006DAFB4 /* HeaderCommonProfileCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FC82046247924BA006DAFB4 /* HeaderCommonProfileCollectionReusableView.xib */; };
 		4FC8204C247AC428006DAFB4 /* SignInProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC8204B247AC428006DAFB4 /* SignInProfileCollectionViewCell.swift */; };
 		4FC820AF247BFCD9006DAFB4 /* KeychainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC820AE247BFCD8006DAFB4 /* KeychainStorage.swift */; };
+		4FC820B2247D0491006DAFB4 /* TermsConditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC820B1247D0491006DAFB4 /* TermsConditionsViewController.swift */; };
+		4FC820B4247D0F21006DAFB4 /* TermsConditionsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FC820B3247D0F21006DAFB4 /* TermsConditionsViewController.storyboard */; };
+		4FC820B7247D1800006DAFB4 /* PrivacyPolicyViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FC820B6247D1800006DAFB4 /* PrivacyPolicyViewController.storyboard */; };
+		4FC820B9247D181D006DAFB4 /* PrivacyPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC820B8247D181D006DAFB4 /* PrivacyPolicyViewController.swift */; };
 		4FCDFBA32472732400BD5DB3 /* StretchingAssetKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCDFBA22472732400BD5DB3 /* StretchingAssetKit.swift */; };
 		4FCDFBEA2474084800BD5DB3 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCDFBE92474084700BD5DB3 /* ExploreViewController.swift */; };
 		4FCDFBEC2474085300BD5DB3 /* ExploreViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FCDFBEB2474085300BD5DB3 /* ExploreViewController.storyboard */; };
@@ -93,6 +97,10 @@
 		4FC820492479FD52006DAFB4 /* Stretching.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Stretching.entitlements; sourceTree = "<group>"; };
 		4FC8204B247AC428006DAFB4 /* SignInProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInProfileCollectionViewCell.swift; sourceTree = "<group>"; };
 		4FC820AE247BFCD8006DAFB4 /* KeychainStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStorage.swift; sourceTree = "<group>"; };
+		4FC820B1247D0491006DAFB4 /* TermsConditionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsConditionsViewController.swift; sourceTree = "<group>"; };
+		4FC820B3247D0F21006DAFB4 /* TermsConditionsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TermsConditionsViewController.storyboard; sourceTree = "<group>"; };
+		4FC820B6247D1800006DAFB4 /* PrivacyPolicyViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PrivacyPolicyViewController.storyboard; sourceTree = "<group>"; };
+		4FC820B8247D181D006DAFB4 /* PrivacyPolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyViewController.swift; sourceTree = "<group>"; };
 		4FCDFBA22472732400BD5DB3 /* StretchingAssetKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchingAssetKit.swift; sourceTree = "<group>"; };
 		4FCDFBE92474084700BD5DB3 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		4FCDFBEB2474085300BD5DB3 /* ExploreViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ExploreViewController.storyboard; sourceTree = "<group>"; };
@@ -196,8 +204,10 @@
 				4FCDFBE82474074E00BD5DB3 /* ExploreScene */,
 				4FCDFE2F24766B8D00BD5DB3 /* GuideScene */,
 				4FCDFBED247408A400BD5DB3 /* PracticeScene */,
+				4FC820B5247D17E9006DAFB4 /* PrivacyPolicyScene */,
 				4FC8203024791B5E006DAFB4 /* ProfileScene */,
 				EC413FB5247288F4000C5B29 /* RewardCell */,
+				4FC820B0247D0465006DAFB4 /* Terms&ConditionsScene */,
 				4FCDFBA12472731200BD5DB3 /* Utils */,
 			);
 			path = Presentation;
@@ -327,6 +337,24 @@
 				4FC820AE247BFCD8006DAFB4 /* KeychainStorage.swift */,
 			);
 			path = KeychainStorage;
+			sourceTree = "<group>";
+		};
+		4FC820B0247D0465006DAFB4 /* Terms&ConditionsScene */ = {
+			isa = PBXGroup;
+			children = (
+				4FC820B1247D0491006DAFB4 /* TermsConditionsViewController.swift */,
+				4FC820B3247D0F21006DAFB4 /* TermsConditionsViewController.storyboard */,
+			);
+			path = "Terms&ConditionsScene";
+			sourceTree = "<group>";
+		};
+		4FC820B5247D17E9006DAFB4 /* PrivacyPolicyScene */ = {
+			isa = PBXGroup;
+			children = (
+				4FC820B6247D1800006DAFB4 /* PrivacyPolicyViewController.storyboard */,
+				4FC820B8247D181D006DAFB4 /* PrivacyPolicyViewController.swift */,
+			);
+			path = PrivacyPolicyScene;
 			sourceTree = "<group>";
 		};
 		4FCDFBA12472731200BD5DB3 /* Utils */ = {
@@ -529,6 +557,7 @@
 				8D24D1AD24686A0A00C9B548 /* Montserrat-Light.ttf in Resources */,
 				8D24D1B924686A0A00C9B548 /* Montserrat-Regular.ttf in Resources */,
 				4FC8203824791D44006DAFB4 /* CommonProfileCollectionViewCell.xib in Resources */,
+				4FC820B4247D0F21006DAFB4 /* TermsConditionsViewController.storyboard in Resources */,
 				4FCDFC16247499E300BD5DB3 /* GreetingsExploreCollectionViewCell.xib in Resources */,
 				EC413FB924728950000C5B29 /* RewardViewCell.xib in Resources */,
 				8D24D1AE24686A0A00C9B548 /* Montserrat-ThinItalic.ttf in Resources */,
@@ -545,6 +574,7 @@
 				4FCDFBEF247408E700BD5DB3 /* PracticeViewController.storyboard in Resources */,
 				8D24D1B124686A0A00C9B548 /* Montserrat-Bold.ttf in Resources */,
 				4FCDFC192474FDCE00BD5DB3 /* GuidePageStoryboard.storyboard in Resources */,
+				4FC820B7247D1800006DAFB4 /* PrivacyPolicyViewController.storyboard in Resources */,
 				4FC82048247924BA006DAFB4 /* HeaderCommonProfileCollectionReusableView.xib in Resources */,
 				8D24D1AB24686A0A00C9B548 /* Montserrat-Medium.ttf in Resources */,
 				4FBC0FD324653E940052DB8A /* Assets.xcassets in Resources */,
@@ -570,9 +600,11 @@
 				4FCDFC0724743F9800BD5DB3 /* GuideStretch+DAOMapping.swift in Sources */,
 				4FC820AF247BFCD9006DAFB4 /* KeychainStorage.swift in Sources */,
 				4FC8204224792279006DAFB4 /* DashboardViewController.swift in Sources */,
+				4FC820B2247D0491006DAFB4 /* TermsConditionsViewController.swift in Sources */,
 				EC413FA324725F86000C5B29 /* ProfileViewController.swift in Sources */,
 				4FC8202C247913E3006DAFB4 /* ScaledCollectionFlowLayout.swift in Sources */,
 				4FCDFBFA2474317200BD5DB3 /* RecommendStretchExploreCollectionViewCell.swift in Sources */,
+				4FC820B9247D181D006DAFB4 /* PrivacyPolicyViewController.swift in Sources */,
 				4FBC0FC524653E930052DB8A /* AppDelegate.swift in Sources */,
 				4FCDFC03247439B600BD5DB3 /* Stretch+DAOMapping.swift in Sources */,
 				4FC8202F247918C2006DAFB4 /* String+Extension.swift in Sources */,
