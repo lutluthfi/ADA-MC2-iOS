@@ -63,6 +63,13 @@ class GuidePageViewController: UIViewController, UIGestureRecognizerDelegate {
         self.navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
+    @IBAction func onStartButtonTouchedUpInside(_ sender: UIButton) {
+        let identifier = String(describing: PracticeViewController.self)
+        let storyboard = UIStoryboard(name: identifier, bundle: nil)
+        let viewController = storyboard.instantiateViewController(identifier: identifier)
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
     @objc func onChevronLeftBarButtonItemTapped(_ sender: UIBarButtonItem) {
         self.navigationController?.popViewController(animated: true)
     }
