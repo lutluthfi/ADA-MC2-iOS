@@ -30,6 +30,16 @@
 		4FC820B4247D0F21006DAFB4 /* TermsConditionsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FC820B3247D0F21006DAFB4 /* TermsConditionsViewController.storyboard */; };
 		4FC820B7247D1800006DAFB4 /* PrivacyPolicyViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FC820B6247D1800006DAFB4 /* PrivacyPolicyViewController.storyboard */; };
 		4FC820B9247D181D006DAFB4 /* PrivacyPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC820B8247D181D006DAFB4 /* PrivacyPolicyViewController.swift */; };
+		4FC820BC247D1E14006DAFB4 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC820BB247D1E14006DAFB4 /* ActivityViewController.swift */; };
+		4FC820BE247D1E1F006DAFB4 /* ActivityViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FC820BD247D1E1F006DAFB4 /* ActivityViewController.storyboard */; };
+		4FC820C2247D3B3F006DAFB4 /* RecentActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC820C1247D3B3F006DAFB4 /* RecentActivityViewController.swift */; };
+		4FC820C4247D3B49006DAFB4 /* WeeklyActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC820C3247D3B49006DAFB4 /* WeeklyActivityViewController.swift */; };
+		4FC820CA247D3B84006DAFB4 /* RecentActivityCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC820C8247D3B84006DAFB4 /* RecentActivityCollectionViewCell.swift */; };
+		4FC820CB247D3B84006DAFB4 /* RecentActivityCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FC820C9247D3B84006DAFB4 /* RecentActivityCollectionViewCell.xib */; };
+		4FC820D0247D3B9B006DAFB4 /* WeeklyActivityCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC820CE247D3B9B006DAFB4 /* WeeklyActivityCollectionViewCell.swift */; };
+		4FC820D1247D3B9B006DAFB4 /* WeeklyActivityCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FC820CF247D3B9B006DAFB4 /* WeeklyActivityCollectionViewCell.xib */; };
+		4FC820D6247D497D006DAFB4 /* RewardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FC820D5247D497D006DAFB4 /* RewardViewController.storyboard */; };
+		4FC820D8247D498D006DAFB4 /* RewardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC820D7247D498D006DAFB4 /* RewardViewController.swift */; };
 		4FCDFBA32472732400BD5DB3 /* StretchingAssetKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCDFBA22472732400BD5DB3 /* StretchingAssetKit.swift */; };
 		4FCDFBEA2474084800BD5DB3 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCDFBE92474084700BD5DB3 /* ExploreViewController.swift */; };
 		4FCDFBEC2474085300BD5DB3 /* ExploreViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FCDFBEB2474085300BD5DB3 /* ExploreViewController.storyboard */; };
@@ -101,6 +111,16 @@
 		4FC820B3247D0F21006DAFB4 /* TermsConditionsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TermsConditionsViewController.storyboard; sourceTree = "<group>"; };
 		4FC820B6247D1800006DAFB4 /* PrivacyPolicyViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PrivacyPolicyViewController.storyboard; sourceTree = "<group>"; };
 		4FC820B8247D181D006DAFB4 /* PrivacyPolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyViewController.swift; sourceTree = "<group>"; };
+		4FC820BB247D1E14006DAFB4 /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		4FC820BD247D1E1F006DAFB4 /* ActivityViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ActivityViewController.storyboard; sourceTree = "<group>"; };
+		4FC820C1247D3B3F006DAFB4 /* RecentActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentActivityViewController.swift; sourceTree = "<group>"; };
+		4FC820C3247D3B49006DAFB4 /* WeeklyActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyActivityViewController.swift; sourceTree = "<group>"; };
+		4FC820C8247D3B84006DAFB4 /* RecentActivityCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentActivityCollectionViewCell.swift; sourceTree = "<group>"; };
+		4FC820C9247D3B84006DAFB4 /* RecentActivityCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecentActivityCollectionViewCell.xib; sourceTree = "<group>"; };
+		4FC820CE247D3B9B006DAFB4 /* WeeklyActivityCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyActivityCollectionViewCell.swift; sourceTree = "<group>"; };
+		4FC820CF247D3B9B006DAFB4 /* WeeklyActivityCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeeklyActivityCollectionViewCell.xib; sourceTree = "<group>"; };
+		4FC820D5247D497D006DAFB4 /* RewardViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RewardViewController.storyboard; sourceTree = "<group>"; };
+		4FC820D7247D498D006DAFB4 /* RewardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardViewController.swift; sourceTree = "<group>"; };
 		4FCDFBA22472732400BD5DB3 /* StretchingAssetKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchingAssetKit.swift; sourceTree = "<group>"; };
 		4FCDFBE92474084700BD5DB3 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		4FCDFBEB2474085300BD5DB3 /* ExploreViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ExploreViewController.storyboard; sourceTree = "<group>"; };
@@ -201,12 +221,14 @@
 				4FC8204124792279006DAFB4 /* DashboardViewController.swift */,
 				8D24D1BD24686E8C00C9B548 /* OnboardingViewController.swift */,
 				EC413FB124728743000C5B29 /* RewardViewController.swift */,
+				4FC820BA247D1DC9006DAFB4 /* ActivityScene */,
 				4FCDFBE82474074E00BD5DB3 /* ExploreScene */,
 				4FCDFE2F24766B8D00BD5DB3 /* GuideScene */,
 				4FCDFBED247408A400BD5DB3 /* PracticeScene */,
 				4FC820B5247D17E9006DAFB4 /* PrivacyPolicyScene */,
 				4FC8203024791B5E006DAFB4 /* ProfileScene */,
 				EC413FB5247288F4000C5B29 /* RewardCell */,
+				4FC820D2247D4945006DAFB4 /* RewardScene */,
 				4FC820B0247D0465006DAFB4 /* Terms&ConditionsScene */,
 				4FCDFBA12472731200BD5DB3 /* Utils */,
 			);
@@ -355,6 +377,102 @@
 				4FC820B8247D181D006DAFB4 /* PrivacyPolicyViewController.swift */,
 			);
 			path = PrivacyPolicyScene;
+			sourceTree = "<group>";
+		};
+		4FC820BA247D1DC9006DAFB4 /* ActivityScene */ = {
+			isa = PBXGroup;
+			children = (
+				4FC820BD247D1E1F006DAFB4 /* ActivityViewController.storyboard */,
+				4FC820BB247D1E14006DAFB4 /* ActivityViewController.swift */,
+				4FC820BF247D3B22006DAFB4 /* RecentScene */,
+				4FC820C0247D3B2D006DAFB4 /* WeeklyScene */,
+			);
+			path = ActivityScene;
+			sourceTree = "<group>";
+		};
+		4FC820BF247D3B22006DAFB4 /* RecentScene */ = {
+			isa = PBXGroup;
+			children = (
+				4FC820C6247D3B6C006DAFB4 /* CollectionCell */,
+				4FC820C1247D3B3F006DAFB4 /* RecentActivityViewController.swift */,
+			);
+			path = RecentScene;
+			sourceTree = "<group>";
+		};
+		4FC820C0247D3B2D006DAFB4 /* WeeklyScene */ = {
+			isa = PBXGroup;
+			children = (
+				4FC820CC247D3B88006DAFB4 /* CollectionCell */,
+				4FC820C3247D3B49006DAFB4 /* WeeklyActivityViewController.swift */,
+			);
+			path = WeeklyScene;
+			sourceTree = "<group>";
+		};
+		4FC820C6247D3B6C006DAFB4 /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				4FC820C7247D3B71006DAFB4 /* Recent */,
+			);
+			path = CollectionCell;
+			sourceTree = "<group>";
+		};
+		4FC820C7247D3B71006DAFB4 /* Recent */ = {
+			isa = PBXGroup;
+			children = (
+				4FC820C8247D3B84006DAFB4 /* RecentActivityCollectionViewCell.swift */,
+				4FC820C9247D3B84006DAFB4 /* RecentActivityCollectionViewCell.xib */,
+			);
+			path = Recent;
+			sourceTree = "<group>";
+		};
+		4FC820CC247D3B88006DAFB4 /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				4FC820CD247D3B8E006DAFB4 /* Weekly */,
+			);
+			path = CollectionCell;
+			sourceTree = "<group>";
+		};
+		4FC820CD247D3B8E006DAFB4 /* Weekly */ = {
+			isa = PBXGroup;
+			children = (
+				4FC820CE247D3B9B006DAFB4 /* WeeklyActivityCollectionViewCell.swift */,
+				4FC820CF247D3B9B006DAFB4 /* WeeklyActivityCollectionViewCell.xib */,
+			);
+			path = Weekly;
+			sourceTree = "<group>";
+		};
+		4FC820D2247D4945006DAFB4 /* RewardScene */ = {
+			isa = PBXGroup;
+			children = (
+				4FC820D4247D496D006DAFB4 /* AllScene */,
+				4FC820D3247D4959006DAFB4 /* OwnedScene */,
+				4FC820D5247D497D006DAFB4 /* RewardViewController.storyboard */,
+				4FC820D7247D498D006DAFB4 /* RewardViewController.swift */,
+			);
+			path = RewardScene;
+			sourceTree = "<group>";
+		};
+		4FC820D3247D4959006DAFB4 /* OwnedScene */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OwnedScene;
+			sourceTree = "<group>";
+		};
+		4FC820D4247D496D006DAFB4 /* AllScene */ = {
+			isa = PBXGroup;
+			children = (
+				4FC820D9247D49D0006DAFB4 /* CollectionCell */,
+			);
+			path = AllScene;
+			sourceTree = "<group>";
+		};
+		4FC820D9247D49D0006DAFB4 /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CollectionCell;
 			sourceTree = "<group>";
 		};
 		4FCDFBA12472731200BD5DB3 /* Utils */ = {
@@ -546,6 +664,7 @@
 			files = (
 				8D24D1B624686A0A00C9B548 /* Montserrat-ExtraBold.ttf in Resources */,
 				8DDC28672465487200DD76C1 /* Main.storyboard in Resources */,
+				4FC820D6247D497D006DAFB4 /* RewardViewController.storyboard in Resources */,
 				8D24D1B324686A0A00C9B548 /* Montserrat-BlackItalic.ttf in Resources */,
 				4FC8204024791D5A006DAFB4 /* AccountProfileCollectionViewCell.xib in Resources */,
 				4FCDFC002474319700BD5DB3 /* TypeStretchExploreCollectionViewCell.xib in Resources */,
@@ -562,15 +681,18 @@
 				EC413FB924728950000C5B29 /* RewardViewCell.xib in Resources */,
 				8D24D1AE24686A0A00C9B548 /* Montserrat-ThinItalic.ttf in Resources */,
 				8D24D1AA24686A0A00C9B548 /* Montserrat-LightItalic.ttf in Resources */,
+				4FC820BE247D1E1F006DAFB4 /* ActivityViewController.storyboard in Resources */,
 				8D24D1BB24686A0A00C9B548 /* Montserrat-SemiBoldItalic.ttf in Resources */,
 				8D24D1B524686A0A00C9B548 /* Montserrat-ExtraLightItalic.ttf in Resources */,
 				4FCDFBFB2474317200BD5DB3 /* RecommendStretchExploreCollectionViewCell.xib in Resources */,
 				8D24D1B424686A0A00C9B548 /* Montserrat-SemiBold.ttf in Resources */,
+				4FC820D1247D3B9B006DAFB4 /* WeeklyActivityCollectionViewCell.xib in Resources */,
 				4FCDFC0C2474900000BD5DB3 /* DefaultHeaderExploreCollectionReusableView.xib in Resources */,
 				8D24D1B824686A0A00C9B548 /* Montserrat-Black.ttf in Resources */,
 				4FC8203C24791D50006DAFB4 /* SignOutProfileCollectionViewCell.xib in Resources */,
 				8D24D1B024686A0A00C9B548 /* Montserrat-Thin.ttf in Resources */,
 				4FCDFBEC2474085300BD5DB3 /* ExploreViewController.storyboard in Resources */,
+				4FC820CB247D3B84006DAFB4 /* RecentActivityCollectionViewCell.xib in Resources */,
 				4FCDFBEF247408E700BD5DB3 /* PracticeViewController.storyboard in Resources */,
 				8D24D1B124686A0A00C9B548 /* Montserrat-Bold.ttf in Resources */,
 				4FCDFC192474FDCE00BD5DB3 /* GuidePageStoryboard.storyboard in Resources */,
@@ -592,6 +714,7 @@
 			files = (
 				4FC8204C247AC428006DAFB4 /* SignInProfileCollectionViewCell.swift in Sources */,
 				EC413FB224728743000C5B29 /* RewardViewController.swift in Sources */,
+				4FC820C4247D3B49006DAFB4 /* WeeklyActivityViewController.swift in Sources */,
 				4FBC0FD124653E930052DB8A /* Stretching.xcdatamodeld in Sources */,
 				8D24D1BE24686E8C00C9B548 /* OnboardingViewController.swift in Sources */,
 				4FCDFBA32472732400BD5DB3 /* StretchingAssetKit.swift in Sources */,
@@ -601,8 +724,11 @@
 				4FC820AF247BFCD9006DAFB4 /* KeychainStorage.swift in Sources */,
 				4FC8204224792279006DAFB4 /* DashboardViewController.swift in Sources */,
 				4FC820B2247D0491006DAFB4 /* TermsConditionsViewController.swift in Sources */,
+				4FC820D0247D3B9B006DAFB4 /* WeeklyActivityCollectionViewCell.swift in Sources */,
 				EC413FA324725F86000C5B29 /* ProfileViewController.swift in Sources */,
 				4FC8202C247913E3006DAFB4 /* ScaledCollectionFlowLayout.swift in Sources */,
+				4FC820D8247D498D006DAFB4 /* RewardViewController.swift in Sources */,
+				4FC820BC247D1E14006DAFB4 /* ActivityViewController.swift in Sources */,
 				4FCDFBFA2474317200BD5DB3 /* RecommendStretchExploreCollectionViewCell.swift in Sources */,
 				4FC820B9247D181D006DAFB4 /* PrivacyPolicyViewController.swift in Sources */,
 				4FBC0FC524653E930052DB8A /* AppDelegate.swift in Sources */,
@@ -615,10 +741,12 @@
 				4FC8203B24791D50006DAFB4 /* SignOutProfileCollectionViewCell.swift in Sources */,
 				4FCDFC0B2474900000BD5DB3 /* DefaultHeaderExploreCollectionReusableView.swift in Sources */,
 				4FCDFBEA2474084800BD5DB3 /* ExploreViewController.swift in Sources */,
+				4FC820C2247D3B3F006DAFB4 /* RecentActivityViewController.swift in Sources */,
 				4FC8202224790CCB006DAFB4 /* FilterPracticeCollectionViewCell.swift in Sources */,
 				4FBC0FC724653E930052DB8A /* SceneDelegate.swift in Sources */,
 				EC413FB824728950000C5B29 /* RewardViewCell.swift in Sources */,
 				4FC82047247924BA006DAFB4 /* HeaderCommonProfileCollectionReusableView.swift in Sources */,
+				4FC820CA247D3B84006DAFB4 /* RecentActivityCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
