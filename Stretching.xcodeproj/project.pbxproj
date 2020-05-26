@@ -7,6 +7,56 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40B05D7D247D0CA4000DE31E /* 04_l_Slowly_turn_left.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D4B247D0C86000DE31E /* 04_l_Slowly_turn_left.mp3 */; };
+		40B05D7E247D0CA4000DE31E /* WhatsApp Chat - edwin siswa apple.zip in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D4C247D0C86000DE31E /* WhatsApp Chat - edwin siswa apple.zip */; };
+		40B05D7F247D0CA4000DE31E /* 09_r_keep_down.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D4D247D0C86000DE31E /* 09_r_keep_down.mp3 */; };
+		40B05D80247D0CA4000DE31E /* Shared Folder Aris Yohanes Elean in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D4E247D0C87000DE31E /* Shared Folder Aris Yohanes Elean */; };
+		40B05D81247D0CA4000DE31E /* 07_r_slowly_tilt_right.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D4F247D0C87000DE31E /* 07_r_slowly_tilt_right.mp3 */; };
+		40B05D82247D0CA4000DE31E /* MC1 in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D50247D0C87000DE31E /* MC1 */; };
+		40B05D83247D0CA4000DE31E /* Rafika Alifia's Inteview Data in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D51247D0C87000DE31E /* Rafika Alifia's Inteview Data */; };
+		40B05D84247D0CA4000DE31E /* Shop Giants Starter.zip in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D52247D0C87000DE31E /* Shop Giants Starter.zip */; };
+		40B05D85247D0CA4000DE31E /* buku_mc1.docx in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D53247D0C87000DE31E /* buku_mc1.docx */; };
+		40B05D86247D0CA4000DE31E /* PHOTO-2020-04-14-14-18-08.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D54247D0C87000DE31E /* PHOTO-2020-04-14-14-18-08.jpg */; };
+		40B05D87247D0CA4000DE31E /* Untitled.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D55247D0C87000DE31E /* Untitled.rtf */; };
+		40B05D88247D0CA4000DE31E /* 339401-music-elements.zip in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D56247D0C87000DE31E /* 339401-music-elements.zip */; };
+		40B05D89247D0CA4000DE31E /* ZIn's Personal Mentee in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D57247D0C87000DE31E /* ZIn's Personal Mentee */; };
+		40B05D8A247D0CA4000DE31E /* 06_l_Slowly_tilt_left.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D58247D0C87000DE31E /* 06_l_Slowly_tilt_left.mp3 */; };
+		40B05D8B247D0CA4000DE31E /* Arif's Interviews Database in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D59247D0C87000DE31E /* Arif's Interviews Database */; };
+		40B05D8C247D0CA4000DE31E /* MC1 - Aris Yohanes Elean.pages in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D5A247D0C87000DE31E /* MC1 - Aris Yohanes Elean.pages */; };
+		40B05D8D247D0CA4000DE31E /* MC2-Team 11 in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D5B247D0C87000DE31E /* MC2-Team 11 */; };
+		40B05D8E247D0CA4000DE31E /* My First App in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D5C247D0C87000DE31E /* My First App */; };
+		40B05D8F247D0CA4000DE31E /* 05_r_Slowly_turn_right.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D5D247D0C88000DE31E /* 05_r_Slowly_turn_right.mp3 */; };
+		40B05D90247D0CA4000DE31E /* PracticeAutoLayoutStarter.zip in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D5E247D0C8A000DE31E /* PracticeAutoLayoutStarter.zip */; };
+		40B05D91247D0CA4000DE31E /* Steven Rafaelie Lukita's Interview Data in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D5F247D0C8C000DE31E /* Steven Rafaelie Lukita's Interview Data */; };
+		40B05D92247D0CA4000DE31E /* 08_l_keep_down.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D60247D0C8C000DE31E /* 08_l_keep_down.mp3 */; };
+		40B05D93247D0CA4000DE31E /* AutoLayoutStarter.zip in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D61247D0C8C000DE31E /* AutoLayoutStarter.zip */; };
+		40B05D94247D0CA4000DE31E /* kerangka_buku.docx in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D62247D0C8C000DE31E /* kerangka_buku.docx */; };
+		40B05D95247D0CA4000DE31E /* Image in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D63247D0C8C000DE31E /* Image */; };
+		40B05D96247D0CA4000DE31E /* Tech Support in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D64247D0C8C000DE31E /* Tech Support */; };
+		40B05D97247D0CA4000DE31E /* Aris Yohanes' Interviews Database in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D65247D0C8C000DE31E /* Aris Yohanes' Interviews Database */; };
+		40B05D98247D0CA4000DE31E /* My First App.zip in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D66247D0C8C000DE31E /* My First App.zip */; };
+		40B05D99247D0CA4000DE31E /* Shop Giants Starter in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D67247D0C8C000DE31E /* Shop Giants Starter */; };
+		40B05D9A247D0CA4000DE31E /* personal_folder in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D68247D0C8C000DE31E /* personal_folder */; };
+		40B05D9B247D0CA4000DE31E /* 03_slowly_back_to_center.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D69247D0C8C000DE31E /* 03_slowly_back_to_center.mp3 */; };
+		40B05D9C247D0CA4000DE31E /* Rafika's Voice Memos in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D6A247D0C8C000DE31E /* Rafika's Voice Memos */; };
+		40B05D9D247D0CA4000DE31E /* archiveVoice in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D6B247D0C8D000DE31E /* archiveVoice */; };
+		40B05D9E247D0CA4000DE31E /* WhatsApp Chat - edwin siswa apple in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D6C247D0C8D000DE31E /* WhatsApp Chat - edwin siswa apple */; };
+		40B05D9F247D0CA4000DE31E /* CanteenTableView-AV in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D6D247D0C8D000DE31E /* CanteenTableView-AV */; };
+		40B05DA0247D0CA4000DE31E /* Tilt left.m4a.reapeaks in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D6E247D0CA0000DE31E /* Tilt left.m4a.reapeaks */; };
+		40B05DA1247D0CA4000DE31E /* Turn right.m4a.reapeaks in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D6F247D0CA0000DE31E /* Turn right.m4a.reapeaks */; };
+		40B05DA2247D0CA4000DE31E /* chat_joel_discussion.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D70247D0CA0000DE31E /* chat_joel_discussion.rtf */; };
+		40B05DA3247D0CA4000DE31E /* Tilt right.m4a.reapeaks in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D71247D0CA0000DE31E /* Tilt right.m4a.reapeaks */; };
+		40B05DA4247D0CA4000DE31E /* tester in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D72247D0CA0000DE31E /* tester */; };
+		40B05DA5247D0CA4000DE31E /* Samuel Christian Interview Data in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D73247D0CA1000DE31E /* Samuel Christian Interview Data */; };
+		40B05DA6247D0CA4000DE31E /* 01_keep_head_up.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D74247D0CA1000DE31E /* 01_keep_head_up.mp3 */; };
+		40B05DA7247D0CA4000DE31E /* link_penting.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D75247D0CA1000DE31E /* link_penting.rtf */; };
+		40B05DA8247D0CA4000DE31E /* Screenshots in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D76247D0CA1000DE31E /* Screenshots */; };
+		40B05DA9247D0CA4000DE31E /* long_press_gesture_url.txt in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D77247D0CA1000DE31E /* long_press_gesture_url.txt */; };
+		40B05DAA247D0CA4000DE31E /* Arie May's Interviews Database in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D78247D0CA1000DE31E /* Arie May's Interviews Database */; };
+		40B05DAB247D0CA4000DE31E /* ADA-MC2-iOS in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D79247D0CA1000DE31E /* ADA-MC2-iOS */; };
+		40B05DAC247D0CA4000DE31E /* 02_hold_8_seconds.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D7A247D0CA1000DE31E /* 02_hold_8_seconds.mp3 */; };
+		40B05DAD247D0CA4000DE31E /* Get Started with Dropbox.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D7B247D0CA1000DE31E /* Get Started with Dropbox.pdf */; };
+		40B05DAE247D0CA4000DE31E /* ZoomInstaller.exe in Resources */ = {isa = PBXBuildFile; fileRef = 40B05D7C247D0CA4000DE31E /* ZoomInstaller.exe */; };
 		4FBC0FC524653E930052DB8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBC0FC424653E930052DB8A /* AppDelegate.swift */; };
 		4FBC0FC724653E930052DB8A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBC0FC624653E930052DB8A /* SceneDelegate.swift */; };
 		4FBC0FC924653E930052DB8A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBC0FC824653E930052DB8A /* FirstViewController.swift */; };
@@ -62,6 +112,56 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		40B05D4B247D0C86000DE31E /* 04_l_Slowly_turn_left.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 04_l_Slowly_turn_left.mp3; path = "../MC2-Team 11/Rafika's Voice Memos/04_l_Slowly_turn_left.mp3"; sourceTree = "<group>"; };
+		40B05D4C247D0C86000DE31E /* WhatsApp Chat - edwin siswa apple.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; name = "WhatsApp Chat - edwin siswa apple.zip"; path = "../WhatsApp Chat - edwin siswa apple.zip"; sourceTree = "<group>"; };
+		40B05D4D247D0C86000DE31E /* 09_r_keep_down.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 09_r_keep_down.mp3; path = "../MC2-Team 11/Rafika's Voice Memos/09_r_keep_down.mp3"; sourceTree = "<group>"; };
+		40B05D4E247D0C87000DE31E /* Shared Folder Aris Yohanes Elean */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Shared Folder Aris Yohanes Elean"; path = "../Shared Folder Aris Yohanes Elean"; sourceTree = "<group>"; };
+		40B05D4F247D0C87000DE31E /* 07_r_slowly_tilt_right.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 07_r_slowly_tilt_right.mp3; path = "../MC2-Team 11/Rafika's Voice Memos/07_r_slowly_tilt_right.mp3"; sourceTree = "<group>"; };
+		40B05D50247D0C87000DE31E /* MC1 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MC1; path = ../MC1; sourceTree = "<group>"; };
+		40B05D51247D0C87000DE31E /* Rafika Alifia's Inteview Data */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Rafika Alifia's Inteview Data"; path = "../MC2-Team 11/Rafika Alifia's Inteview Data"; sourceTree = "<group>"; };
+		40B05D52247D0C87000DE31E /* Shop Giants Starter.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; name = "Shop Giants Starter.zip"; path = "../Shop Giants Starter.zip"; sourceTree = "<group>"; };
+		40B05D53247D0C87000DE31E /* buku_mc1.docx */ = {isa = PBXFileReference; lastKnownFileType = file; name = buku_mc1.docx; path = ../buku_mc1.docx; sourceTree = "<group>"; };
+		40B05D54247D0C87000DE31E /* PHOTO-2020-04-14-14-18-08.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "PHOTO-2020-04-14-14-18-08.jpg"; path = "../PHOTO-2020-04-14-14-18-08.jpg"; sourceTree = "<group>"; };
+		40B05D55247D0C87000DE31E /* Untitled.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; name = Untitled.rtf; path = ../Untitled.rtf; sourceTree = "<group>"; };
+		40B05D56247D0C87000DE31E /* 339401-music-elements.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; name = "339401-music-elements.zip"; path = "../339401-music-elements.zip"; sourceTree = "<group>"; };
+		40B05D57247D0C87000DE31E /* ZIn's Personal Mentee */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "ZIn's Personal Mentee"; path = "../ZIn's Personal Mentee"; sourceTree = "<group>"; };
+		40B05D58247D0C87000DE31E /* 06_l_Slowly_tilt_left.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 06_l_Slowly_tilt_left.mp3; path = "../MC2-Team 11/Rafika's Voice Memos/06_l_Slowly_tilt_left.mp3"; sourceTree = "<group>"; };
+		40B05D59247D0C87000DE31E /* Arif's Interviews Database */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Arif's Interviews Database"; path = "../MC2-Team 11/Arif's Interviews Database"; sourceTree = "<group>"; };
+		40B05D5A247D0C87000DE31E /* MC1 - Aris Yohanes Elean.pages */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MC1 - Aris Yohanes Elean.pages"; path = "../MC1 - Aris Yohanes Elean.pages"; sourceTree = "<group>"; };
+		40B05D5B247D0C87000DE31E /* MC2-Team 11 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "MC2-Team 11"; path = "../MC2-Team 11"; sourceTree = "<group>"; };
+		40B05D5C247D0C87000DE31E /* My First App */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "My First App"; path = "../My First App"; sourceTree = "<group>"; };
+		40B05D5D247D0C88000DE31E /* 05_r_Slowly_turn_right.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 05_r_Slowly_turn_right.mp3; path = "../MC2-Team 11/Rafika's Voice Memos/05_r_Slowly_turn_right.mp3"; sourceTree = "<group>"; };
+		40B05D5E247D0C8A000DE31E /* PracticeAutoLayoutStarter.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; name = PracticeAutoLayoutStarter.zip; path = ../PracticeAutoLayoutStarter.zip; sourceTree = "<group>"; };
+		40B05D5F247D0C8C000DE31E /* Steven Rafaelie Lukita's Interview Data */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Steven Rafaelie Lukita's Interview Data"; path = "../MC2-Team 11/Steven Rafaelie Lukita's Interview Data"; sourceTree = "<group>"; };
+		40B05D60247D0C8C000DE31E /* 08_l_keep_down.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 08_l_keep_down.mp3; path = "../MC2-Team 11/Rafika's Voice Memos/08_l_keep_down.mp3"; sourceTree = "<group>"; };
+		40B05D61247D0C8C000DE31E /* AutoLayoutStarter.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; name = AutoLayoutStarter.zip; path = ../AutoLayoutStarter.zip; sourceTree = "<group>"; };
+		40B05D62247D0C8C000DE31E /* kerangka_buku.docx */ = {isa = PBXFileReference; lastKnownFileType = file; name = kerangka_buku.docx; path = ../kerangka_buku.docx; sourceTree = "<group>"; };
+		40B05D63247D0C8C000DE31E /* Image */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Image; path = ../Image; sourceTree = "<group>"; };
+		40B05D64247D0C8C000DE31E /* Tech Support */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Tech Support"; path = "../Tech Support"; sourceTree = "<group>"; };
+		40B05D65247D0C8C000DE31E /* Aris Yohanes' Interviews Database */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Aris Yohanes' Interviews Database"; path = "../MC2-Team 11/Aris Yohanes' Interviews Database"; sourceTree = "<group>"; };
+		40B05D66247D0C8C000DE31E /* My First App.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; name = "My First App.zip"; path = "../My First App.zip"; sourceTree = "<group>"; };
+		40B05D67247D0C8C000DE31E /* Shop Giants Starter */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Shop Giants Starter"; path = "../Shop Giants Starter"; sourceTree = "<group>"; };
+		40B05D68247D0C8C000DE31E /* personal_folder */ = {isa = PBXFileReference; lastKnownFileType = folder; name = personal_folder; path = ../personal_folder; sourceTree = "<group>"; };
+		40B05D69247D0C8C000DE31E /* 03_slowly_back_to_center.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 03_slowly_back_to_center.mp3; path = "../MC2-Team 11/Rafika's Voice Memos/03_slowly_back_to_center.mp3"; sourceTree = "<group>"; };
+		40B05D6A247D0C8C000DE31E /* Rafika's Voice Memos */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Rafika's Voice Memos"; path = "../MC2-Team 11/Rafika's Voice Memos"; sourceTree = "<group>"; };
+		40B05D6B247D0C8D000DE31E /* archiveVoice */ = {isa = PBXFileReference; lastKnownFileType = folder; name = archiveVoice; path = ../archiveVoice; sourceTree = "<group>"; };
+		40B05D6C247D0C8D000DE31E /* WhatsApp Chat - edwin siswa apple */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "WhatsApp Chat - edwin siswa apple"; path = "../WhatsApp Chat - edwin siswa apple"; sourceTree = "<group>"; };
+		40B05D6D247D0C8D000DE31E /* CanteenTableView-AV */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "CanteenTableView-AV"; path = "../CanteenTableView-AV"; sourceTree = "<group>"; };
+		40B05D6E247D0CA0000DE31E /* Tilt left.m4a.reapeaks */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Tilt left.m4a.reapeaks"; path = "../MC2-Team 11/Rafika's Voice Memos/Tilt left.m4a.reapeaks"; sourceTree = "<group>"; };
+		40B05D6F247D0CA0000DE31E /* Turn right.m4a.reapeaks */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Turn right.m4a.reapeaks"; path = "../MC2-Team 11/Rafika's Voice Memos/Turn right.m4a.reapeaks"; sourceTree = "<group>"; };
+		40B05D70247D0CA0000DE31E /* chat_joel_discussion.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; name = chat_joel_discussion.rtf; path = ../chat_joel_discussion.rtf; sourceTree = "<group>"; };
+		40B05D71247D0CA0000DE31E /* Tilt right.m4a.reapeaks */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Tilt right.m4a.reapeaks"; path = "../MC2-Team 11/Rafika's Voice Memos/Tilt right.m4a.reapeaks"; sourceTree = "<group>"; };
+		40B05D72247D0CA0000DE31E /* tester */ = {isa = PBXFileReference; lastKnownFileType = folder; name = tester; path = ../tester; sourceTree = "<group>"; };
+		40B05D73247D0CA1000DE31E /* Samuel Christian Interview Data */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Samuel Christian Interview Data"; path = "../MC2-Team 11/Samuel Christian Interview Data"; sourceTree = "<group>"; };
+		40B05D74247D0CA1000DE31E /* 01_keep_head_up.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 01_keep_head_up.mp3; path = "../MC2-Team 11/Rafika's Voice Memos/01_keep_head_up.mp3"; sourceTree = "<group>"; };
+		40B05D75247D0CA1000DE31E /* link_penting.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; name = link_penting.rtf; path = ../link_penting.rtf; sourceTree = "<group>"; };
+		40B05D76247D0CA1000DE31E /* Screenshots */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Screenshots; path = ../Screenshots; sourceTree = "<group>"; };
+		40B05D77247D0CA1000DE31E /* long_press_gesture_url.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = long_press_gesture_url.txt; path = ../long_press_gesture_url.txt; sourceTree = "<group>"; };
+		40B05D78247D0CA1000DE31E /* Arie May's Interviews Database */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Arie May's Interviews Database"; path = "../MC2-Team 11/Arie May's Interviews Database"; sourceTree = "<group>"; };
+		40B05D79247D0CA1000DE31E /* ADA-MC2-iOS */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "ADA-MC2-iOS"; sourceTree = "<group>"; };
+		40B05D7A247D0CA1000DE31E /* 02_hold_8_seconds.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 02_hold_8_seconds.mp3; path = "../MC2-Team 11/Rafika's Voice Memos/02_hold_8_seconds.mp3"; sourceTree = "<group>"; };
+		40B05D7B247D0CA1000DE31E /* Get Started with Dropbox.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Get Started with Dropbox.pdf"; path = "../Get Started with Dropbox.pdf"; sourceTree = "<group>"; };
+		40B05D7C247D0CA4000DE31E /* ZoomInstaller.exe */ = {isa = PBXFileReference; lastKnownFileType = file; name = ZoomInstaller.exe; path = ../ZoomInstaller.exe; sourceTree = "<group>"; };
 		4FBC0FC124653E930052DB8A /* Stretching.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stretching.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FBC0FC424653E930052DB8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FBC0FC624653E930052DB8A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +232,56 @@
 		4FBC0FB824653E930052DB8A = {
 			isa = PBXGroup;
 			children = (
+				40B05D74247D0CA1000DE31E /* 01_keep_head_up.mp3 */,
+				40B05D7A247D0CA1000DE31E /* 02_hold_8_seconds.mp3 */,
+				40B05D69247D0C8C000DE31E /* 03_slowly_back_to_center.mp3 */,
+				40B05D4B247D0C86000DE31E /* 04_l_Slowly_turn_left.mp3 */,
+				40B05D5D247D0C88000DE31E /* 05_r_Slowly_turn_right.mp3 */,
+				40B05D58247D0C87000DE31E /* 06_l_Slowly_tilt_left.mp3 */,
+				40B05D4F247D0C87000DE31E /* 07_r_slowly_tilt_right.mp3 */,
+				40B05D60247D0C8C000DE31E /* 08_l_keep_down.mp3 */,
+				40B05D4D247D0C86000DE31E /* 09_r_keep_down.mp3 */,
+				40B05D56247D0C87000DE31E /* 339401-music-elements.zip */,
+				40B05D79247D0CA1000DE31E /* ADA-MC2-iOS */,
+				40B05D6B247D0C8D000DE31E /* archiveVoice */,
+				40B05D78247D0CA1000DE31E /* Arie May's Interviews Database */,
+				40B05D59247D0C87000DE31E /* Arif's Interviews Database */,
+				40B05D65247D0C8C000DE31E /* Aris Yohanes' Interviews Database */,
+				40B05D61247D0C8C000DE31E /* AutoLayoutStarter.zip */,
+				40B05D53247D0C87000DE31E /* buku_mc1.docx */,
+				40B05D6D247D0C8D000DE31E /* CanteenTableView-AV */,
+				40B05D70247D0CA0000DE31E /* chat_joel_discussion.rtf */,
+				40B05D7B247D0CA1000DE31E /* Get Started with Dropbox.pdf */,
+				40B05D63247D0C8C000DE31E /* Image */,
+				40B05D62247D0C8C000DE31E /* kerangka_buku.docx */,
+				40B05D75247D0CA1000DE31E /* link_penting.rtf */,
+				40B05D77247D0CA1000DE31E /* long_press_gesture_url.txt */,
+				40B05D50247D0C87000DE31E /* MC1 */,
+				40B05D5A247D0C87000DE31E /* MC1 - Aris Yohanes Elean.pages */,
+				40B05D5B247D0C87000DE31E /* MC2-Team 11 */,
+				40B05D5C247D0C87000DE31E /* My First App */,
+				40B05D66247D0C8C000DE31E /* My First App.zip */,
+				40B05D68247D0C8C000DE31E /* personal_folder */,
+				40B05D54247D0C87000DE31E /* PHOTO-2020-04-14-14-18-08.jpg */,
+				40B05D5E247D0C8A000DE31E /* PracticeAutoLayoutStarter.zip */,
+				40B05D51247D0C87000DE31E /* Rafika Alifia's Inteview Data */,
+				40B05D6A247D0C8C000DE31E /* Rafika's Voice Memos */,
+				40B05D73247D0CA1000DE31E /* Samuel Christian Interview Data */,
+				40B05D76247D0CA1000DE31E /* Screenshots */,
+				40B05D4E247D0C87000DE31E /* Shared Folder Aris Yohanes Elean */,
+				40B05D67247D0C8C000DE31E /* Shop Giants Starter */,
+				40B05D52247D0C87000DE31E /* Shop Giants Starter.zip */,
+				40B05D5F247D0C8C000DE31E /* Steven Rafaelie Lukita's Interview Data */,
+				40B05D64247D0C8C000DE31E /* Tech Support */,
+				40B05D72247D0CA0000DE31E /* tester */,
+				40B05D6E247D0CA0000DE31E /* Tilt left.m4a.reapeaks */,
+				40B05D71247D0CA0000DE31E /* Tilt right.m4a.reapeaks */,
+				40B05D6F247D0CA0000DE31E /* Turn right.m4a.reapeaks */,
+				40B05D55247D0C87000DE31E /* Untitled.rtf */,
+				40B05D6C247D0C8D000DE31E /* WhatsApp Chat - edwin siswa apple */,
+				40B05D4C247D0C86000DE31E /* WhatsApp Chat - edwin siswa apple.zip */,
+				40B05D57247D0C87000DE31E /* ZIn's Personal Mentee */,
+				40B05D7C247D0CA4000DE31E /* ZoomInstaller.exe */,
 				4FBC0FC324653E930052DB8A /* Stretching */,
 				4FBC0FC224653E930052DB8A /* Products */,
 			);
@@ -391,36 +541,86 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40B05D85247D0CA4000DE31E /* buku_mc1.docx in Resources */,
+				40B05D87247D0CA4000DE31E /* Untitled.rtf in Resources */,
 				8D24D1B624686A0A00C9B548 /* Montserrat-ExtraBold.ttf in Resources */,
+				40B05D7E247D0CA4000DE31E /* WhatsApp Chat - edwin siswa apple.zip in Resources */,
+				40B05D7D247D0CA4000DE31E /* 04_l_Slowly_turn_left.mp3 in Resources */,
 				8DDC28672465487200DD76C1 /* Main.storyboard in Resources */,
 				EC413FA9247262E7000C5B29 /* SettingCell.xib in Resources */,
+				40B05D86247D0CA4000DE31E /* PHOTO-2020-04-14-14-18-08.jpg in Resources */,
 				8D24D1B324686A0A00C9B548 /* Montserrat-BlackItalic.ttf in Resources */,
 				4FCDFC002474319700BD5DB3 /* TypeStretchExploreCollectionViewCell.xib in Resources */,
+				40B05D88247D0CA4000DE31E /* 339401-music-elements.zip in Resources */,
 				8D24D1B224686A0A00C9B548 /* Montserrat-MediumItalic.ttf in Resources */,
+				40B05DA7247D0CA4000DE31E /* link_penting.rtf in Resources */,
 				8D24D1AC24686A0A00C9B548 /* Montserrat-BoldItalic.ttf in Resources */,
 				8D24D1BA24686A0A00C9B548 /* Montserrat-Italic.ttf in Resources */,
 				8D24D1BC24686A0A00C9B548 /* Montserrat-ExtraBoldItalic.ttf in Resources */,
 				8DDC28682465487200DD76C1 /* LaunchScreen.storyboard in Resources */,
+				40B05D80247D0CA4000DE31E /* Shared Folder Aris Yohanes Elean in Resources */,
 				8D24D1AD24686A0A00C9B548 /* Montserrat-Light.ttf in Resources */,
+				40B05DA8247D0CA4000DE31E /* Screenshots in Resources */,
+				40B05DA9247D0CA4000DE31E /* long_press_gesture_url.txt in Resources */,
+				40B05DA2247D0CA4000DE31E /* chat_joel_discussion.rtf in Resources */,
 				8D24D1B924686A0A00C9B548 /* Montserrat-Regular.ttf in Resources */,
+				40B05D8D247D0CA4000DE31E /* MC2-Team 11 in Resources */,
+				40B05D93247D0CA4000DE31E /* AutoLayoutStarter.zip in Resources */,
+				40B05D8F247D0CA4000DE31E /* 05_r_Slowly_turn_right.mp3 in Resources */,
+				40B05D82247D0CA4000DE31E /* MC1 in Resources */,
+				40B05D96247D0CA4000DE31E /* Tech Support in Resources */,
+				40B05DA0247D0CA4000DE31E /* Tilt left.m4a.reapeaks in Resources */,
 				4FCDFC16247499E300BD5DB3 /* GreetingsExploreCollectionViewCell.xib in Resources */,
+				40B05D7F247D0CA4000DE31E /* 09_r_keep_down.mp3 in Resources */,
+				40B05D92247D0CA4000DE31E /* 08_l_keep_down.mp3 in Resources */,
+				40B05DAB247D0CA4000DE31E /* ADA-MC2-iOS in Resources */,
+				40B05D9A247D0CA4000DE31E /* personal_folder in Resources */,
+				40B05D8E247D0CA4000DE31E /* My First App in Resources */,
 				EC413FB924728950000C5B29 /* RewardViewCell.xib in Resources */,
 				8D24D1AE24686A0A00C9B548 /* Montserrat-ThinItalic.ttf in Resources */,
+				40B05DAE247D0CA4000DE31E /* ZoomInstaller.exe in Resources */,
 				8D24D1AA24686A0A00C9B548 /* Montserrat-LightItalic.ttf in Resources */,
 				8D24D1BB24686A0A00C9B548 /* Montserrat-SemiBoldItalic.ttf in Resources */,
+				40B05D94247D0CA4000DE31E /* kerangka_buku.docx in Resources */,
+				40B05D9B247D0CA4000DE31E /* 03_slowly_back_to_center.mp3 in Resources */,
 				8D24D1B524686A0A00C9B548 /* Montserrat-ExtraLightItalic.ttf in Resources */,
+				40B05D9D247D0CA4000DE31E /* archiveVoice in Resources */,
+				40B05D84247D0CA4000DE31E /* Shop Giants Starter.zip in Resources */,
+				40B05DAC247D0CA4000DE31E /* 02_hold_8_seconds.mp3 in Resources */,
+				40B05DA3247D0CA4000DE31E /* Tilt right.m4a.reapeaks in Resources */,
+				40B05D9F247D0CA4000DE31E /* CanteenTableView-AV in Resources */,
 				4FCDFBFB2474317200BD5DB3 /* RecommendStretchExploreCollectionViewCell.xib in Resources */,
 				8D24D1B424686A0A00C9B548 /* Montserrat-SemiBold.ttf in Resources */,
+				40B05D9E247D0CA4000DE31E /* WhatsApp Chat - edwin siswa apple in Resources */,
 				4FCDFC0C2474900000BD5DB3 /* DefaultHeaderExploreCollectionReusableView.xib in Resources */,
 				8D24D1B824686A0A00C9B548 /* Montserrat-Black.ttf in Resources */,
 				8D24D1B024686A0A00C9B548 /* Montserrat-Thin.ttf in Resources */,
+				40B05DAD247D0CA4000DE31E /* Get Started with Dropbox.pdf in Resources */,
 				4FCDFBEC2474085300BD5DB3 /* ExploreViewController.storyboard in Resources */,
+				40B05D98247D0CA4000DE31E /* My First App.zip in Resources */,
+				40B05D9C247D0CA4000DE31E /* Rafika's Voice Memos in Resources */,
 				4FCDFBEF247408E700BD5DB3 /* PracticeViewController.storyboard in Resources */,
 				8D24D1B124686A0A00C9B548 /* Montserrat-Bold.ttf in Resources */,
+				40B05D8A247D0CA4000DE31E /* 06_l_Slowly_tilt_left.mp3 in Resources */,
+				40B05DAA247D0CA4000DE31E /* Arie May's Interviews Database in Resources */,
+				40B05D91247D0CA4000DE31E /* Steven Rafaelie Lukita's Interview Data in Resources */,
+				40B05D90247D0CA4000DE31E /* PracticeAutoLayoutStarter.zip in Resources */,
 				4FCDFC192474FDCE00BD5DB3 /* GuidePageStoryboard.storyboard in Resources */,
+				40B05DA4247D0CA4000DE31E /* tester in Resources */,
+				40B05D97247D0CA4000DE31E /* Aris Yohanes' Interviews Database in Resources */,
+				40B05D83247D0CA4000DE31E /* Rafika Alifia's Inteview Data in Resources */,
+				40B05D8C247D0CA4000DE31E /* MC1 - Aris Yohanes Elean.pages in Resources */,
+				40B05D95247D0CA4000DE31E /* Image in Resources */,
+				40B05D99247D0CA4000DE31E /* Shop Giants Starter in Resources */,
+				40B05DA6247D0CA4000DE31E /* 01_keep_head_up.mp3 in Resources */,
+				40B05DA1247D0CA4000DE31E /* Turn right.m4a.reapeaks in Resources */,
 				8D24D1AB24686A0A00C9B548 /* Montserrat-Medium.ttf in Resources */,
 				4FBC0FD324653E940052DB8A /* Assets.xcassets in Resources */,
+				40B05DA5247D0CA4000DE31E /* Samuel Christian Interview Data in Resources */,
 				8D24D1AF24686A0A00C9B548 /* Montserrat-ExtraLight.ttf in Resources */,
+				40B05D81247D0CA4000DE31E /* 07_r_slowly_tilt_right.mp3 in Resources */,
+				40B05D8B247D0CA4000DE31E /* Arif's Interviews Database in Resources */,
+				40B05D89247D0CA4000DE31E /* ZIn's Personal Mentee in Resources */,
 				EC413FAE24726781000C5B29 /* ProfileCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
