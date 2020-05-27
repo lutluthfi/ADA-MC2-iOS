@@ -29,11 +29,13 @@ class TermsConditionsViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.title = "Terms & Conditions"
+        self.navigationItem.leftBarButtonItems = [self.backBarButtonItem]
+        self.navigationController?.navigationBar.tintColor = .black
         self.navigationController?.view.backgroundColor = .white // removing black flashes
     }
     
     @objc private func onBackBarButtonItemTapped(_ sender: UIBarButtonItem) {
-        
+        self.navigationController?.popViewController(animated: true)
     }
     
     private func setupViewDidLoad() {
