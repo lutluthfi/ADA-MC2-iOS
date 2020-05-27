@@ -37,7 +37,7 @@ class DashboardViewController: UITabBarController {
         let exploreViewController = (viewControllers[0] as? UINavigationController)?
             .viewControllers
             .first as? ExploreViewController
-        let profileViewController = (viewControllers[1] as? UINavigationController)?
+        let profileViewController = (viewControllers[3] as? UINavigationController)?
             .viewControllers
             .first as? ProfileViewController
         if let exploreViewController = exploreViewController {
