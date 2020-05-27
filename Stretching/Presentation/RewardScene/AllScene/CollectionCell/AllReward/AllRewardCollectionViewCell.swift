@@ -16,6 +16,7 @@ class AllRewardCollectionViewCell: UICollectionViewCell {
     
     static let height = CGFloat(180)
 
+    @IBOutlet weak var viewContainer: UIView!
     @IBOutlet weak var imageAllReward: UIImageView!
     @IBOutlet weak var titleAllReward: UILabel!
     @IBOutlet weak var descAllReward: UILabel!
@@ -25,8 +26,13 @@ class AllRewardCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         self.layoutIfNeeded()
         self.layer.cornerRadius = 8
+        self.viewContainer.layer.shadowColor = UIColor.black.cgColor
+        self.viewContainer.layer.shadowOpacity = 0.1
+        self.viewContainer.layer.shadowOffset = .zero
+        self.viewContainer.layer.shadowRadius = 5
         let rewardImageViewCorner = self.imageAllReward.frame.height / 2
         self.imageAllReward.layer.cornerRadius = rewardImageViewCorner
+        self.buttonTryFilter.layer.cornerRadius = 15
     }
     
     func fill(with title: String, image: UIImage, description: String) {
