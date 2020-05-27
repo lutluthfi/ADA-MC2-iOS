@@ -70,8 +70,8 @@
                     <connections>
                         <segue destination="1sp-M2-xdQ" kind="relationship" relationship="viewControllers" id="ghm-OB-AmF"/>
                         <segue destination="k04-0a-ifw" kind="relationship" relationship="viewControllers" id="b5c-o4-rdm"/>
-                        <segue destination="BoF-0D-cly" kind="relationship" relationship="viewControllers" id="K9n-xj-nKx"/>
                         <segue destination="b8P-bg-aDt" kind="relationship" relationship="viewControllers" id="iGJ-Mv-ThR"/>
+                        <segue destination="BoF-0D-cly" kind="relationship" relationship="viewControllers" id="2wW-X4-jaX"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -123,7 +123,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nzA-gL-02H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="622" y="-106"/>
+            <point key="canvasLocation" x="625" y="644"/>
         </scene>
         <!--Onboarding View Controller-->
         <scene sceneID="Lzv-W7-bJe">
