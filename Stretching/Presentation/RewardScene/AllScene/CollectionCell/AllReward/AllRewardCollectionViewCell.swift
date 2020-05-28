@@ -40,5 +40,24 @@ class AllRewardCollectionViewCell: UICollectionViewCell {
         self.imageAllReward.image = image
         self.descAllReward.text = description
     }
+    
+    func changeButtonAndDescriptionColor(title: String) -> Void {
+        self.buttonTryFilter.titleLabel?.text = "Unlock"
+        self.descAllReward.textColor = UIColor.orange
+    }
+    
+    @IBAction func clickButton(_ sender: UIButton) {
+        if sender.currentTitle == "Unlock" {
+            for item in RewardLists().shownAllRewards {
+                if item.descAllReward == "You have complete the missions!" {
+                    RewardLists().myRewardList.append(item)
+                }
+            }
+        }
+//        if sender.currentTitle == "Unlock" {
+//            RewardLists().myRewardList.append(RewardLists().displayedAllRewards[])
+//        }
+    }
+    
 
 }

@@ -65,6 +65,8 @@
 		8D0C39BD247DB4B40012D254 /* AllRewardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0C39BB247DB4B40012D254 /* AllRewardCollectionViewCell.swift */; };
 		8D0C39BE247DB4B40012D254 /* AllRewardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D0C39BC247DB4B40012D254 /* AllRewardCollectionViewCell.xib */; };
 		8D0C39C0247DB5E30012D254 /* AllRewardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0C39BF247DB5E30012D254 /* AllRewardViewController.swift */; };
+		8D0C39D42480373C0012D254 /* SoundEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0C39D32480373C0012D254 /* SoundEngine.swift */; };
+		8D0C39D6248041870012D254 /* RewardLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0C39D5248041870012D254 /* RewardLists.swift */; };
 		8D24D1AA24686A0A00C9B548 /* Montserrat-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D24D19724686A0A00C9B548 /* Montserrat-LightItalic.ttf */; };
 		8D24D1AB24686A0A00C9B548 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D24D19824686A0A00C9B548 /* Montserrat-Medium.ttf */; };
 		8D24D1AC24686A0A00C9B548 /* Montserrat-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D24D19924686A0A00C9B548 /* Montserrat-BoldItalic.ttf */; };
@@ -151,6 +153,8 @@
 		8D0C39BB247DB4B40012D254 /* AllRewardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllRewardCollectionViewCell.swift; sourceTree = "<group>"; };
 		8D0C39BC247DB4B40012D254 /* AllRewardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllRewardCollectionViewCell.xib; sourceTree = "<group>"; };
 		8D0C39BF247DB5E30012D254 /* AllRewardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllRewardViewController.swift; sourceTree = "<group>"; };
+		8D0C39D32480373C0012D254 /* SoundEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundEngine.swift; sourceTree = "<group>"; };
+		8D0C39D5248041870012D254 /* RewardLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardLists.swift; sourceTree = "<group>"; };
 		8D24D19724686A0A00C9B548 /* Montserrat-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-LightItalic.ttf"; sourceTree = "<group>"; };
 		8D24D19824686A0A00C9B548 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
 		8D24D19924686A0A00C9B548 /* Montserrat-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BoldItalic.ttf"; sourceTree = "<group>"; };
@@ -459,6 +463,7 @@
 				4FC820D3247D4959006DAFB4 /* OwnedScene */,
 				4FC820D5247D497D006DAFB4 /* RewardViewController.storyboard */,
 				4FC820D7247D498D006DAFB4 /* RewardViewController.swift */,
+				8D0C39D5248041870012D254 /* RewardLists.swift */,
 			);
 			path = RewardScene;
 			sourceTree = "<group>";
@@ -578,6 +583,7 @@
 			children = (
 				4FCDFC1A2474FDD500BD5DB3 /* GuidePageViewController.swift */,
 				4FCDFC182474FDCE00BD5DB3 /* GuidePageStoryboard.storyboard */,
+				8D0C39D32480373C0012D254 /* SoundEngine.swift */,
 			);
 			path = GuideScene;
 			sourceTree = "<group>";
@@ -757,9 +763,11 @@
 				4FC8204C247AC428006DAFB4 /* SignInProfileCollectionViewCell.swift in Sources */,
 				4FC820C4247D3B49006DAFB4 /* WeeklyActivityViewController.swift in Sources */,
 				4FBC0FD124653E930052DB8A /* Stretching.xcdatamodeld in Sources */,
+				8D0C39D42480373C0012D254 /* SoundEngine.swift in Sources */,
 				8D24D1BE24686E8C00C9B548 /* OnboardingViewController.swift in Sources */,
 				4FCDFBA32472732400BD5DB3 /* StretchingAssetKit.swift in Sources */,
 				4FCDFC15247499E300BD5DB3 /* GreetingsExploreCollectionViewCell.swift in Sources */,
+				8D0C39D6248041870012D254 /* RewardLists.swift in Sources */,
 				4FCDFBFF2474319700BD5DB3 /* TypeStretchExploreCollectionViewCell.swift in Sources */,
 				4FCDFC0724743F9800BD5DB3 /* GuideStretch+DAOMapping.swift in Sources */,
 				4FC820AF247BFCD9006DAFB4 /* KeychainStorage.swift in Sources */,
