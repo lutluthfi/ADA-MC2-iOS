@@ -16,7 +16,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="180" height="280"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ImageInternalRotationStretch" translatesAutoresizingMaskIntoConstraints="NO" id="bhc-ea-U5L">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ImageRecommendSideToSideStretch" translatesAutoresizingMaskIntoConstraints="NO" id="bhc-ea-U5L">
                         <rect key="frame" x="0.0" y="0.0" width="180" height="280"/>
                     </imageView>
                 </subviews>
@@ -36,6 +36,6 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="ImageInternalRotationStretch" width="200" height="317"/>
+        <image name="ImageRecommendSideToSideStretch" width="200" height="317"/>
     </resources>
 </document>

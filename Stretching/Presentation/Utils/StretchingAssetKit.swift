@@ -41,13 +41,18 @@ struct StretchingAssetKit {
     static let imageGuide29 = UIImage(named: "29")!
     static let imageGuide30 = UIImage(named: "30")!
     static let imageGuide31 = UIImage(named: "31")!
+    struct Color {
+        static let colorPrimaryOrange = #colorLiteral(red: 1, green: 0.4793429971, blue: 0.3508216441, alpha: 1)
+        static let colorPrimaryOrangeDark = #colorLiteral(red: 1, green: 0.4793429971, blue: 0.3508216441, alpha: 1)
+        static let colorPrimaryIndigo = #colorLiteral(red: 0.3759545088, green: 0.5444107056, blue: 1, alpha: 1)
+    }
     struct Image {
         static let imageRecommendInternalRotationStretch = #imageLiteral(resourceName: "ImageRecommendInternalRotationStretch")
         static let imageRecommendLevatorScapulaeStretch = #imageLiteral(resourceName: "ImageRecommendLevatorScapulaeStretch")
         static let imageRecommendSideToSideStretch = #imageLiteral(resourceName: "ImageRecommendSideToSideStretch")
         static let imageRecommendUpperTraperziuStretch = #imageLiteral(resourceName: "ImageRecommendUpperTrapeziusStretch")
-        static let imageTypeStretchNeck = #imageLiteral(resourceName: "ImageTypeStretcNeck")
-        static let imageTypeStretchShoulder = #imageLiteral(resourceName: "ImageTypeStretcShoulder")
-        static let imageTypeStretchWrist = #imageLiteral(resourceName: "ImageTypeStretcWrist")
+        static let imageTypeStretchNeck = #imageLiteral(resourceName: "ImageTypeStretchNeck")
+        static let imageTypeStretchShoulder = #imageLiteral(resourceName: "ImageTypeStretchShoulder")
+        static let imageTypeStretchWrist = #imageLiteral(resourceName: "ImageTypeStretchWrist")
     }
 }
