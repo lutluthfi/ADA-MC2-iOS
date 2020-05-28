@@ -164,7 +164,7 @@
                                 </connections>
                             </button>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="0Cb-6v-J8t">
-                                <rect key="frame" x="20" y="811" width="39" height="37"/>
+                                <rect key="frame" x="50" y="811" width="39" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="HsM-a5-oJP"/>
                                     <constraint firstAttribute="width" constant="39" id="ZvH-ij-ni7"/>
@@ -185,7 +185,7 @@
                         <constraints>
                             <constraint firstItem="WF4-Od-GSa" firstAttribute="trailing" secondItem="67C-gU-N2Q" secondAttribute="trailing" constant="20" id="1aS-y4-iWV"/>
                             <constraint firstItem="67C-gU-N2Q" firstAttribute="trailing" secondItem="NII-XO-sCC" secondAttribute="trailing" id="BgL-S1-e9e"/>
-                            <constraint firstItem="0Cb-6v-J8t" firstAttribute="leading" secondItem="WF4-Od-GSa" secondAttribute="leading" constant="20" id="H5y-jO-qvY"/>
+                            <constraint firstItem="0Cb-6v-J8t" firstAttribute="leading" secondItem="WF4-Od-GSa" secondAttribute="leading" constant="50" id="H5y-jO-qvY"/>
                             <constraint firstItem="67C-gU-N2Q" firstAttribute="leading" secondItem="WF4-Od-GSa" secondAttribute="leading" constant="20" id="HDX-K5-CYj"/>
                             <constraint firstItem="67C-gU-N2Q" firstAttribute="centerX" secondItem="sis-dd-Wdb" secondAttribute="centerX" id="HzT-Vn-Xka"/>
                             <constraint firstItem="NII-XO-sCC" firstAttribute="centerX" secondItem="sis-dd-Wdb" secondAttribute="centerX" id="QfK-8a-GsG"/>
