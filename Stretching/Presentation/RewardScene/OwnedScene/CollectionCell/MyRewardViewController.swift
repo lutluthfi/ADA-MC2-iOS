@@ -8,16 +8,6 @@
 
 import UIKit
 
-struct Rewards {
-    var imageReward: UIImage
-    var titleReward: String
-    
-    init(image: UIImage, title: String) {
-        self.imageReward = image
-        self.titleReward = title
-    }
-}
-
 extension MyRewardViewController {
     class CollectionView {
         static var myRewardCollectionViewUINib: UINib = {
@@ -32,11 +22,6 @@ extension MyRewardViewController {
 class MyRewardViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
-    
-    private let displayedMyRewards: [Rewards] = [
-        Rewards(image: #imageLiteral(resourceName: "istockphoto-1134423558-1024x1024"), title: "Lucu"),
-        Rewards(image: #imageLiteral(resourceName: "thunder copy"), title: "Parah")
-    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,7 +45,7 @@ extension MyRewardViewController: UICollectionViewDataSource, UICollectionViewDe
         _ collectionView: UICollectionView,
         numberOfItemsInSection section: Int
     ) -> Int {
-        return self.displayedMyRewards.count
+        return RewardLists().myRewardList.count
     }
     
     func collectionView(
@@ -83,8 +68,8 @@ extension MyRewardViewController: UICollectionViewDataSource, UICollectionViewDe
             for: indexPath
         ) as? MyRewardCollectionViewCell
         guard let cell = reusableCell else { fatalError() }
-        let reward = self.displayedMyRewards[indexPath.row]
-        cell.fill(with: reward.titleReward, image: reward.imageReward)
+        let reward = RewardLists().myRewardList[indexPath.row]
+        cell.fill(with: reward.titleAllReward, image: reward.imageAllReward)
         return cell
     }
 }

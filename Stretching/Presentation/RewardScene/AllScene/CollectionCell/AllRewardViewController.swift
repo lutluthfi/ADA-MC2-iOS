@@ -8,18 +8,6 @@
 
 import UIKit
 
-struct AllReward {
-    var imageAllReward: UIImage
-    var titleAllReward: String
-    var descAllReward: String
-    
-    init(image: UIImage, title: String, description: String) {
-        self.imageAllReward = image
-        self.titleAllReward = title
-        self.descAllReward = description
-    }
-}
-
 extension AllRewardViewController {
     class CollectionView {
         static var allRewardCollectionViewUINib: UINib = {
@@ -35,14 +23,12 @@ class AllRewardViewController: UIViewController {
 
    @IBOutlet weak var collectionView: UICollectionView!
     
-    private let displayedAllRewards: [AllReward] = [
-        AllReward(image: #imageLiteral(resourceName: "thunder copy"), title: "Stargaze", description: "I don't know actually"),
-        AllReward(image: #imageLiteral(resourceName: "istockphoto-1134423558-1024x1024"), title: "Supermie", description: "I am really hungry")
-    ]
-
+    var allRewardsList: [Reward] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupViewDidLoad()
+        processingAllRewardList()
     }
 
     private func setupViewDidLoad() {
@@ -54,6 +40,21 @@ class AllRewardViewController: UIViewController {
             forCellWithReuseIdentifier: AllRewardCollectionViewCell.identifier
         )
     }
+    
+    func processingAllRewardList() -> Void {
+        for reward in RewardLists().displayedAllRewards {
+            if reward.titleAllReward == "Thunder Filter" {
+                var tempReward = reward
+                tempReward.descAllReward = "You have complete the missions!"
+                print(tempReward)
+                self.allRewardsList.append(tempReward)
+            } else {
+                self.allRewardsList.append(reward)
+            }
+            collectionView.reloadData()
+            RewardLists().shownAllRewards.append(contentsOf: self.allRewardsList)
+        }
+    }
 }
 
 extension AllRewardViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
@@ -61,7 +62,7 @@ extension AllRewardViewController: UICollectionViewDataSource, UICollectionViewD
         _ collectionView: UICollectionView,
         numberOfItemsInSection section: Int
     ) -> Int {
-        return self.displayedAllRewards.count
+        return self.allRewardsList.count
     }
     
     func collectionView(
@@ -84,7 +85,10 @@ extension AllRewardViewController: UICollectionViewDataSource, UICollectionViewD
             for: indexPath
         ) as? AllRewardCollectionViewCell
         guard let cell = reusableCell else { fatalError() }
-        let reward = self.displayedAllRewards[indexPath.row]
+        let reward = self.allRewardsList[indexPath.row]
+        if reward.descAllReward == "You have complete the missions!" {
+            cell.changeButtonAndDescriptionColor(title: reward.titleAllReward)
+        }
         cell.fill(with: reward.titleAllReward, image: reward.imageAllReward, description: reward.descAllReward)
         return cell
     }
