@@ -59,6 +59,17 @@
 		4FCDFC16247499E300BD5DB3 /* GreetingsExploreCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FCDFC14247499E300BD5DB3 /* GreetingsExploreCollectionViewCell.xib */; };
 		4FCDFC192474FDCE00BD5DB3 /* GuidePageStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FCDFC182474FDCE00BD5DB3 /* GuidePageStoryboard.storyboard */; };
 		4FCDFC1B2474FDD500BD5DB3 /* GuidePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCDFC1A2474FDD500BD5DB3 /* GuidePageViewController.swift */; };
+		4FD0029E2480725D001F333B /* ResultPracticeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FD0029D2480725D001F333B /* ResultPracticeViewController.storyboard */; };
+		4FD002A02480726F001F333B /* ResultPracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD0029F2480726F001F333B /* ResultPracticeViewController.swift */; };
+		4FD002AA248074B7001F333B /* 09_r_keep_down.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FD002A1248074B6001F333B /* 09_r_keep_down.mp3 */; };
+		4FD002AB248074B7001F333B /* 08_l_keep_down.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FD002A2248074B6001F333B /* 08_l_keep_down.mp3 */; };
+		4FD002AC248074B7001F333B /* 02_hold_8_seconds.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FD002A3248074B7001F333B /* 02_hold_8_seconds.mp3 */; };
+		4FD002AD248074B7001F333B /* 06_l_Slowly_tilt_left.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FD002A4248074B7001F333B /* 06_l_Slowly_tilt_left.mp3 */; };
+		4FD002AE248074B7001F333B /* 01_keep_head_up.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FD002A5248074B7001F333B /* 01_keep_head_up.mp3 */; };
+		4FD002AF248074B7001F333B /* 04_l_Slowly_turn_left.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FD002A6248074B7001F333B /* 04_l_Slowly_turn_left.mp3 */; };
+		4FD002B0248074B7001F333B /* 03_slowly_back_to_center.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FD002A7248074B7001F333B /* 03_slowly_back_to_center.mp3 */; };
+		4FD002B1248074B7001F333B /* 05_r_Slowly_turn_right.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FD002A8248074B7001F333B /* 05_r_Slowly_turn_right.mp3 */; };
+		4FD002B2248074B7001F333B /* 07_r_slowly_tilt_right.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4FD002A9248074B7001F333B /* 07_r_slowly_tilt_right.mp3 */; };
 		8D0C39A6247DA4000012D254 /* MyRewardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D0C39A3247DA4000012D254 /* MyRewardCollectionViewCell.xib */; };
 		8D0C39A7247DA4000012D254 /* MyRewardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0C39A4247DA4000012D254 /* MyRewardCollectionViewCell.swift */; };
 		8D0C39A8247DA4000012D254 /* MyRewardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0C39A5247DA4000012D254 /* MyRewardViewController.swift */; };
@@ -145,6 +156,17 @@
 		4FCDFC14247499E300BD5DB3 /* GreetingsExploreCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GreetingsExploreCollectionViewCell.xib; sourceTree = "<group>"; };
 		4FCDFC182474FDCE00BD5DB3 /* GuidePageStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GuidePageStoryboard.storyboard; sourceTree = "<group>"; };
 		4FCDFC1A2474FDD500BD5DB3 /* GuidePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuidePageViewController.swift; sourceTree = "<group>"; };
+		4FD0029D2480725D001F333B /* ResultPracticeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ResultPracticeViewController.storyboard; sourceTree = "<group>"; };
+		4FD0029F2480726F001F333B /* ResultPracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultPracticeViewController.swift; sourceTree = "<group>"; };
+		4FD002A1248074B6001F333B /* 09_r_keep_down.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 09_r_keep_down.mp3; sourceTree = "<group>"; };
+		4FD002A2248074B6001F333B /* 08_l_keep_down.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 08_l_keep_down.mp3; sourceTree = "<group>"; };
+		4FD002A3248074B7001F333B /* 02_hold_8_seconds.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 02_hold_8_seconds.mp3; sourceTree = "<group>"; };
+		4FD002A4248074B7001F333B /* 06_l_Slowly_tilt_left.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 06_l_Slowly_tilt_left.mp3; sourceTree = "<group>"; };
+		4FD002A5248074B7001F333B /* 01_keep_head_up.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 01_keep_head_up.mp3; sourceTree = "<group>"; };
+		4FD002A6248074B7001F333B /* 04_l_Slowly_turn_left.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 04_l_Slowly_turn_left.mp3; sourceTree = "<group>"; };
+		4FD002A7248074B7001F333B /* 03_slowly_back_to_center.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 03_slowly_back_to_center.mp3; sourceTree = "<group>"; };
+		4FD002A8248074B7001F333B /* 05_r_Slowly_turn_right.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 05_r_Slowly_turn_right.mp3; sourceTree = "<group>"; };
+		4FD002A9248074B7001F333B /* 07_r_slowly_tilt_right.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 07_r_slowly_tilt_right.mp3; sourceTree = "<group>"; };
 		8D0C39A3247DA4000012D254 /* MyRewardCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyRewardCollectionViewCell.xib; sourceTree = "<group>"; };
 		8D0C39A4247DA4000012D254 /* MyRewardCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRewardCollectionViewCell.swift; sourceTree = "<group>"; };
 		8D0C39A5247DA4000012D254 /* MyRewardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRewardViewController.swift; sourceTree = "<group>"; };
@@ -226,6 +248,7 @@
 		4FBC0FDE24653EEA0052DB8A /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				4FD0029C2480724B001F333B /* ResultPracticeScene */,
 				8DDC28662465487200DD76C1 /* LaunchScreen.storyboard */,
 				8DDC28652465487200DD76C1 /* Main.storyboard */,
 				4FC8204124792279006DAFB4 /* DashboardViewController.swift */,
@@ -482,6 +505,15 @@
 		4FC820DC247D8644006DAFB4 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				4FD002A5248074B7001F333B /* 01_keep_head_up.mp3 */,
+				4FD002A3248074B7001F333B /* 02_hold_8_seconds.mp3 */,
+				4FD002A7248074B7001F333B /* 03_slowly_back_to_center.mp3 */,
+				4FD002A6248074B7001F333B /* 04_l_Slowly_turn_left.mp3 */,
+				4FD002A8248074B7001F333B /* 05_r_Slowly_turn_right.mp3 */,
+				4FD002A4248074B7001F333B /* 06_l_Slowly_tilt_left.mp3 */,
+				4FD002A9248074B7001F333B /* 07_r_slowly_tilt_right.mp3 */,
+				4FD002A2248074B6001F333B /* 08_l_keep_down.mp3 */,
+				4FD002A1248074B6001F333B /* 09_r_keep_down.mp3 */,
 				4FC820DD247D8654006DAFB4 /* DeskHitted.m4a */,
 			);
 			path = Sounds;
@@ -580,6 +612,15 @@
 				4FCDFC182474FDCE00BD5DB3 /* GuidePageStoryboard.storyboard */,
 			);
 			path = GuideScene;
+			sourceTree = "<group>";
+		};
+		4FD0029C2480724B001F333B /* ResultPracticeScene */ = {
+			isa = PBXGroup;
+			children = (
+				4FD0029D2480725D001F333B /* ResultPracticeViewController.storyboard */,
+				4FD0029F2480726F001F333B /* ResultPracticeViewController.swift */,
+			);
+			path = ResultPracticeScene;
 			sourceTree = "<group>";
 		};
 		8D0C39A1247DA4000012D254 /* CollectionCell */ = {
@@ -713,6 +754,7 @@
 				8D24D1AC24686A0A00C9B548 /* Montserrat-BoldItalic.ttf in Resources */,
 				8D24D1BA24686A0A00C9B548 /* Montserrat-Italic.ttf in Resources */,
 				8D24D1BC24686A0A00C9B548 /* Montserrat-ExtraBoldItalic.ttf in Resources */,
+				4FD002B2248074B7001F333B /* 07_r_slowly_tilt_right.mp3 in Resources */,
 				8DDC28682465487200DD76C1 /* LaunchScreen.storyboard in Resources */,
 				8D24D1AD24686A0A00C9B548 /* Montserrat-Light.ttf in Resources */,
 				8D24D1B924686A0A00C9B548 /* Montserrat-Regular.ttf in Resources */,
@@ -720,30 +762,39 @@
 				4FC820B4247D0F21006DAFB4 /* TermsConditionsViewController.storyboard in Resources */,
 				4FCDFC16247499E300BD5DB3 /* GreetingsExploreCollectionViewCell.xib in Resources */,
 				8D24D1AE24686A0A00C9B548 /* Montserrat-ThinItalic.ttf in Resources */,
+				4FD0029E2480725D001F333B /* ResultPracticeViewController.storyboard in Resources */,
 				8D24D1AA24686A0A00C9B548 /* Montserrat-LightItalic.ttf in Resources */,
 				4FC820BE247D1E1F006DAFB4 /* ActivityViewController.storyboard in Resources */,
 				8D24D1BB24686A0A00C9B548 /* Montserrat-SemiBoldItalic.ttf in Resources */,
 				8D24D1B524686A0A00C9B548 /* Montserrat-ExtraLightItalic.ttf in Resources */,
 				4FCDFBFB2474317200BD5DB3 /* RecommendStretchExploreCollectionViewCell.xib in Resources */,
+				4FD002AE248074B7001F333B /* 01_keep_head_up.mp3 in Resources */,
 				8D24D1B424686A0A00C9B548 /* Montserrat-SemiBold.ttf in Resources */,
+				4FD002AF248074B7001F333B /* 04_l_Slowly_turn_left.mp3 in Resources */,
 				4FC820D1247D3B9B006DAFB4 /* WeeklyActivityCollectionViewCell.xib in Resources */,
 				4FCDFC0C2474900000BD5DB3 /* DefaultHeaderExploreCollectionReusableView.xib in Resources */,
 				8D24D1B824686A0A00C9B548 /* Montserrat-Black.ttf in Resources */,
 				4FC8203C24791D50006DAFB4 /* SignOutProfileCollectionViewCell.xib in Resources */,
 				4FC820DE247D8654006DAFB4 /* DeskHitted.m4a in Resources */,
 				8D24D1B024686A0A00C9B548 /* Montserrat-Thin.ttf in Resources */,
+				4FD002AB248074B7001F333B /* 08_l_keep_down.mp3 in Resources */,
 				4FCDFBEC2474085300BD5DB3 /* ExploreViewController.storyboard in Resources */,
+				4FD002AA248074B7001F333B /* 09_r_keep_down.mp3 in Resources */,
+				4FD002B0248074B7001F333B /* 03_slowly_back_to_center.mp3 in Resources */,
 				4FC820CB247D3B84006DAFB4 /* RecentActivityCollectionViewCell.xib in Resources */,
 				4FCDFBEF247408E700BD5DB3 /* PracticeViewController.storyboard in Resources */,
 				8D24D1B124686A0A00C9B548 /* Montserrat-Bold.ttf in Resources */,
 				4FCDFC192474FDCE00BD5DB3 /* GuidePageStoryboard.storyboard in Resources */,
+				4FD002AD248074B7001F333B /* 06_l_Slowly_tilt_left.mp3 in Resources */,
 				4FC820B7247D1800006DAFB4 /* PrivacyPolicyViewController.storyboard in Resources */,
 				4FC82048247924BA006DAFB4 /* HeaderCommonProfileCollectionReusableView.xib in Resources */,
 				8D24D1AB24686A0A00C9B548 /* Montserrat-Medium.ttf in Resources */,
 				4FBC0FD324653E940052DB8A /* Assets.xcassets in Resources */,
 				4FC8202324790CCB006DAFB4 /* FilterPracticeCollectionViewCell.xib in Resources */,
+				4FD002B1248074B7001F333B /* 05_r_Slowly_turn_right.mp3 in Resources */,
 				8D0C39BE247DB4B40012D254 /* AllRewardCollectionViewCell.xib in Resources */,
 				8D24D1AF24686A0A00C9B548 /* Montserrat-ExtraLight.ttf in Resources */,
+				4FD002AC248074B7001F333B /* 02_hold_8_seconds.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -790,6 +841,7 @@
 				4FC8202224790CCB006DAFB4 /* FilterPracticeCollectionViewCell.swift in Sources */,
 				4FBC0FC724653E930052DB8A /* SceneDelegate.swift in Sources */,
 				4FC82047247924BA006DAFB4 /* HeaderCommonProfileCollectionReusableView.swift in Sources */,
+				4FD002A02480726F001F333B /* ResultPracticeViewController.swift in Sources */,
 				4FC820CA247D3B84006DAFB4 /* RecentActivityCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYm-Fi-KP7">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Result Practice View Controller-->
+        <scene sceneID="ebS-KP-v4Z">
+            <objects>
+                <viewController storyboardIdentifier="ResultPracticeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYm-Fi-KP7" customClass="ResultPracticeViewController" customModule="Stretching" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zld-i4-LQW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ImageResultPractice" translatesAutoresizingMaskIntoConstraints="NO" id="q67-OG-RZP">
+                                <rect key="frame" x="95.5" y="185.5" width="223" height="223"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="q67-OG-RZP" secondAttribute="height" multiplier="1:1" id="R6m-D5-OlH"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ImageStarResultPractice" translatesAutoresizingMaskIntoConstraints="NO" id="wYW-HG-N0h">
+                                <rect key="frame" x="102" y="432.5" width="210" height="31"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Va3-Jv-4XB">
+                                <rect key="frame" x="32" y="495.5" width="350" height="91"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You did it!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Dz-OH-7jE">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="28"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You’ve done it with good result, keep it try everyday" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U3v-eV-pmG">
+                                        <rect key="frame" x="0.0" y="44" width="350" height="47"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mc9-SU-waC">
+                                <rect key="frame" x="32" y="814" width="350" height="48"/>
+                                <color key="backgroundColor" name="ColorPrimaryOrange"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="BnW-sx-n4S"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="16"/>
+                                <state key="normal" title="Explore More">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onExploreMoreButtonTouchedUpInside:" destination="BYm-Fi-KP7" eventType="touchUpInside" id="w91-TO-bNd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="wYW-HG-N0h" firstAttribute="centerX" secondItem="zld-i4-LQW" secondAttribute="centerX" id="1bf-il-VMM"/>
+                            <constraint firstItem="Va3-Jv-4XB" firstAttribute="top" secondItem="wYW-HG-N0h" secondAttribute="bottom" constant="32" id="52h-oZ-e04"/>
+                            <constraint firstAttribute="trailing" secondItem="Va3-Jv-4XB" secondAttribute="trailing" constant="32" id="89z-mB-qSO"/>
+                            <constraint firstItem="wYW-HG-N0h" firstAttribute="top" secondItem="q67-OG-RZP" secondAttribute="bottom" constant="24" id="913-g8-ZqU"/>
+                            <constraint firstItem="mc9-SU-waC" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Va3-Jv-4XB" secondAttribute="bottom" constant="24" id="Cdd-fG-L31"/>
+                            <constraint firstItem="mc9-SU-waC" firstAttribute="leading" secondItem="V9G-yj-gcf" secondAttribute="leading" constant="32" id="Eql-IX-Z20"/>
+                            <constraint firstItem="V9G-yj-gcf" firstAttribute="trailing" secondItem="mc9-SU-waC" secondAttribute="trailing" constant="32" id="Mvq-R1-rzT"/>
+                            <constraint firstItem="wYW-HG-N0h" firstAttribute="centerY" secondItem="zld-i4-LQW" secondAttribute="centerY" id="R52-ak-4sw"/>
+                            <constraint firstItem="Va3-Jv-4XB" firstAttribute="centerX" secondItem="zld-i4-LQW" secondAttribute="centerX" id="Roh-9u-EQe"/>
+                            <constraint firstItem="q67-OG-RZP" firstAttribute="centerX" secondItem="zld-i4-LQW" secondAttribute="centerX" id="fab-TR-CVY"/>
+                            <constraint firstItem="V9G-yj-gcf" firstAttribute="bottom" secondItem="mc9-SU-waC" secondAttribute="bottom" id="pZw-OH-wc8"/>
+                            <constraint firstItem="Va3-Jv-4XB" firstAttribute="leading" secondItem="zld-i4-LQW" secondAttribute="leading" constant="32" id="vfY-6F-UMZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="V9G-yj-gcf"/>
+                    </view>
+                    <connections>
+                        <outlet property="exploreMoreButton" destination="mc9-SU-waC" id="aMn-3S-olt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EZh-GL-M1f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ImageResultPractice" width="223" height="223"/>
+        <image name="ImageStarResultPractice" width="210" height="31"/>
+        <namedColor name="ColorPrimaryOrange">
+            <color red="1" green="0.38823529411764707" blue="0.28235294117647058" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

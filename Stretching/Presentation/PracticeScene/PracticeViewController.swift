@@ -21,10 +21,24 @@ extension PracticeViewController {
             )
         }()
     }
-    class Pracice {
+    enum GuideVoiceAudio: String {
+        case headUp = "01_keep_head_up"
+        case hold = "02_hold_8_seconds"
+        case backToCenter = "03_slowly_back_to_center"
+        case slowlyTurnLeft = "04_l_Slowly_turn_left"
+        case slowlyTurnRight = "05_r_Slowly_turn_right"
+        case slowlyTiltLeft = "06_l_Slowly_tilt_left"
+        case slowlyTiltRight = "07_r_slowly_tilt_right"
+        case leftKeepDown = "08_l_keep_down"
+        case rightKeepDown = "09_r_keep_down"
+    }
+    class Practice {
         enum Instruction: String, CaseIterable {
+            case backCenter = "Back to center"
             case finish = "Finish!"
             case getReady = "Get Ready!"
+            case headUp = "Head Up"
+            case hold8Seconds = "Hold 8 seconds"
             case oneCounter = "1"
             case sideToSideLeft = "Look at to your left"
             case sideToSideRight = "Look at to your right"
@@ -32,29 +46,11 @@ extension PracticeViewController {
             case threeCounter = "3"
             case twoCounter = "2"
         }
-        static let sideToSideNeckStretchInstructions: [Instruction] = [
+        static let startInstructions: [Instruction] = [
             .getReady,
             .threeCounter,
             .twoCounter,
-            .oneCounter,
-            .start,
-            .sideToSideLeft,
-            .sideToSideLeft,
-            .sideToSideLeft,
-            .sideToSideLeft,
-            .sideToSideLeft,
-            .sideToSideLeft,
-            .sideToSideLeft,
-            .sideToSideLeft,
-            .sideToSideRight,
-            .sideToSideRight,
-            .sideToSideRight,
-            .sideToSideRight,
-            .sideToSideRight,
-            .sideToSideRight,
-            .sideToSideRight,
-            .sideToSideRight,
-            .finish
+            .oneCounter
         ]
     }
 }
@@ -121,17 +117,36 @@ class PracticeViewController: UIViewController {
         return label
     }()
     
+    private let calypsoClassicTone = SystemSoundID(1322)
+    private let minuetClassicTone = SystemSoundID(1027)
     private var audioPlayer: AVAudioPlayer?
     private var currentFaceAnchor: ARFaceAnchor?
+    private var currentInstruction: (instruction: Practice.Instruction, done: Bool, soundPlayed: Bool) = (.getReady, false, true)
+    private var currentInstructionIndex: Int = 0
+    private var currentTimerSecond: Int = 0
     private var contentNode: SCNNode?
     private lazy var eyeLeftNode = self.contentNode!.childNode(withName: "eyeLeft", recursively: true)!
     private lazy var eyeRightNode = self.contentNode!.childNode(withName: "eyeRight", recursively: true)!
+    private var guideVoiceAudioPlayer: AVAudioPlayer?
     private lazy var jawNode = self.contentNode!.childNode(withName: "jaw", recursively: true)!
     private lazy var jawHeight: Float = {
         let (min, max) = self.jawNode.boundingBox
         return max.y - min.y
     }()
     private var originalJawY: Float = 0
+    private var sideToSideNeckStretchInstructions: [(instruction: Practice.Instruction, done: Bool, soundPlayed: Bool)] = [
+        (.getReady, false, true),
+        (.threeCounter, false, true),
+        (.twoCounter, false, true),
+        (.oneCounter, false, true),
+        (.start, false, true),
+        (.headUp, false, false),
+        (.sideToSideLeft, false, false),
+        (.backCenter, false, false),
+        (.sideToSideRight, false, false),
+        (.backCenter, false, false),
+        (.finish, false, false)
+    ]
     private var timer: Timer?
     
     private var playedCounter: Int = 0
@@ -157,6 +172,7 @@ class PracticeViewController: UIViewController {
     }
     
     @objc private func onBackBarButtonItemTapped(_ sender: UIBarButtonItem) {
+        self.practiceDidStop()
         self.navigationController?.popViewController(animated: true)
     }
     
@@ -194,10 +210,44 @@ class PracticeViewController: UIViewController {
         }
     }
     
+    private func guideVoiceDidPlay(instruction: Practice.Instruction, completion: (_ soundPlayed: Bool?) -> Void) {
+        var audio = ""
+        switch instruction {
+        case .backCenter:
+            audio = GuideVoiceAudio.backToCenter.rawValue
+        case .headUp:
+            audio = GuideVoiceAudio.headUp.rawValue
+        case .hold8Seconds:
+            audio = GuideVoiceAudio.hold.rawValue
+        case .sideToSideLeft:
+            audio = GuideVoiceAudio.slowlyTurnLeft.rawValue
+        case .sideToSideRight:
+            audio = GuideVoiceAudio.slowlyTurnRight.rawValue
+            break
+        default:
+            break
+        }
+        guard !self.currentInstruction.soundPlayed else { return }
+        guard let bundle = Bundle.main.path(forResource: audio, ofType: "mp3") else { return }
+        let url = URL(fileURLWithPath: bundle)
+        do {
+            self.guideVoiceAudioPlayer = try AVAudioPlayer(contentsOf: url)
+            self.guideVoiceAudioPlayer?.prepareToPlay()
+            self.guideVoiceAudioPlayer?.play()
+            completion(true)
+        } catch {
+            completion(nil)
+        }
+    }
+    
     private func practiceDidComplete() {
+        AudioServicesPlayAlertSound(self.minuetClassicTone)
         self.practiceDidStop()
         let okAlertAction = UIAlertAction(title: "OK", style: .default) { (_) in
-            // go to result page
+            let identifier = String(describing: ResultPracticeViewController.self)
+            let storyboard = UIStoryboard(name: identifier, bundle: nil)
+            let vc = storyboard.instantiateViewController(identifier: identifier)
+            self.navigationController?.pushViewController(vc, animated: true)
         }
         let alertController = UIAlertController(
             title: "Complete!",
@@ -212,14 +262,84 @@ class PracticeViewController: UIViewController {
         self.collectionView.isScrollEnabled = false
         self.timer = Timer
             .scheduledTimer(withTimeInterval: 1, repeats: true, block: { (timer) in
-                if self.playedCounter >= Pracice.sideToSideNeckStretchInstructions.count {
+                guard self.currentInstructionIndex < self.sideToSideNeckStretchInstructions.count else {
                     self.practiceDidComplete()
                     return
                 }
-                self.deksHittedSoundDidPlay()
-                let foo = Pracice.sideToSideNeckStretchInstructions[self.playedCounter]
-                self.instructionLabel.text = foo.rawValue
-                self.playedCounter += 1
+                self.currentInstruction = self.sideToSideNeckStretchInstructions[self.currentInstructionIndex]
+                let instruction = self.currentInstruction.instruction
+                switch instruction {
+                case .backCenter:
+                    self.instructionLabel.text = instruction.rawValue
+                    self.guideVoiceDidPlay(instruction: instruction) { (soundPlayed) in
+                        guard let soundPlayed = soundPlayed else { return }
+                        self.currentInstruction.soundPlayed = soundPlayed
+                        self.sideToSideNeckStretchInstructions[self.currentInstructionIndex] = self.currentInstruction
+                    }
+                    break
+                case .finish:
+                    self.currentInstruction.done = true
+                    self.instructionLabel.text = instruction.rawValue
+                    self.currentInstructionIndex += 1
+                    break
+                case .getReady:
+                    self.currentInstruction.done = true
+                    self.instructionLabel.text = instruction.rawValue
+                    self.currentInstructionIndex += 1
+                    break
+                case .headUp:
+                    self.instructionLabel.text = instruction.rawValue
+                    self.guideVoiceDidPlay(instruction: instruction) { (soundPlayed) in
+                        guard let soundPlayed = soundPlayed else { return }
+                        self.currentInstruction.soundPlayed = soundPlayed
+                        self.sideToSideNeckStretchInstructions[self.currentInstructionIndex] = self.currentInstruction
+                    }
+                    break
+                case .hold8Seconds:
+                    self.guideVoiceDidPlay(instruction: instruction) { (soundPlayed) in
+                        guard let soundPlayed = soundPlayed else { return }
+                        self.currentInstruction.soundPlayed = soundPlayed
+                        self.sideToSideNeckStretchInstructions[self.currentInstructionIndex] = self.currentInstruction
+                    }
+                    break
+                case .oneCounter:
+                    self.currentInstruction.done = true
+                    self.instructionLabel.text = instruction.rawValue
+                    self.currentInstructionIndex += 1
+                    break
+                case .sideToSideLeft:
+                    self.instructionLabel.text = instruction.rawValue
+                    self.guideVoiceDidPlay(instruction: instruction) { (soundPlayed) in
+                        guard let soundPlayed = soundPlayed else { return }
+                        self.currentInstruction.soundPlayed = soundPlayed
+                        self.sideToSideNeckStretchInstructions[self.currentInstructionIndex] = self.currentInstruction
+                    }
+                    break
+                case .sideToSideRight:
+                    self.instructionLabel.text = instruction.rawValue
+                    self.guideVoiceDidPlay(instruction: instruction) { (soundPlayed) in
+                        guard let soundPlayed = soundPlayed else { return }
+                        self.currentInstruction.soundPlayed = soundPlayed
+                        self.sideToSideNeckStretchInstructions[self.currentInstructionIndex] = self.currentInstruction
+                    }
+                    break
+                case .start:
+                    self.currentInstruction.done = true
+                    self.instructionLabel.text = instruction.rawValue
+                    self.currentInstructionIndex += 1
+                    break
+                case .threeCounter:
+                    self.currentInstruction.done = true
+                    self.instructionLabel.text = instruction.rawValue
+                    self.currentInstructionIndex += 1
+                    break
+                case .twoCounter:
+                    self.currentInstruction.done = true
+                    self.instructionLabel.text = instruction.rawValue
+                    self.currentInstructionIndex += 1
+                    break
+                }
+                self.currentTimerSecond += 1
             })
     }
     
@@ -332,18 +452,36 @@ extension PracticeViewController: ARSCNViewDelegate {
         
         let xLookAtPoint = faceAnchor.lookAtPoint.x
         let yLookAtPoint = faceAnchor.lookAtPoint.y
-        if -0.05...0.05 ~= xLookAtPoint && -0.05...0.05 ~= yLookAtPoint {
-            // self.faceLabel.text = "Kamu tidak menghadap kemana-mana"
-        }
-        if xLookAtPoint > 0.4 {
-            // self.faceLabel.text = "Kamu menghadap ke kiri"
-        } else if xLookAtPoint < -0.4 {
-            // self.faceLabel.text = "Kamu menghadap ke kanan"
-        }
-        if yLookAtPoint > 0.3 {
-            // self.faceLabel.text = "Kamu menghadap ke bawah"
-        } else if yLookAtPoint < -0.3 {
-            // self.faceLabel.text = "Kamu menghadap ke atas"
+        print("x: \(xLookAtPoint) || y: \(yLookAtPoint)")
+        DispatchQueue.main.async {
+            if -0.05...0.05 ~= xLookAtPoint && -0.05...0.05 ~= yLookAtPoint { // Center
+                if (self.currentInstruction.instruction == .headUp || self.currentInstruction.instruction == .backCenter) && !self.currentInstruction.done {
+                    self.currentInstruction.done = true
+                    self.sideToSideNeckStretchInstructions[self.currentInstructionIndex] = self.currentInstruction
+                    self.currentInstructionIndex += 1
+                    AudioServicesPlayAlertSound(self.calypsoClassicTone)
+                }
+            }
+            if xLookAtPoint > 0.4 { // Left
+                if self.currentInstruction.instruction == .sideToSideLeft && !self.currentInstruction.done {
+                    self.currentInstruction.done = true
+                    self.sideToSideNeckStretchInstructions[self.currentInstructionIndex] = self.currentInstruction
+                    self.currentInstructionIndex += 1
+                    AudioServicesPlayAlertSound(self.calypsoClassicTone)
+                }
+            }
+            if xLookAtPoint < -0.4 { // Right
+                if self.currentInstruction.instruction == .sideToSideRight && !self.currentInstruction.done {
+                    self.currentInstruction.done = true
+                    self.sideToSideNeckStretchInstructions[self.currentInstructionIndex] = self.currentInstruction
+                    self.currentInstructionIndex += 1
+                    AudioServicesPlayAlertSound(self.calypsoClassicTone)
+                }
+            }
+            if yLookAtPoint > 0.15 { // Down
+            }
+            if yLookAtPoint < -0.3 { // Up
+            }
         }
     }
 }

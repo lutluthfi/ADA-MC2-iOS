@@ -67,6 +67,8 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.layoutIfNeeded()
+        self.startButton.layer.borderColor = UIColor(red: 255/255, green: 99/255, blue: 72/255, alpha: 1).cgColor
+        self.startButton.layer.borderWidth = 1
         self.startButton.layer.cornerRadius = 17.5
         self.scrollView.delegate = self
         scrollView.isPagingEnabled = true
